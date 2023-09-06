@@ -8,8 +8,8 @@ public class PlayerControllerBasic : MonoBehaviour
 
     [SerializeField]
     private float moveSpeed;
-
     public bool phaseUnlocked;
+    public List<BoxCollider2D> phaseColliders;
 
 
     private void Start()
@@ -21,14 +21,18 @@ public class PlayerControllerBasic : MonoBehaviour
     void Update()
     {
         Movement();
-        
+        PhaseCheck();
     }
 
     void PhaseCheck()
     {
-        if (phaseUnlocked && Input.GetKey(KeyCode.LeftShift))
+        if (phaseUnlocked && Input.GetKeyDown(KeyCode.LeftShift))
         {
-
+            gameObject.layer = 7;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            gameObject.layer = 6;
         }
     }
 
