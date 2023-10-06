@@ -8,12 +8,25 @@ public class PlayerMovement : MonoBehaviour
 
     public float jumpingPower = 16f;
     private bool isFacingRight = true;
-    public float hangCounter;
-    public float jumpBufferCount;
+    private float hangCounter;
+    private float jumpBufferCount;
+
+    public bool isWallSliding;
+
+    private bool isWallJumping;
+    public float wallJumpingDirection;
+    private float wallJumpingTime = 0.2f;
+    private float wallJumpingCounter;
+    private float wallJumpingDuration = 0.4f;
+    private Vector2 wallJumpingPower = new Vector2(8f, 16f);
+
+    [SerializeField] private float wallSlidingSpeed = 2f;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private Transform wallCheck;
+    [SerializeField] private LayerMask wallLayer;
 
 
     public int maxJumps = 2;
@@ -34,22 +47,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-
-
-        ////Big jump
-        //if (jumpBufferCount >= 0 && hangCounter > 0f && jumpsLeft > 0)
-        //{
-        //    rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-        //    jumpBufferCount = jumpBuggerLenght;
-        //    jumpsLeft -= 1;
-        //}
-
-        ////Small jump
-        //if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
-        //{
-        //    rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-        //    jumpBufferCount = 0;
-        //}
 
         if(jumpsLeft > 0 && Input.GetButtonDown("Jump"))
         {
@@ -96,8 +93,13 @@ public class PlayerMovement : MonoBehaviour
             jumpBufferCount -= Time.deltaTime;
         }
 
+        WallSlide();
+        WallJump();
 
-        Flip();
+        if (!isWallJumping)
+        {
+            Flip();
+        }
 
         //Move camera point
         if(Input.GetAxisRaw("Horizontal") != 0)
@@ -108,12 +110,89 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        if (!isWallJumping)
+        {
+            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        }
     }
 
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+    }
+
+    private bool IsWalled()
+    {
+        return Physics2D.OverlapCircle(wallCheck.position, 0.2f, wallLayer);
+    }
+
+    private void WallSlide()
+    {
+        if(IsWalled() && !IsGrounded() && horizontal != 0f)
+        {
+            isWallSliding = true;
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
+        }
+        else
+        {
+            isWallSliding = false;
+        }
+    }
+
+    private void WallJump()
+    {
+        if (isWallSliding == true)
+        {
+            isWallJumping = false;
+            if(transform.rotation.y >= 0)
+            {
+                wallJumpingDirection = -1;
+            }
+
+            if(transform.rotation.y <= 0)
+            {
+                wallJumpingDirection = 1;
+            }
+            wallJumpingCounter = wallJumpingTime;
+
+            CancelInvoke(nameof(StopWallJumping));
+        }
+        else
+        {
+            wallJumpingCounter -= Time.deltaTime;
+        }
+
+        if (Input.GetButtonDown("Jump") && wallJumpingCounter > 0f)
+        {
+            isWallJumping = true;
+            rb.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y);
+            wallJumpingCounter = 0;
+            if(wallJumpingDirection == 1)
+            {
+                wallJumpingDirection = -1;
+            }
+            else
+            {
+                wallJumpingDirection = 1;
+            }
+            if(transform.rotation.y == 0)
+            {
+                isFacingRight = !isFacingRight;
+                transform.Rotate(0f, 180f, 0f);
+            }
+            else
+            {
+                isFacingRight = !isFacingRight;
+                transform.Rotate(0f, 180f, 0f);
+            }
+
+            Invoke(nameof(StopWallJumping), wallJumpingDuration);
+        }
+    }
+
+    private void StopWallJumping()
+    {
+        isWallJumping = false;
     }
 
     private void Flip()
