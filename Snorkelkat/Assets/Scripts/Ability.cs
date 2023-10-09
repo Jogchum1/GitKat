@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ability : ScriptableObject
+public interface Ability 
 {
-    public new string name;
-    public float cooldownTime;
-    public float activateTime;
-
-    public virtual void Activate(GameObject parent) {}
+    public virtual void Activate() {}
+    public virtual void Deactivate() {}
 }

@@ -26,6 +26,11 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         if (GetComponentInParent<InventorySlot>() != null)
         {
             GetComponentInParent<InventorySlot>().hasItem = false;
+            if(GetComponentInParent<InventorySlot>().selectedAbilitySlot == true)
+            {
+                GetComponentInParent<InventorySlot>().RemoveAbility();
+            }
+
         }
         transform.SetParent(canvas.transform);
         transform.SetAsLastSibling();

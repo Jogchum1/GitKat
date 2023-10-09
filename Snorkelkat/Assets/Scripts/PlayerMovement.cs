@@ -11,10 +11,10 @@ public class PlayerMovement : MonoBehaviour
     private float hangCounter;
     private float jumpBufferCount;
 
-    public bool isWallSliding;
-
+    public bool canWallJump = false;
+    private bool isWallSliding;
     private bool isWallJumping;
-    public float wallJumpingDirection;
+    private float wallJumpingDirection;
     private float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
     private float wallJumpingDuration = 0.4f;
@@ -93,8 +93,11 @@ public class PlayerMovement : MonoBehaviour
             jumpBufferCount -= Time.deltaTime;
         }
 
-        WallSlide();
-        WallJump();
+        if (canWallJump)
+        {
+            WallSlide();
+            WallJump();
+        }
 
         if (!isWallJumping)
         {

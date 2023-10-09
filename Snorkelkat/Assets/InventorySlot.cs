@@ -6,7 +6,7 @@ public class InventorySlot : MonoBehaviour, IDropHandler
 {
     [HideInInspector] public bool hasItem = false;
     public bool selectedAbilitySlot = false;
-
+    public DraggableItem item;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +26,7 @@ public class InventorySlot : MonoBehaviour, IDropHandler
             DraggableItem draggableItem = dropped.GetComponent<DraggableItem>();
             draggableItem.parentAfterDrag = transform;
             hasItem = true;
+            item = draggableItem;
             if (selectedAbilitySlot == true)
                 AddAbility();
         }
@@ -34,6 +35,12 @@ public class InventorySlot : MonoBehaviour, IDropHandler
     public void AddAbility()
     {
         Debug.Log("ADDING ABILITY TO PLAYER");
+        item.gameObject.GetComponent<Ability>().Activate();
+    }
+
+    public void RemoveAbility()
+    {
+        item.gameObject.GetComponent<Ability>().Deactivate();
     }
 
     
