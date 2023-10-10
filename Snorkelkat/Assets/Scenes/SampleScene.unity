@@ -1970,7 +1970,11 @@ PrefabInstance:
       objectReference: {fileID: 981440503}
     - target: {fileID: 2280772047722110831, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: wallLayer.m_Bits
-      value: 512
+      value: 576
+      objectReference: {fileID: 0}
+    - target: {fileID: 2280772047722110831, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
+      propertyPath: wallJumpingDuration
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 5579191290656132238, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: inventoryUI
