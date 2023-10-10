@@ -22,6 +22,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
+        Debug.Log("Begin drag");
         parentAfterDrag = transform.parent;
         if (GetComponentInParent<InventorySlot>() != null)
         {
