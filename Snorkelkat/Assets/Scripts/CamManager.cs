@@ -11,7 +11,8 @@ public class CamManager : MonoBehaviour
 
     private Coroutine panCamCoroutine;
 
-    private CinemachineVirtualCamera currentCamera;
+    [HideInInspector]
+    public CinemachineVirtualCamera currentCamera;
     private CinemachineFramingTransposer framingTransposer;
 
     private Vector2 startingTrackedObjectOffset;

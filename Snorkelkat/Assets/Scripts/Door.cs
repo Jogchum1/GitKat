@@ -16,10 +16,12 @@ public class Door : MonoBehaviour
     public Vector3 goalPos;
     private Image transScreen;
     private GameManager gameManager;
+    private CamManager camManager;
     private GameObject room;
 
     private void Start()
     {
+        camManager = CamManager.instance;
         goalPos = transform.position + spawnpoint;
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         transScreen = GameObject.Find("BlackScreen").GetComponent<Image>();
@@ -38,6 +40,7 @@ public class Door : MonoBehaviour
 
         gameManager.StopPlayerVelocity();
         playerCol.gameObject.transform.position = goalDoor.goalPos;
+        camManager.currentCamera.transform.position = goalDoor.goalPos;
         yield return new WaitForSeconds(transTime/3);
 
         yield return TransitionScreen(Color.black, Color.clear, duration);
