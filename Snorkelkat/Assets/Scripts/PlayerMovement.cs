@@ -6,21 +6,10 @@ public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
 
-    public float jumpingPower = 16f;
     private bool isFacingRight = true;
     private float hangCounter;
     private float jumpBufferCount;
 
-    public bool canWallJump = false;
-    private bool isWallSliding;
-    private bool isWallJumping;
-    private float wallJumpingDirection;
-    private float wallJumpingTime = 0.2f;
-    private float wallJumpingCounter;
-    private float wallJumpingDuration = 0.4f;
-    private Vector2 wallJumpingPower = new Vector2(8f, 16f);
-
-    [SerializeField] private float wallSlidingSpeed = 2f;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -28,13 +17,27 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer;
 
-
+    [Header("General Movement")]
+    public float speed = 8f;
+    public float jumpingPower = 16f;
     public int maxJumps = 2;
     private int jumpsLeft;
-
-    public float speed = 8f;
     public float hangTime = .2f;
     public float jumpBuggerLenght = .1f;
+
+    [Header("Wall Jumping")]
+    public float wallJumpingDuration = 0.4f;
+    public Vector2 wallJumpingPower = new Vector2(8f, 16f);
+
+    [HideInInspector] public bool canWallJump = false;
+    private bool isWallSliding;
+    private bool isWallJumping;
+    private float wallJumpingDirection;
+    private float wallJumpingTime = 0.2f;
+    private float wallJumpingCounter;
+
+    [SerializeField] private float wallSlidingSpeed = 2f;
+
     [Header("Camera")]
     public Transform camTarget;
     public float aheadAmount, aheadSpeed;
@@ -188,7 +191,6 @@ public class PlayerMovement : MonoBehaviour
                 isFacingRight = !isFacingRight;
                 transform.Rotate(0f, 180f, 0f);
             }
-
             Invoke(nameof(StopWallJumping), wallJumpingDuration);
         }
     }
