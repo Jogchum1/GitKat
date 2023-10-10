@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319361409565683799}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalScale: {x: 0.75, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 319361411195448732}
@@ -171,7 +171,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674419258905703117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.162, y: 0.99999994, z: 0}
+  m_LocalPosition: {x: 0.162, y: 0.49999994, z: 0}
   m_LocalScale: {x: 1, y: 0.38508, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -230,6 +230,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &5488949749718374290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8606042356006008394}
+  m_Layer: 0
+  m_Name: Wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8606042356006008394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5488949749718374290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.4, y: 0.36, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 319361411195448732}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8607489187868692277
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +277,7 @@ GameObject:
   - component: {fileID: 5579191290656132238}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -267,6 +298,7 @@ Transform:
   - {fileID: 8607489187868692278}
   - {fileID: 319361409960301979}
   - {fileID: 6010893755168876126}
+  - {fileID: 8606042356006008394}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -283,7 +315,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.5}
+  m_Offset: {x: 0, y: 0.25}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -294,7 +326,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.75, y: 1.5}
   m_EdgeRadius: 0
 --- !u!50 &8607489187868692276
 Rigidbody2D:
@@ -330,13 +362,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpingPower: 16
-  hangCounter: 0
-  jumpBufferCount: 0
+  canWallJump: 0
+  wallSlidingSpeed: 2
   rb: {fileID: 8607489187868692276}
   groundCheck: {fileID: 8607489187868692278}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  wallCheck: {fileID: 8606042356006008394}
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 576
   maxJumps: 1
   speed: 8
   hangTime: 0.2
@@ -381,3 +417,4 @@ MonoBehaviour:
   interactLayers:
     serializedVersion: 2
     m_Bits: 256
+  inventoryUI: {fileID: 0}
