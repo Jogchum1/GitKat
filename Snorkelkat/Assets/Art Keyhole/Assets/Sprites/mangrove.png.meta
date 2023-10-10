@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6e0a04e8e2502db48a387c548ac93edd
+guid: 10b7082f47c1de44184826a3db0aa0d4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,169 +105,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: smallPlants_0
+      name: mangrove_1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 200
-        height: 459
+        width: 1102
+        height: 3311
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92364d310ed0e8442ae91b77f278949a
-      internalID: 349773336
+      spriteID: 99895a4c718c0f34b83bd91316a0cd60
+      internalID: 1072919244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smallPlants_1
+      name: mangrove_2
       rect:
         serializedVersion: 2
-        x: 497
-        y: 53
-        width: 96
-        height: 324
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac3cb1e985d685c49808514a59585850
-      internalID: 299021578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smallPlants_2
-      rect:
-        serializedVersion: 2
-        x: 917
-        y: 30
-        width: 166
-        height: 283
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02ac590046cce734aa4d76638f4fc8c8
-      internalID: -902808770
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smallPlants_4
-      rect:
-        serializedVersion: 2
-        x: 1279
-        y: 63
-        width: 67
-        height: 104
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5255e9aac3905e4dba70dffbb1e71bf
-      internalID: 410111705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smallPlants_5
-      rect:
-        serializedVersion: 2
-        x: 1550
-        y: 31
-        width: 78
-        height: 219
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19908e4c6adff184a9591a5388c90de4
-      internalID: -1871024919
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smallPlants_6
-      rect:
-        serializedVersion: 2
-        x: 1857
-        y: 7
-        width: 187
-        height: 273
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce07598e7e7aa5b47939fe714c81956b
-      internalID: 123522924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smallPlants_7
-      rect:
-        serializedVersion: 2
-        x: 2303
+        x: 2589
         y: 0
-        width: 141
-        height: 459
+        width: 2332
+        height: 3421
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba1142a6dd8951c45a11d3d8964cf36a
-      internalID: -1186428214
+      spriteID: 7b6690f7cccdbd54aa04ab89f988d9dd
+      internalID: 327173794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smallPlants_8
+      name: mangrove_roots1
       rect:
         serializedVersion: 2
-        x: 2591
-        y: 0
-        width: 107
-        height: 459
+        x: 1488
+        y: 2773
+        width: 478
+        height: 648
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f9a0d468360261469454b780c211846
-      internalID: -22395955
+      spriteID: 7fb2be5b76942e44986c6cfa6b730f61
+      internalID: -724633529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mangrove_roots2
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 1957
+        width: 489
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1aa241a2ed760c4da247789bcab99b3
+      internalID: -1201868799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mangrove_roots3
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 373
+        width: 1021
+        height: 1076
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d96f494efa01a42aef4c70c38d3ec1
+      internalID: 2012966557
       vertices: []
       indices: 
       edges: []
@@ -283,17 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      smallPlants_0: 349773336
-      smallPlants_1: 299021578
-      smallPlants_10: 1094172803
-      smallPlants_12: -758779360
-      smallPlants_14: 258985020
-      smallPlants_2: -902808770
-      smallPlants_4: 410111705
-      smallPlants_5: -1871024919
-      smallPlants_6: 123522924
-      smallPlants_7: -1186428214
-      smallPlants_8: -22395955
+      mangrove_1: 1072919244
+      mangrove_2: 327173794
+      mangrove_roots1: -724633529
+      mangrove_roots2: -1201868799
+      mangrove_roots3: 2012966557
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
