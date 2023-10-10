@@ -7,6 +7,8 @@ public class PlayerInteract : MonoBehaviour
     public float interactRange = 1f;
     public LayerMask interactLayers;
 
+    public GameObject inventoryUI;
+    private bool invActive = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,5 +30,17 @@ public class PlayerInteract : MonoBehaviour
                 }
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            ToggleUI();
+        }
+
+    }
+
+    private void ToggleUI()
+    {
+        invActive = !invActive;
+        inventoryUI.SetActive(invActive);
     }
 }
