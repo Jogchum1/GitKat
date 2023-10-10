@@ -31,6 +31,14 @@ public class CamControlTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+
+            Vector2 exitDirection = (collision.transform.position - collider.bounds.center).normalized;
+
+            if (customInspectorObjects.swapCameras && customInspectorObjects.cameraOnLeft != null && customInspectorObjects.cameraOnRight != null)
+            {
+                CamManager.instance.CameraCheckAndSwap(customInspectorObjects.cameraOnLeft, customInspectorObjects.cameraOnRight, exitDirection);
+            }
+
             if (customInspectorObjects.panCameraOnContact)
             {
                 CamManager.instance.PanCameraOnContact(customInspectorObjects.panDistance, customInspectorObjects.panTime, customInspectorObjects.panDirection, true);

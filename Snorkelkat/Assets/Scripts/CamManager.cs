@@ -93,4 +93,33 @@ public class CamManager : MonoBehaviour
             yield return null;
         }
     }
+
+    #region Swap Cameras
+
+    //checks the exit direction and swaps to the corresponding camera
+    public void CameraCheckAndSwap(CinemachineVirtualCamera cameraFromLeft, CinemachineVirtualCamera cameraFromRight, Vector2 triggerExitDirection)
+    {
+        //if the current camera is the camera on the left and our trigger exit direction was on the right
+        if (currentCamera == cameraFromLeft && triggerExitDirection.x > 0f)
+        {
+            CameraSwap(cameraFromLeft, cameraFromRight);
+        }
+
+        //if the current camera is the camera on the right and our trigger exit direction was on the left
+        else if (currentCamera == cameraFromRight && triggerExitDirection.x < 0f)
+        {
+            CameraSwap(cameraFromRight, cameraFromLeft);
+        }
+    }
+
+    private void CameraSwap(CinemachineVirtualCamera oldCam, CinemachineVirtualCamera newCam)
+    {
+        newCam.enabled = true;
+        oldCam.enabled = false;
+        currentCamera = newCam;
+
+        framingTransposer = newCam.GetCinemachineComponent<CinemachineFramingTransposer>();
+    }
+
+    #endregion
 }
