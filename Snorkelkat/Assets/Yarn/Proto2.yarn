@@ -41,3 +41,11 @@ Damn… oh well it was fun while it lasted!
 
 We are going NOWHERE this playtest is over, thank you for playing!
 ===
+title: derdeblokje
+---
+Hello.
+Welcome to the terminal.
+Please pick your ability.
+<<RunNPCEvent UpgradeTerminalNPC>>
+<<stop>>
+===

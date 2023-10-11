@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Yarn;
 using Yarn.Unity;
 
@@ -10,6 +11,9 @@ public class NPCDialogue : MonoBehaviour, IInteractable
     public string test;
     public GameObject textComponent;
     public bool isActive = false;
+
+    [SerializeField]
+    private UnityEvent NPCEvent;
     
     
     private void OnTriggerEnter2D(Collider2D other)
@@ -32,5 +36,11 @@ public class NPCDialogue : MonoBehaviour, IInteractable
     public void Interact()
     {
         dialogueRunner.StartDialogue(test);
+    }
+
+    [YarnCommand("RunNPCEvent")]
+    public void RunNPCEvent()
+    {
+        NPCEvent.Invoke();
     }
 }
