@@ -51,18 +51,21 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (jumpsLeft > 0 && Input.GetButtonDown("Jump"))
+        if (jumpsLeft > 0)
         {
+
             if (jumpBufferCount >= 0 && hangCounter > 0f)
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-                jumpBufferCount = jumpBuggerLenght;
+                jumpBufferCount = 0;
                 jumpsLeft -= 1;
+                Debug.Log("Jump 1");
             }
-            else
+            else if (maxJumps > 1 && Input.GetButtonDown("Jump"))
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-                jumpsLeft -= 1;
+                //jumpsLeft -= 1;
+                Debug.Log("Jump 2");
             }
 
             //Small jump
@@ -70,6 +73,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
                 jumpBufferCount = 0;
+                Debug.Log("Jump 3");
+
             }
         }
 
