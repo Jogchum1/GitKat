@@ -41,6 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: skybox
+    uniqueID: 3561540779
+    locked: 0
+  - name: background5
+    uniqueID: 2116740897
+    locked: 0
+  - name: background4
+    uniqueID: 1139837165
+    locked: 0
   - name: background3
     uniqueID: 858423387
     locked: 0
