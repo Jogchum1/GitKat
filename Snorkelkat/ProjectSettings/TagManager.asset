@@ -41,9 +41,6 @@ TagManager:
   - name: skybox
     uniqueID: 3561540779
     locked: 0
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: background5
     uniqueID: 2116740897
     locked: 0
@@ -67,4 +64,10 @@ TagManager:
     locked: 0
   - name: foreground1
     uniqueID: 1062457849
+    locked: 0
+  - name: Blockout
+    uniqueID: 3948851803
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
