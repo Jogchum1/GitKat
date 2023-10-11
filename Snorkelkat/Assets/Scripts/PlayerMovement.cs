@@ -7,8 +7,8 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
 
     private bool isFacingRight = true;
-    private float hangCounter;
-    private float jumpBufferCount;
+    public float hangCounter;
+    public float jumpBufferCount;
 
 
     [SerializeField] private Rigidbody2D rb;
@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 8f;
     public float jumpingPower = 16f;
     public int maxJumps = 2;
-    private int jumpsLeft;
+    public int jumpsLeft;
     public float hangTime = .2f;
     public float jumpBuggerLenght = .1f;
 
@@ -51,18 +51,21 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if(jumpsLeft > 0 && Input.GetButtonDown("Jump"))
+        if(jumpsLeft > 0)
         {
+
             if (jumpBufferCount >= 0 && hangCounter > 0f )
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-                jumpBufferCount = jumpBuggerLenght;
+                jumpBufferCount = 0;
                 jumpsLeft -= 1;
+                Debug.Log("Jump 1");
             }
-            else
+            else if(maxJumps > 1 && Input.GetButtonDown("Jump"))
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-                jumpsLeft -= 1;
+                //jumpsLeft -= 1;
+                Debug.Log("Jump 2");
             }
 
             //Small jump
@@ -70,6 +73,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
                 jumpBufferCount = 0;
+                Debug.Log("Jump 3");
+
             }
         }
 
