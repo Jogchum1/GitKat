@@ -19,6 +19,12 @@ public class GameManager : MonoBehaviour
                 ToggleInventory();
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && !inventoryActive)
+        {
+            Application.Quit();
+            print("DOEI");
+        }
     }
 
     public void TogglePlayerMovement()
