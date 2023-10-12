@@ -61,21 +61,20 @@ public class PlayerMovement : MonoBehaviour
                 jumpsLeft -= 1;
                 Debug.Log("Jump 1");
             }
-            else if (maxJumps > 1 && Input.GetButtonDown("Jump"))
+            else if (maxJumps > 1 && Input.GetButtonDown("Jump") && !IsGrounded())
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-                //jumpsLeft -= 1;
+                jumpsLeft -= 1;
                 Debug.Log("Jump 2");
             }
 
-            //Small jump
-            if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-                jumpBufferCount = 0;
-                Debug.Log("Jump 3");
-
-            }
+        }
+        //Small jump
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f && jumpsLeft >= 0)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            jumpBufferCount = 0;
+            Debug.Log("Jump 3");
         }
 
 
