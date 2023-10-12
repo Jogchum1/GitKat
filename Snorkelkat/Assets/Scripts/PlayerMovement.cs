@@ -69,15 +69,15 @@ public class PlayerMovement : MonoBehaviour
             }
 
             //Small jump
-            if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-                jumpBufferCount = 0;
-                Debug.Log("Jump 3");
-
-            }
         }
 
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f && jumpsLeft >= 0)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            jumpBufferCount = 0;
+            Debug.Log("Jump 3");
+
+        }
 
 
         //Hantime
