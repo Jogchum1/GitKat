@@ -59,13 +59,13 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
                 jumpBufferCount = 0;
                 jumpsLeft -= 1;
-                Debug.Log("Jump 1");
+               // Debug.Log("Jump 1");
             }
             else if (maxJumps > 1 && Input.GetButtonDown("Jump") && !IsGrounded())
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
                 jumpsLeft -= 1;
-                Debug.Log("Jump 2");
+                //Debug.Log("Jump 2");
             }
 
         }
@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
             jumpBufferCount = 0;
-            Debug.Log("Jump 3");
+            //Debug.Log("Jump 3");
         }
 
 
@@ -213,5 +213,13 @@ public class PlayerMovement : MonoBehaviour
             transform.Rotate(0f, 180f, 0f);
             aheadAmount = -aheadAmount;
         }
+    }
+
+    public void KnockBack(GameObject attacker, float power)
+    {
+        Vector2 knockbackDir = (rb.transform.position - attacker.transform.position).normalized;
+        Vector2 knockbackPow = knockbackDir * power;
+        rb.AddForce(knockbackPow, ForceMode2D.Force);
+        rb.velocity.y = Vector2.zero;
     }
 }

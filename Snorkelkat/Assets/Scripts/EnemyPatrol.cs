@@ -5,11 +5,14 @@ using UnityEngine;
 public class EnemyPatrol : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float maxSpeed = 4f;
     public float aggroDistance = 5f;
     public float minWaypointDistance = 5f;
 
     public List<Transform> waypoints = new List<Transform>();
-    
+    public GameObject groundedCheck;
+    public LayerMask groundLayers;
+
     private GameObject player;
     private Rigidbody2D rb;
 
@@ -36,13 +39,27 @@ public class EnemyPatrol : MonoBehaviour
             Patrol();
         }
 
-        Move();
-
+        if(target != null)
+        {
+            Move();
+        }
+        
     }
 
     public void Move()
     {
-        //rb.AddForce()
+        Vector2 direction = ((Vector2)target.position - rb.position).normalized;
+        Vector2 force = direction * moveSpeed;
+        rb.velocity = force;
+
+        if (rb.velocity.x > 0.05f)
+        {
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
+        else if (rb.velocity.x < -0.05f)
+        {
+            transform.localScale = new Vector3(-1f * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
     }
 
     public void Patrol()
@@ -83,6 +100,20 @@ public class EnemyPatrol : MonoBehaviour
     public void FollowPlayer()
     {
         foundClosestWaypoint = false;
+        if (IsGrounded())
+        {
+            target = player.gameObject.transform;
+        }
+        else
+        {
+            target = null;
+            rb.velocity = Vector2.zero;
+        }
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics2D.OverlapCircle(groundedCheck.transform.position, 0.2f, groundLayers);
     }
 
     public void Flip()
