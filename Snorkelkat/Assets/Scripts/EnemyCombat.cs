@@ -52,11 +52,12 @@ public class EnemyCombat : MonoBehaviour, IDamageable
         Debug.Log("ouch, im the enemy and im hurt :(" + damage);
         currentHealth -= damage;
         sprite.color = Color.white;
-        StartCoroutine("ChangeColor");
         if (currentHealth <= 0)
         {
             Die();
+            return;
         }
+        StartCoroutine("ChangeColor");
     }
 
     private IEnumerator ChangeColor()

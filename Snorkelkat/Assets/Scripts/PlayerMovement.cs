@@ -219,7 +219,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 knockbackDir = (rb.transform.position - attacker.transform.position).normalized;
         Vector2 knockbackPow = knockbackDir * power;
-        rb.AddForce(knockbackPow, ForceMode2D.Force);
-        rb.velocity.y = Vector2.zero;
+        //rb.AddForce(knockbackPow, ForceMode2D.Force);
+        //rb.velocity.y = Vector2.zero;
     }
 }
