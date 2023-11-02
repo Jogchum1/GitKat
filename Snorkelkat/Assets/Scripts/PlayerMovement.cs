@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IDataPersistence
 {
+    private int jumpCountTest;
+
     private float horizontal;
 
     private bool isFacingRight = true;
@@ -93,6 +95,7 @@ public class PlayerMovement : MonoBehaviour
         //JumpBuffer
         if (Input.GetButtonDown("Jump"))
         {
+            jumpCountTest++;
             jumpBufferCount = jumpBuggerLenght;
         }
         else
@@ -221,5 +224,17 @@ public class PlayerMovement : MonoBehaviour
         Vector2 knockbackPow = knockbackDir * power;
         //rb.AddForce(knockbackPow, ForceMode2D.Force);
         //rb.velocity.y = Vector2.zero;
+    }
+
+    public void LoadData(GameData data)
+    {
+        this.jumpCountTest = data.jumpCount;
+        this.transform.position = data.playerPosition;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.jumpCount = this.jumpCountTest;
+        data.playerPosition = this.transform.position;
     }
 }
