@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AbilitySwitcher : MonoBehaviour
 {
-    private Modifier activeTopModifier;
-    private Modifier activeBottomModifier;
+    private ModifierScript activeTopModifier;
+    private ModifierScript activeBottomModifier;
 
 }
