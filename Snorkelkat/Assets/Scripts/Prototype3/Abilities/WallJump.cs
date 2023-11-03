@@ -5,13 +5,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "WallJump", menuName = "AbilitySystem/Abilities/WallJump")]
 public class WallJump : ModAbility
 {
-    public override void Activate()
+    public override void ActivateAbility()
     {
-        throw new System.NotImplementedException();
+        gameManager.player.GetComponent<PlayerMovement>().canWallJump = true;
     }
 
-    public override void Deactivate()
+    public override void DeactivateAbility()
     {
-        throw new System.NotImplementedException();
+        gameManager.player.GetComponent<PlayerMovement>().canWallJump = false;
     }
 }

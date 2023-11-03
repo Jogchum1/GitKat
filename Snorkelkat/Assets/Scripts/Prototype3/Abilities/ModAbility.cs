@@ -1,7 +1,16 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public abstract class ModAbility : ScriptableObject
 {
-    public abstract void Activate();
-    public abstract void Deactivate();
+    [HideInInspector]
+    public GameManager gameManager;
+    
+    public void InstantiateAbility(GameManager gm)
+    {
+        gameManager = gm;
+    }
+
+    public abstract void ActivateAbility();
+    public abstract void DeactivateAbility();
 }

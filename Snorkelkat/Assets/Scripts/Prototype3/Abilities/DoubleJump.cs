@@ -5,13 +5,15 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "DoubleJump", menuName = "AbilitySystem/Abilities/DoubleJump")]
 public class DoubleJump : ModAbility
 {
-    public override void Activate()
+    public int amountOfJumps = 2;
+
+    public override void ActivateAbility()
     {
-        throw new System.NotImplementedException();
+        gameManager.player.GetComponent<PlayerMovement>().maxJumps = amountOfJumps;
     }
 
-    public override void Deactivate()
+    public override void DeactivateAbility()
     {
-        throw new System.NotImplementedException();
+        gameManager.player.GetComponent<PlayerMovement>().maxJumps = 1;
     }
 }

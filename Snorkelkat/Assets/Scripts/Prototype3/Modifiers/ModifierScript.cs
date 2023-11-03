@@ -11,15 +11,21 @@ public class ModifierScript : ScriptableObject
     [SerializeField]
     private ModAbility bottomAbility;
 
+    public void InstatiateAbilities(GameManager gameManager)
+    {
+        topAbility.InstantiateAbility(gameManager);
+        bottomAbility.InstantiateAbility(gameManager);
+    }
+
     public void SwitchToTop()
     {
-        topAbility.Deactivate();
-        bottomAbility.Activate();
+        bottomAbility.DeactivateAbility();
+        topAbility.ActivateAbility();
     }
 
     public void SwitchToBottom()
     {
-        topAbility.Activate();
-        topAbility.Deactivate();
+        topAbility.DeactivateAbility();
+        bottomAbility.ActivateAbility();
     }
 }
