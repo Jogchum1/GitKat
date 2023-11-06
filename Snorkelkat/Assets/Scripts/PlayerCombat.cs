@@ -48,7 +48,7 @@ public class PlayerCombat : MonoBehaviour, IDamageable
 
     public void Attack()
     {
-        sword.SetActive(true);
+        //sword.SetActive(true);
         StartCoroutine("ToggleSword");
         Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayers);
         foreach (Collider2D enemy in enemiesInRange)
@@ -93,7 +93,7 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     private IEnumerator ToggleSword()
     {
         yield return new WaitForSeconds(.1f);
-        sword.SetActive(false);
+        //sword.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
