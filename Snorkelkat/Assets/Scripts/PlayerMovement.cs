@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     public float speed = 8f;
     public float jumpingPower = 16f;
     public int maxJumps = 2;
-    private int jumpsLeft;
+    public int jumpsLeft;
     public float hangTime = .2f;
     public float jumpBuggerLenght = .1f;
 
@@ -89,7 +89,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
 
         //Hantime
-        if (IsGrounded() && rb.velocity.y == 0)
+        if (IsGrounded() && rb.velocity.y <= 2)
         {
             hangCounter = hangTime;
             jumpsLeft = maxJumps;
@@ -138,7 +138,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.position, 0.4f, groundLayer);
     }
 
     private bool IsWalled()
