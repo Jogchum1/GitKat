@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Modifier
   m_EditorClassIdentifier: 
   modName: 
-  modSprite: {fileID: 0}
+  modSprite: {fileID: 21300000, guid: 528a6dd601766934abb8b1053bd798ef, type: 3}
   topAbility: {fileID: 11400000, guid: 61ef16ee65647eb40b1eb8aa98165431, type: 2}
   bottomAbility: {fileID: 11400000, guid: d9197e088ad17a34c9678c1b84345fca, type: 2}

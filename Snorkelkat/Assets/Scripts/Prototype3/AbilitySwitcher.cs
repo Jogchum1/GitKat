@@ -6,6 +6,9 @@ public class AbilitySwitcher : MonoBehaviour
 {
     [SerializeField] private ModifierScript topModifier;
     [SerializeField] private ModifierScript bottomModifier;
+    [SerializeField] private ModifierSlot topModifierSlot;
+    [SerializeField] private ModifierSlot bottomModifierSlot;
+    [SerializeField] private float switchTimeSeconds;
 
     private void Start()
     {
@@ -20,6 +23,7 @@ public class AbilitySwitcher : MonoBehaviour
             bottomModifier.InstatiateAbilities(gameManager);
             bottomModifier.SwitchToBottom();
         }
+        setModSlots();
     }
 
     public void Update()
@@ -42,6 +46,7 @@ public class AbilitySwitcher : MonoBehaviour
             bottomModifier.SwitchToTop();
             topModifier = bottomModifier;
             bottomModifier = null;
+            setModSlots(switchTimeSeconds);
             return;
         }
 
@@ -50,6 +55,7 @@ public class AbilitySwitcher : MonoBehaviour
             topModifier.SwitchToBottom();
             bottomModifier = topModifier;
             topModifier = null;
+            setModSlots(switchTimeSeconds);
             return;
         }
 
@@ -59,6 +65,32 @@ public class AbilitySwitcher : MonoBehaviour
         ModifierScript newBottomMod = topModifier;
         topModifier = newTopMod;
         bottomModifier = newBottomMod;
+        setModSlots(switchTimeSeconds);
+    }
+
+
+    private void setModSlots()
+    {
+        if (topModifier != null) { topModifierSlot.SetModSprite(topModifier.modSprite); }
+        else { topModifierSlot.SetModSprite(null); }
+        if (bottomModifier != null) { bottomModifierSlot.SetModSprite(bottomModifier.modSprite); }
+        else { bottomModifierSlot.SetModSprite(null); }
+    }
+
+    private void setModSlots(float animateSlotsForSeconds)
+    {
+        StartCoroutine(showModSlots(switchTimeSeconds));
+    }
+
+    private IEnumerator showModSlots(float showForSeconds)
+    {
+        topModifierSlot.gameObject.SetActive(true);
+        bottomModifierSlot.gameObject.SetActive(true);
+        yield return new WaitForSeconds(showForSeconds / 2);
+        setModSlots();
+        yield return new WaitForSeconds(showForSeconds / 2);
+        topModifierSlot.gameObject.SetActive(false);
+        bottomModifierSlot.gameObject.SetActive(false);
     }
 
 }
