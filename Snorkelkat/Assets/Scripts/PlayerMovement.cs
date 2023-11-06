@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IDataPersistence
 {
+    private int jumpCountTest;
+
     private float horizontal;
 
     private bool isFacingRight = true;
@@ -59,14 +61,22 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
                 jumpBufferCount = 0;
                 jumpsLeft -= 1;
-                Debug.Log("Jump 1");
+               // Debug.Log("Jump 1");
             }
             else if (maxJumps > 1 && Input.GetButtonDown("Jump") && !IsGrounded())
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
                 jumpsLeft -= 1;
-                Debug.Log("Jump 2");
+                //Debug.Log("Jump 2");
             }
+
+        }
+        //Small jump
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f && jumpsLeft >= 0)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            jumpBufferCount = 0;
+            //Debug.Log("Jump 3");
 
         }
         //Small jump
@@ -92,6 +102,7 @@ public class PlayerMovement : MonoBehaviour
         //JumpBuffer
         if (Input.GetButtonDown("Jump"))
         {
+            jumpCountTest++;
             jumpBufferCount = jumpBuggerLenght;
         }
         else
@@ -212,5 +223,25 @@ public class PlayerMovement : MonoBehaviour
             transform.Rotate(0f, 180f, 0f);
             aheadAmount = -aheadAmount;
         }
+    }
+
+    public void KnockBack(GameObject attacker, float power)
+    {
+        Vector2 knockbackDir = (rb.transform.position - attacker.transform.position).normalized;
+        Vector2 knockbackPow = knockbackDir * power;
+        //rb.AddForce(knockbackPow, ForceMode2D.Force);
+        //rb.velocity.y = Vector2.zero;
+    }
+
+    public void LoadData(GameData data)
+    {
+        this.jumpCountTest = data.jumpCount;
+        this.transform.position = data.playerPosition;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.jumpCount = this.jumpCountTest;
+        data.playerPosition = this.transform.position;
     }
 }

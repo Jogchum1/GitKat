@@ -15,14 +15,17 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     public LayerMask enemyLayers;
 
     public GameObject bullet;
-    public GameObject sword;
-    public GameObject lastDoor;
+    public Transform lastDoor;
+    private SpriteRenderer sprite;
+
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
-        sword.SetActive(false);
+        lastDoor = gameObject.transform;
+        sprite = GetComponentInChildren<SpriteRenderer>();
+
     }
 
     // Update is called once per frame
@@ -65,10 +68,20 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     {
         Debug.Log("Played damaged");
         currentHealth -= damage;
+        sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0);
+        StartCoroutine("ChangeColor");
         if (currentHealth <= 0)
         {
             Die();
         }
+    }
+
+   
+
+    private IEnumerator ChangeColor()
+    {
+        yield return new WaitForSeconds(.1f);
+        sprite.color = Color.white;
     }
     public void Die()
     {
