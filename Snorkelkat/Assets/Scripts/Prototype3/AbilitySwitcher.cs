@@ -9,6 +9,7 @@ public class AbilitySwitcher : MonoBehaviour
     [SerializeField] private ModifierSlot topModifierSlot;
     [SerializeField] private ModifierSlot bottomModifierSlot;
     [SerializeField] private float switchTimeSeconds;
+    [SerializeField] private Animator animator;
 
     private void Start()
     {
@@ -23,7 +24,7 @@ public class AbilitySwitcher : MonoBehaviour
             bottomModifier.InstatiateAbilities(gameManager);
             bottomModifier.SwitchToBottom();
         }
-        setModSlots();
+        updateModifierSlotsSprites();
     }
 
     public void Update()
@@ -46,7 +47,7 @@ public class AbilitySwitcher : MonoBehaviour
             bottomModifier.SwitchToTop();
             topModifier = bottomModifier;
             bottomModifier = null;
-            setModSlots(switchTimeSeconds);
+            updateModifierSlotsSprites(switchTimeSeconds);
             return;
         }
 
@@ -55,7 +56,7 @@ public class AbilitySwitcher : MonoBehaviour
             topModifier.SwitchToBottom();
             bottomModifier = topModifier;
             topModifier = null;
-            setModSlots(switchTimeSeconds);
+            updateModifierSlotsSprites(switchTimeSeconds);
             return;
         }
 
@@ -65,20 +66,41 @@ public class AbilitySwitcher : MonoBehaviour
         ModifierScript newBottomMod = topModifier;
         topModifier = newTopMod;
         bottomModifier = newBottomMod;
-        setModSlots(switchTimeSeconds);
+        updateModifierSlotsSprites(switchTimeSeconds);
     }
 
 
-    private void setModSlots()
+    private void updateModifierSlotsSprites()
     {
-        if (topModifier != null) { topModifierSlot.SetModSprite(topModifier.modSprite); }
+        //changes order of children to keep ability on top in UI
+        Transform lastChild;
+        if (topModifierSlot.gameObject.transform.GetSiblingIndex() != 0)
+        {
+            lastChild = topModifierSlot.gameObject.transform;
+        }
+        else
+        {
+            lastChild = bottomModifierSlot.gameObject.transform;
+        }
+        lastChild.SetAsFirstSibling();
+
+        //switch sprites
+        if (topModifier != null)
+        {
+            topModifierSlot.SetModSprite(topModifier.modSprite);
+        }
         else { topModifierSlot.SetModSprite(null); }
-        if (bottomModifier != null) { bottomModifierSlot.SetModSprite(bottomModifier.modSprite); }
+
+        if (bottomModifier != null) 
+        {
+            bottomModifierSlot.SetModSprite(bottomModifier.modSprite);
+        }
         else { bottomModifierSlot.SetModSprite(null); }
     }
 
-    private void setModSlots(float animateSlotsForSeconds)
+    private void updateModifierSlotsSprites(float animateSlotsForSeconds)
     {
+        StopAllCoroutines();
         StartCoroutine(showModSlots(switchTimeSeconds));
     }
 
@@ -86,9 +108,11 @@ public class AbilitySwitcher : MonoBehaviour
     {
         topModifierSlot.gameObject.SetActive(true);
         bottomModifierSlot.gameObject.SetActive(true);
+        animator.speed = 1 / showForSeconds;
+        animator.SetTrigger("modSlotChange");
         yield return new WaitForSeconds(showForSeconds / 2);
-        setModSlots();
-        yield return new WaitForSeconds(showForSeconds / 2);
+        updateModifierSlotsSprites();
+        yield return new WaitForSeconds(showForSeconds/2);
         topModifierSlot.gameObject.SetActive(false);
         bottomModifierSlot.gameObject.SetActive(false);
     }
