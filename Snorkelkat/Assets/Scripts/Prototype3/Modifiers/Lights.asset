@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edf55f944d104f478084a1b94645399, type: 3}
+  m_Name: Lights
+  m_EditorClassIdentifier: 
+  modName: 
+  modSprite: {fileID: 21300000, guid: a6437d2f3b1bf4da7a9619a6b6446a16, type: 3}
+  topAbility: {fileID: 11400000, guid: e2b7960199a99464ea94feb9dd1fbbe8, type: 2}
+  bottomAbility: {fileID: 11400000, guid: 8bfb7e2521b9c1849bce92e506cf7c47, type: 2}
