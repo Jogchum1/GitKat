@@ -15,11 +15,11 @@ TagManager:
   - Enemy
   - InteractableNPC
   - Wall
+  - post processing
+  - Foreground
+  - Background
   - 
-  - 
-  - 
-  - 
-  - 
+  - Effects(notRendered)
   - 
   - 
   - 
@@ -59,8 +59,11 @@ TagManager:
   - name: background1
     uniqueID: 3310466215
     locked: 0
-  - name: playerLayer
+  - name: playerBG
     uniqueID: 3179848629
+    locked: 0
+  - name: playerGround
+    uniqueID: 2665703321
     locked: 0
   - name: foreground2
     uniqueID: 253132417
