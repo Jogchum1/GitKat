@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     private int jumpsLeft;
     public float hangTime = .2f;
     public float jumpBuggerLenght = .1f;
+    public bool canGlide = true;
 
     [Header("Wall Jumping")]
     public float wallJumpingDuration = 0.4f;
@@ -103,6 +104,16 @@ public class PlayerMovement : MonoBehaviour
         {
             WallSlide();
             WallJump();
+        }
+
+        if (canGlide)
+        {
+            Debug.Log("WTF");
+            Glide();
+        }
+        else
+        {
+            rb.gravityScale = 3;
         }
 
         if (!isWallJumping)
@@ -201,6 +212,22 @@ public class PlayerMovement : MonoBehaviour
     private void StopWallJumping()
     {
         isWallJumping = false;
+    }
+
+    private void Glide()
+    {
+        Debug.Log("Test");
+        if(!IsGrounded() && Input.GetKeyDown(KeyCode.Space) && rb.velocity.y < 0)
+        {
+            Debug.Log("Glide");
+            rb.gravityScale = 0.1f;
+        }
+
+        if (IsGrounded())
+        {
+            rb.gravityScale = 3f;
+        }
+
     }
 
     private void Flip()
