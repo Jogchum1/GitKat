@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     public float wallJumpingDuration = 0.4f;
     public Vector2 wallJumpingPower = new Vector2(8f, 16f);
 
-    [HideInInspector] public bool canWallJump = false;
+    public bool canWallJump = false;
     private bool isWallSliding;
     private bool isWallJumping;
     private float wallJumpingDirection;
@@ -108,7 +108,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (canGlide)
         {
-            Debug.Log("WTF");
             Glide();
         }
         else
@@ -138,7 +137,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
     }
 
     private bool IsWalled()
@@ -216,14 +215,23 @@ public class PlayerMovement : MonoBehaviour
 
     private void Glide()
     {
-        Debug.Log("Test");
-        if(!IsGrounded() && Input.GetKeyDown(KeyCode.Space) && rb.velocity.y < 0)
+        
+        if(!IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
+            if(rb.velocity.y > 0)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, 0);
+            }
             Debug.Log("Glide");
             rb.gravityScale = 0.1f;
         }
 
         if (IsGrounded())
+        {
+            rb.gravityScale = 3f;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             rb.gravityScale = 3f;
         }
