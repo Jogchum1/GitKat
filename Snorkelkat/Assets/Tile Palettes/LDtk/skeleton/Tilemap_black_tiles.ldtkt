@@ -1,0 +1,33 @@
+{
+  "Rects": null,
+  "Def": {
+    "__cHei": 5,
+    "__cWid": 5,
+    "cachedPixelData": {
+      "opaqueTiles": "1111111111111111111111111",
+      "averageColors": "fdddfdddfdddfdddfdddfeeefeeefeeefeeefeeefeeefeeefeeefeeefeeefeeefeeefeeefeeefeeefeeefeeefeeefeeefeee"
+    },
+    "customData": [
+
+    ],
+    "embedAtlas": null,
+    "enumTags": [
+
+    ],
+    "identifier": "Tilemap_black_tiles",
+    "padding": 0,
+    "pxHei": 1000,
+    "pxWid": 1000,
+    "relPath": "tilemap-black-tiles.png",
+    "savedSelections": [
+
+    ],
+    "spacing": 0,
+    "tags": [
+
+    ],
+    "tagsSourceEnumUid": null,
+    "tileGridSize": 200,
+    "uid": 32
+  }
+}

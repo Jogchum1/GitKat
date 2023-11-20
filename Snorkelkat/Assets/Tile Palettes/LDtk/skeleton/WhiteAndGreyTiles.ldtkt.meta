@@ -1,0 +1,1414 @@
+fileFormatVersion: 2
+guid: b779f75fbaf2e9340970dd2a69e844fd
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f3268c876daf4890b6af6cd462063137, type: 3}
+  _reimportOnDependencyChange: 1
+  _pixelsPerUnit: 16
+  _sprites:
+  - name: WhiteAndGreyTiles_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 144
+      width: 16
+      height: 16
+    spriteID: 795682335d849664c99a77653e6cdd9b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 144
+      width: 16
+      height: 16
+    spriteID: 352c4bf42811a8245ace7a092c50f6cc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 144
+      width: 16
+      height: 16
+    spriteID: 042395626f86772419ce5fae8af8c1e7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 144
+      width: 16
+      height: 16
+    spriteID: b359e9e8d5772564da57a9d428cb726e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 144
+      width: 16
+      height: 16
+    spriteID: 71858b2416925b445bb691d1bf0d60cb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 144
+      width: 16
+      height: 16
+    spriteID: 3a327a310509d6b4082dd71ec4e702e9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 144
+      width: 16
+      height: 16
+    spriteID: bc41ecdfe861cf74fa542fb26e153439
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 144
+      width: 16
+      height: 16
+    spriteID: 7e3508676b5555644ac68d20416b6a4a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 144
+      width: 16
+      height: 16
+    spriteID: 0a2721bfe8e512f4e9b66768e4891793
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 144
+      width: 16
+      height: 16
+    spriteID: c778c0728507e034da89b3d34b7a1ff9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 128
+      width: 16
+      height: 16
+    spriteID: a09df3cacaaace44b8a8fdd8de50194c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 128
+      width: 16
+      height: 16
+    spriteID: f62e91e505364b049bd2cc8381d071b4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 128
+      width: 16
+      height: 16
+    spriteID: cc76f1d0e8c8ef145a25ca09e1b2a7cb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 128
+      width: 16
+      height: 16
+    spriteID: 0e995dd2717a6e24f954f24ab863da9e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 128
+      width: 16
+      height: 16
+    spriteID: dc9610e52bec53849a622a5e3fdc5bb7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 128
+      width: 16
+      height: 16
+    spriteID: 56bacc28015219c4f851a1088e1fa238
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 128
+      width: 16
+      height: 16
+    spriteID: 9dc6ce7f99d76694dbb371c91693d9fc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 128
+      width: 16
+      height: 16
+    spriteID: 00a5dae322efb8f4c8ddbd745343075a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 128
+      width: 16
+      height: 16
+    spriteID: 9670ec43386598f45ab8e1fdf5aaff14
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 128
+      width: 16
+      height: 16
+    spriteID: fdfe8bc67f0c12a4f80c731c6bf4439e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 112
+      width: 16
+      height: 16
+    spriteID: 64b377a47e32cfc46ae5562161247963
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 112
+      width: 16
+      height: 16
+    spriteID: 274d75e842b91574fba698cf321fac12
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 112
+      width: 16
+      height: 16
+    spriteID: bc8e62fa0482d2145813fca4d3e78bc2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 112
+      width: 16
+      height: 16
+    spriteID: eacb5b8f38c4ca34a9bb9c522070c229
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 112
+      width: 16
+      height: 16
+    spriteID: 2853389c660b8de4fb8c7ba440e39e04
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 112
+      width: 16
+      height: 16
+    spriteID: ef486669cf460fc46a7877b6b64b838f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_26
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 112
+      width: 16
+      height: 16
+    spriteID: 72adcd478a2e6614aa09ee5f255439d9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_27
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 112
+      width: 16
+      height: 16
+    spriteID: 4c9d9198f4520744cb2d6cad297554f9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_28
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 112
+      width: 16
+      height: 16
+    spriteID: 0347b373647952447a6a647a6dae2199
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_29
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 112
+      width: 16
+      height: 16
+    spriteID: ba6994422ed3e4143ae51585e9b10c84
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_30
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 96
+      width: 16
+      height: 16
+    spriteID: a1a52fa9a44e86e4fb5976fc4ed0acb3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_31
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 96
+      width: 16
+      height: 16
+    spriteID: 0afd7ef48776fa248a73037ce7d29da9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_32
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 96
+      width: 16
+      height: 16
+    spriteID: 25f75421efa90b246a65b315c884a4bf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_33
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 96
+      width: 16
+      height: 16
+    spriteID: c8e2157623572b64293bca4444c08776
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_34
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 96
+      width: 16
+      height: 16
+    spriteID: 706bcfcc4e9927a4a909275bb973922d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_35
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 96
+      width: 16
+      height: 16
+    spriteID: a56584cbc4f4bf140a65e4ae63959c55
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_36
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 96
+      width: 16
+      height: 16
+    spriteID: 7004d3bfb6bcb41458a785f81788c423
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_37
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 96
+      width: 16
+      height: 16
+    spriteID: b56d7a303bd58984f964100722667992
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_38
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 96
+      width: 16
+      height: 16
+    spriteID: 2bc5ae1620bd99641bbfcedcaac810eb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_39
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 96
+      width: 16
+      height: 16
+    spriteID: cf0b53b50deb02141b45a8ef08c3d4c8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_40
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 80
+      width: 16
+      height: 16
+    spriteID: 752541bfb64c6774e92817d93d1b0272
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_41
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 80
+      width: 16
+      height: 16
+    spriteID: 191f27d3a9acd7d429ce18308f32abbd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_42
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 80
+      width: 16
+      height: 16
+    spriteID: 1d6d244ae24dc174b921cac4b38bad9e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_43
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 80
+      width: 16
+      height: 16
+    spriteID: e00a3c87444fa44418d8afedd757639c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_44
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 80
+      width: 16
+      height: 16
+    spriteID: 16dd378cf89863f4a91a64f58d7daf20
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_45
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 80
+      width: 16
+      height: 16
+    spriteID: 0fd17ccc6d9c4544eafbd554ebc421c7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_46
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 80
+      width: 16
+      height: 16
+    spriteID: d669f29bf9335064489298c0be956885
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_47
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 80
+      width: 16
+      height: 16
+    spriteID: c9a39211508cae5458cd3e806c583ea9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_48
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 80
+      width: 16
+      height: 16
+    spriteID: dba1257c671a7e5419c53543506555c7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_49
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 80
+      width: 16
+      height: 16
+    spriteID: 56d02800054162e4db81b9520fadc946
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_50
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 64
+      width: 16
+      height: 16
+    spriteID: e9d660ed7983de84080f185c5ee86fac
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_51
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 64
+      width: 16
+      height: 16
+    spriteID: 6fb40fd33d0b14e46a3e39f30a98ee91
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_52
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 64
+      width: 16
+      height: 16
+    spriteID: b4b3dcd0cb07a9e489bcbba4c226a837
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_53
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 64
+      width: 16
+      height: 16
+    spriteID: 89c7cfa2a5a4f5f44a0a03aced7adf24
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_54
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 64
+      width: 16
+      height: 16
+    spriteID: c4815325134ff7c46b10bcd3eb401b53
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_55
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 64
+      width: 16
+      height: 16
+    spriteID: e0fea96a72a535d479d26fb77a275a1e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_56
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 64
+      width: 16
+      height: 16
+    spriteID: 04bcd81c44787dc4bbe5b5f0d3175abf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_57
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 64
+      width: 16
+      height: 16
+    spriteID: d4aa0614da12db44cbd033fea019bf34
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_58
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 64
+      width: 16
+      height: 16
+    spriteID: fe043e80560d1a5409ac350f5e266876
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_59
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 64
+      width: 16
+      height: 16
+    spriteID: 09d6b074a9c88ac488ead05e4d0b4a00
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_60
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 48
+      width: 16
+      height: 16
+    spriteID: 5802c0d232c3f1446bf47e5b630365b4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_61
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 48
+      width: 16
+      height: 16
+    spriteID: 35af940c241324146b52774bfcdaf0ab
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_62
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 48
+      width: 16
+      height: 16
+    spriteID: efa3251596222a74fa563b9cdc3ef1a0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_63
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 48
+      width: 16
+      height: 16
+    spriteID: 8cd49e1bb7703604684b7a4242438b08
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_64
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 48
+      width: 16
+      height: 16
+    spriteID: 08e48e746ac3fe341b93f14c237d8878
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_65
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 48
+      width: 16
+      height: 16
+    spriteID: d238cb7362366d848a24ef4bda43208e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_66
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 48
+      width: 16
+      height: 16
+    spriteID: f2057b460dd45e74b9b21791d3bcae92
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_67
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 48
+      width: 16
+      height: 16
+    spriteID: 1974472721f9da147a156d71ac8eed94
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_68
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 48
+      width: 16
+      height: 16
+    spriteID: 6e2ea3f36d7c1144eab40e3ad35eb4d8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_69
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 48
+      width: 16
+      height: 16
+    spriteID: f317c2ff42757304f95acf751cee5e54
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_70
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 32
+      width: 16
+      height: 16
+    spriteID: 30c33c5e6f065ac49883b1ee00c757cf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_71
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 32
+      width: 16
+      height: 16
+    spriteID: f65924737ce594d47a508adda0c94f02
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_72
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 32
+      width: 16
+      height: 16
+    spriteID: 562b9ae4c7d89314f84014a244e782fc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_73
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 32
+      width: 16
+      height: 16
+    spriteID: af4998f62a6b6b14b99ffdbcf852efe1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_74
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 32
+      width: 16
+      height: 16
+    spriteID: 4a61a0c941c6e7841ae0a99a24602b41
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_75
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 32
+      width: 16
+      height: 16
+    spriteID: 51fde1fa9e24ec448b8455335d730e3f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_76
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 32
+      width: 16
+      height: 16
+    spriteID: 181a431c5fbf8a345b2d5f74642c04fe
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_77
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 32
+      width: 16
+      height: 16
+    spriteID: 3db3124fef8ad56488f6a4424970aafd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_78
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 32
+      width: 16
+      height: 16
+    spriteID: e48b1cd5e44144a48961605973756045
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_79
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 32
+      width: 16
+      height: 16
+    spriteID: cca2255e01857664382d6b43a323ec37
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_80
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 16
+      width: 16
+      height: 16
+    spriteID: fc60ceccd19a57247b285c0b56ebb658
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_81
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 255413a09c9b597478e1fcc3e1c006ab
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_82
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 12fb686582f47594dbd0d7d5ba3d4330
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_83
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 16
+      width: 16
+      height: 16
+    spriteID: a404ef7b7bde04f46b9fea93689d9365
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_84
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 1dce9b3b92e978b42950fca6d0eec31c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_85
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 5356a67883a812a44bff898e186ebbb3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_86
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 16
+      width: 16
+      height: 16
+    spriteID: df108963004f34246b730fd8614fd503
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_87
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 16
+      width: 16
+      height: 16
+    spriteID: cc475346658137345bec4ad101d59117
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_88
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 7d9154a93d5b1e646b02a5ee287f13fd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_89
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 92484c6a644e92d40972dc96598a3d4e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_90
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 38454c84f2fb9ce4a9723c248941e6ab
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_91
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 0
+      width: 16
+      height: 16
+    spriteID: e13511ff3cec9fe4da73dda4f7bdcefe
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_92
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 16
+      height: 16
+    spriteID: b0fab698ce4810543b386652768f1e0b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_93
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 0
+      width: 16
+      height: 16
+    spriteID: eb77b8045d1c985479c277999f132422
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_94
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 7c341bc9921a2e3478d7c88758dd6176
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_95
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 09b0241ca960a2246ae7c39e015b7dff
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_96
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 0
+      width: 16
+      height: 16
+    spriteID: a1629059ec0b6e34584976eec397273c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_97
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 8885b5e93e02f974298ed79bedf4290f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_98
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 681b91bb38eca154ca6ed54335a10748
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: WhiteAndGreyTiles_99
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 0
+      width: 16
+      height: 16
+    spriteID: a32aa88c3a30b654d96bec70384c2cb4
+    spriteOutline: []
+    tessellationDetail: 0
+  _secondaryTextures: []

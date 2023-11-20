@@ -1,0 +1,82 @@
+{
+	"identifier": "Level_0",
+	"uniqueIdentifer": "887b9800-6280-11ee-8653-3d22507b2f65",
+	"x": 256,
+	"y": 0,
+	"width": 1792,
+	"height": 768,
+	"bgColor": "#8B9BB4",
+	"neighbourLevels": [],
+	"customFields" : {},
+	"layers": [
+		"Ground.png"
+	],
+	"entities": {
+		"PlayerStart": [
+			{
+				"id": "PlayerStart",
+				"iid": "613063f0-6280-11ee-acb7-e976f2a7e3a5",
+				"layer": "Entities",
+				"x": 568,
+				"y": 304,
+				"width": 16,
+				"height": 24,
+				"color": 39387,
+				"customFields" : {}
+			}
+		],
+		"Collectable": [
+			{
+				"id": "Collectable",
+				"iid": "8c7e5bc0-6280-11ee-acb7-657b267b1eab",
+				"layer": "Entities",
+				"x": 1512,
+				"y": 240,
+				"width": 16,
+				"height": 16,
+				"color": 6539085,
+				"customFields" : {}
+			}
+		],
+		"Door_LeftWall": [
+			{
+				"id": "Door_LeftWall",
+				"iid": "030af5d0-6280-11ee-acb7-c39b2a6aae61",
+				"layer": "Entities",
+				"x": 232,
+				"y": 304,
+				"width": 16,
+				"height": 80,
+				"color": 7552569,
+				"customFields": {
+					"GoalDoor": {
+						"entityIid": "734769a0-6280-11ee-acb7-db38a4e533ac",
+						"layerIid": "57b35800-6280-11ee-acb7-b95bd5cbfdf9",
+						"levelIid": "887b9800-6280-11ee-8653-3d22507b2f65",
+						"worldIid": "887b70f1-6280-11ee-8653-590468d997e4"
+					}
+				}
+			}
+		],
+		"Door_RightWall": [
+			{
+				"id": "Door_RightWall",
+				"iid": "734769a0-6280-11ee-acb7-db38a4e533ac",
+				"layer": "Entities",
+				"x": 72,
+				"y": 304,
+				"width": 16,
+				"height": 80,
+				"color": 7552569,
+				"customFields": {
+					"GoalDoor": {
+						"entityIid": "030af5d0-6280-11ee-acb7-c39b2a6aae61",
+						"layerIid": "57b35800-6280-11ee-acb7-b95bd5cbfdf9",
+						"levelIid": "887b9800-6280-11ee-8653-3d22507b2f65",
+						"worldIid": "887b70f1-6280-11ee-8653-590468d997e4"
+					}
+				}
+			}
+		]
+	}
+}

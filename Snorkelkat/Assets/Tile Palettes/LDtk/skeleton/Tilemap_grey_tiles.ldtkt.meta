@@ -1,0 +1,364 @@
+fileFormatVersion: 2
+guid: d6ef8b7baa776104095cbac082c8b1b3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f3268c876daf4890b6af6cd462063137, type: 3}
+  _reimportOnDependencyChange: 1
+  _pixelsPerUnit: 16
+  _sprites:
+  - name: Tilemap_grey_tiles_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 64
+      width: 16
+      height: 16
+    spriteID: d738324858bc3fa4cad81d6b6db4f011
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 64
+      width: 16
+      height: 16
+    spriteID: 11203ba00a61ce24888c180c6b9f5cde
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 64
+      width: 16
+      height: 16
+    spriteID: e36b3ccec55a37648b96aa8dd796a1ff
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 64
+      width: 16
+      height: 16
+    spriteID: 878e145449c11494285f971c946ed286
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 64
+      width: 16
+      height: 16
+    spriteID: fb3070962dcf2c743bb516a79621426c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 48
+      width: 16
+      height: 16
+    spriteID: 20bf57895db3b7b4fbb5ae718f8b2e8a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 48
+      width: 16
+      height: 16
+    spriteID: 58cba251b5027f1408fb5c1da841891d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 48
+      width: 16
+      height: 16
+    spriteID: 946297d278d192545a1c3e8e7e9f910d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 48
+      width: 16
+      height: 16
+    spriteID: 0eeeb327772ed3e4ebabdc69d48d316d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 48
+      width: 16
+      height: 16
+    spriteID: 432ddc25b28470f40b8cb07a4bbf85c0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 32
+      width: 16
+      height: 16
+    spriteID: b65ba0ae21a431b499b2e8f86fd568ca
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 32
+      width: 16
+      height: 16
+    spriteID: 040bdf813d107e144960c717be9893a6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 32
+      width: 16
+      height: 16
+    spriteID: d6139379a495d4640bc553871becc11b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 32
+      width: 16
+      height: 16
+    spriteID: d746a0ae5a42d804ea78af848ef95857
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 32
+      width: 16
+      height: 16
+    spriteID: fcf5ef4ec31e850499ac7c14ad101ab8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 9b473baa841f4e64a97d4dc96bd892ef
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 16
+      width: 16
+      height: 16
+    spriteID: bcb5a81991aec644180d5643b2e7e331
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 16
+      width: 16
+      height: 16
+    spriteID: c1f58dadd94fab742900230e06eddb22
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 16
+      width: 16
+      height: 16
+    spriteID: a863495166dabc74c8c2942ccb05c56d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 16
+      width: 16
+      height: 16
+    spriteID: b8e996590740e144280ff4b4b6b1faef
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 687ec2eb0b22c6c46af2569bf6fd9155
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 393e6e24d78925f439c0d82ac4133830
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 16
+      height: 16
+    spriteID: ca7d29974f4fbd34cafd2983cee5b5f7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 81c807b4dbb11284e8d7136fe8b3753b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Tilemap_grey_tiles_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 0
+      width: 16
+      height: 16
+    spriteID: bedb378de27909c4b9e2b6f452ea87af
+    spriteOutline: []
+    tessellationDetail: 0
+  _secondaryTextures: []
