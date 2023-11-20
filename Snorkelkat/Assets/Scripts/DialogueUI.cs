@@ -5,8 +5,12 @@ using UnityEngine.UI;
 using Yarn.Unity;
 using System;
 
+
 public class DialogueUI : DialogueViewBase
 {
+
+    public List<LocalizedLine> lines = new List<LocalizedLine>();
+
     // The amount of time that lines will take to appear.
     [SerializeField] private float appearanceTime = 0.5f;
 
@@ -108,6 +112,8 @@ public class DialogueUI : DialogueViewBase
                     // might happen after other views have completed that
                     // they're done.)
                     advanceHandler = null;
+                    lines.Add(dialogueLine);
+                    Debug.Log(lines.Count);
                     onDialogueLineFinished();
                 }
             }
