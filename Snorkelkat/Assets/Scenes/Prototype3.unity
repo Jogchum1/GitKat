@@ -49439,6 +49439,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2280772047722110831, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
+      propertyPath: canGlide
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2280772047722110831, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: jumpingPower
       value: 15
       objectReference: {fileID: 0}

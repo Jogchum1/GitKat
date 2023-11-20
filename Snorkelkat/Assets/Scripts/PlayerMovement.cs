@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     private int jumpsLeft;
     public float hangTime = .2f;
     public float jumpBuggerLenght = .1f;
-    public bool canGlide = true;
+    public bool canGlide = false;
     public float glideGrav = 0.1f;
 
     [Header("Wall Jumping")]
