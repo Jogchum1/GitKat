@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     public float hangTime = .2f;
     public float jumpBuggerLenght = .1f;
     public bool canGlide = true;
+    public float glideGrav = 0.1f;
 
     [Header("Wall Jumping")]
     public float wallJumpingDuration = 0.4f;
@@ -218,12 +219,12 @@ public class PlayerMovement : MonoBehaviour
         
         if(!IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
-            if(rb.velocity.y > 0)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, 0);
-            }
+            
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+            
             Debug.Log("Glide");
-            rb.gravityScale = 0.1f;
+            rb.gravityScale = glideGrav;
+
         }
 
         if (IsGrounded())
