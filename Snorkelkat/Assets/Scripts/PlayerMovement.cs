@@ -24,12 +24,14 @@ public class PlayerMovement : MonoBehaviour
     private int jumpsLeft;
     public float hangTime = .2f;
     public float jumpBuggerLenght = .1f;
+    public bool canGlide = true;
+    public float glideGrav = 0.1f;
 
     [Header("Wall Jumping")]
     public float wallJumpingDuration = 0.4f;
     public Vector2 wallJumpingPower = new Vector2(8f, 16f);
 
-    [HideInInspector] public bool canWallJump = false;
+    public bool canWallJump = false;
     private bool isWallSliding;
     private bool isWallJumping;
     private float wallJumpingDirection;
@@ -105,6 +107,15 @@ public class PlayerMovement : MonoBehaviour
             WallJump();
         }
 
+        if (canGlide)
+        {
+            Glide();
+        }
+        else
+        {
+            rb.gravityScale = 3;
+        }
+
         if (!isWallJumping)
         {
             Flip();
@@ -127,7 +138,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
     }
 
     private bool IsWalled()
@@ -201,6 +212,31 @@ public class PlayerMovement : MonoBehaviour
     private void StopWallJumping()
     {
         isWallJumping = false;
+    }
+
+    private void Glide()
+    {
+        
+        if(!IsGrounded() && Input.GetKeyDown(KeyCode.Space))
+        {
+            
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+            
+            Debug.Log("Glide");
+            rb.gravityScale = glideGrav;
+
+        }
+
+        if (IsGrounded())
+        {
+            rb.gravityScale = 3f;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            rb.gravityScale = 3f;
+        }
+
     }
 
     private void Flip()
