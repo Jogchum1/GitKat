@@ -114,7 +114,17 @@ public class DialogueUI : DialogueViewBase
                     // might happen after other views have completed that
                     // they're done.)
                     advanceHandler = null;
-                    lines.Add(dialogueLine);
+                    if(lines.Count < 5)
+                    {
+                        lines.Add(dialogueLine);
+                        Debug.Log("Add lines");
+                    }
+                    else
+                    {
+                        lines.RemoveAt(0);
+                        SortLines();
+                        Debug.Log("Sort lines");
+                    }
                     Debug.Log(lines.Count);
 
 
@@ -130,16 +140,27 @@ public class DialogueUI : DialogueViewBase
     {
         for (int i = 0; i < lines.Count; i++)
         {
-            if(i <= 5)
-            {
-                string tmp = lines[i].Text.Text.ToString();
-                textObjects[i].text = tmp;
-            }
-            else
-            {
-                lines.RemoveAt(0);
-            }
+            Debug.Log(i);
+            string tmp = lines[i].Text.Text.ToString();
+            textObjects[i].text = tmp;
+            
+        }
+    }
 
+    public void SortLines()
+    {
+        for (int i = 0; i < lines.Count; i++)
+        {
+            int nextFree = 0;
+
+            LocalizedLine ivi = lines[i]; // temp copy
+            if (ivi == null) continue;
+            print("copying " + ivi.Text.Text + " from " + i + " to " + nextFree);
+            lines[i] = null; // so we don't have extra copies
+            lines[nextFree] = ivi; // this may copy over the same spot, which is fine
+            string tmp = lines[i].Text.Text.ToString();
+            textObjects[i].text = tmp;
+            nextFree++;
         }
     }
 
