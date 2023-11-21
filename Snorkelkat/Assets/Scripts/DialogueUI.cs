@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using Yarn.Unity;
 using System;
-
+using TMPro;
 
 public class DialogueUI : DialogueViewBase
 {
 
     public List<LocalizedLine> lines = new List<LocalizedLine>();
+
+    public List<TMP_Text> textObjects = new List<TMP_Text>();
 
     // The amount of time that lines will take to appear.
     [SerializeField] private float appearanceTime = 0.5f;
@@ -114,10 +116,31 @@ public class DialogueUI : DialogueViewBase
                     advanceHandler = null;
                     lines.Add(dialogueLine);
                     Debug.Log(lines.Count);
+
+
+                    UpdateTextBoxes();
+
                     onDialogueLineFinished();
                 }
             }
             );
+    }
+
+    public void UpdateTextBoxes()
+    {
+        for (int i = 0; i < lines.Count; i++)
+        {
+            if(i <= 5)
+            {
+                string tmp = lines[i].Text.Text.ToString();
+                textObjects[i].text = tmp;
+            }
+            else
+            {
+                lines.RemoveAt(0);
+            }
+
+        }
     }
 
     // InterruptLine is called when the dialogue runner indicates that the
