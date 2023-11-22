@@ -48908,7 +48908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7778558434935992803, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 10.000061
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7778558434976753271, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: m_AnchorMax.y
@@ -59644,6 +59644,18 @@ PrefabInstance:
     - target: {fileID: 2012566674207582000, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_Tiles.Array.data[74].second.m_TileObjectToInstantiateIndex
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651006865213117659, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651006865213117659, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651006865213117659, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1629263975
       objectReference: {fileID: 0}
     - target: {fileID: 6890831143710669749, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_Name
@@ -131085,18 +131097,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1158699776470159077, guid: 8410e87e37ba45c46a01a58e9d8ae9e4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3110164995582814276, guid: 8410e87e37ba45c46a01a58e9d8ae9e4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5920046152198826965, guid: 8410e87e37ba45c46a01a58e9d8ae9e4, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7353600916991869446, guid: 8410e87e37ba45c46a01a58e9d8ae9e4, type: 3}
       propertyPath: m_Name
       value: BackgroundTest
