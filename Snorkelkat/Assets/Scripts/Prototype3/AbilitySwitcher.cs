@@ -29,7 +29,7 @@ public class AbilitySwitcher : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             SwitchModifierPos();
         }
