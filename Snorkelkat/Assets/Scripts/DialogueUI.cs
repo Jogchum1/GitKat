@@ -12,6 +12,7 @@ public class DialogueUI : DialogueViewBase
     public List<LocalizedLine> lines = new List<LocalizedLine>();
 
     public List<TMP_Text> textObjects = new List<TMP_Text>();
+    [SerializeField] CanvasGroup canvasGroup;
 
     // The amount of time that lines will take to appear.
     [SerializeField] private float appearanceTime = 0.5f;
@@ -51,6 +52,7 @@ public class DialogueUI : DialogueViewBase
     {
         // On start, we'll hide the line view by setting the scale to zero
         Scale = 0;
+        canvasGroup.alpha = 0;
     }
 
     // RunLine receives a localized line, and is in charge of displaying it to
@@ -74,11 +76,11 @@ public class DialogueUI : DialogueViewBase
         }
 
         Debug.Log($"{this.name} running line {dialogueLine.TextID}");
-
+        canvasGroup.alpha = 1;
         // Start displaying the line: set our scale to zero, and update our
         // text.
         Scale = 0;
-        text.text = dialogueLine.Text.Text;
+        //text.text = dialogueLine.Text.Text;
 
         // During presentation, if we get an advance signal, we'll indicate that
         // we want to interrupt.
@@ -122,10 +124,12 @@ public class DialogueUI : DialogueViewBase
                     else
                     {
                         lines.RemoveAt(0);
-                        SortLines();
+                        Debug.Log(lines.Count + " is dit dan 1 minder?");
                         Debug.Log("Sort lines");
+                        SortLines();
+                        lines.Add(dialogueLine);
                     }
-                    Debug.Log(lines.Count);
+                    Debug.Log(lines.Count + " is lines count");
 
 
                     UpdateTextBoxes();
@@ -140,10 +144,9 @@ public class DialogueUI : DialogueViewBase
     {
         for (int i = 0; i < lines.Count; i++)
         {
-            Debug.Log(i);
             string tmp = lines[i].Text.Text.ToString();
             textObjects[i].text = tmp;
-            
+            Debug.Log(i + " is i van update");
         }
     }
 
@@ -151,17 +154,24 @@ public class DialogueUI : DialogueViewBase
     {
         for (int i = 0; i < lines.Count; i++)
         {
-            int nextFree = 0;
-
-            LocalizedLine ivi = lines[i]; // temp copy
-            if (ivi == null) continue;
-            print("copying " + ivi.Text.Text + " from " + i + " to " + nextFree);
-            lines[i] = null; // so we don't have extra copies
-            lines[nextFree] = ivi; // this may copy over the same spot, which is fine
             string tmp = lines[i].Text.Text.ToString();
             textObjects[i].text = tmp;
-            nextFree++;
+            Debug.Log(i + " is i van sort");
         }
+    }
+
+    public override void DialogueComplete()
+    {
+        canvasGroup.alpha = 0;
+        lines.Clear();
+        for (int i = 0; i < textObjects.Count; i++)
+        {
+            textObjects[i].text = null;
+        }
+    }
+    public void test2()
+    {
+        Debug.Log("Test2");
     }
 
     // InterruptLine is called when the dialogue runner indicates that the
@@ -366,4 +376,8 @@ public static class TweenExtensions
         // Finally, if we had an on-complete method to call, call it now.
         onComplete?.Invoke();
     }
+
+    
+
+
 }
