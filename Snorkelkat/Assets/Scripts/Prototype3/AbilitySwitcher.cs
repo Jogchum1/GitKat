@@ -106,15 +106,15 @@ public class AbilitySwitcher : MonoBehaviour
 
     private IEnumerator showModSlots(float showForSeconds)
     {
-        topModifierSlot.gameObject.SetActive(true);
-        bottomModifierSlot.gameObject.SetActive(true);
+        //topModifierSlot.gameObject.SetActive(true);
+        //bottomModifierSlot.gameObject.SetActive(true);
         animator.speed = 1 / showForSeconds;
         animator.SetTrigger("modSlotChange");
         yield return new WaitForSeconds(showForSeconds / 2);
         updateModifierSlotsSprites();
         yield return new WaitForSeconds(showForSeconds/2);
-        topModifierSlot.gameObject.SetActive(false);
-        bottomModifierSlot.gameObject.SetActive(false);
+        //topModifierSlot.gameObject.SetActive(false);
+        //bottomModifierSlot.gameObject.SetActive(false);
     }
 
 }
