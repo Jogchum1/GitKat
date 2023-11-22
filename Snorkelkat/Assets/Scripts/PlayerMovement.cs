@@ -81,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         //Hantime
-        if (IsGrounded() && rb.velocity.y == 0)
+        if (IsGrounded() && rb.velocity.y <= 2)
         {
             hangCounter = hangTime;
             jumpsLeft = maxJumps;
