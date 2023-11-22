@@ -252,6 +252,9 @@ MonoBehaviour:
   NPCEvent:
     m_PersistentCalls:
       m_Calls: []
+  onTalkEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6733805857012390423
 GameObject:
   m_ObjectHideFlags: 0
