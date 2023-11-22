@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _colliderType: 0
   _customPhysicsSprite: {fileID: 0}
-  _tilemapTag: Respawn
-  _tilemapLayerMask: 6
+  _tilemapTag: Untagged
+  _tilemapLayerMask: 0
   _physicsMaterial: {fileID: 6200000, guid: ec5794f3e1905b44282e216fa7f32917, type: 2}
-  _gameObject: {fileID: 0}
+  _gameObject: {fileID: 2277982537730609279, guid: cf380d24b82f7f346b1f7f9358c5aa1d, type: 3}
