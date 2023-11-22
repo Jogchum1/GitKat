@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: GiantSkeletonMod
   m_EditorClassIdentifier: 
   modName: Giant Skeleton
-  modSprite: {fileID: 21300000, guid: 1bf829169327319448781df4315428be, type: 3}
+  modSprite: {fileID: -6398203030942198141, guid: fca58957f501fe34fabea88f58822067, type: 3}
   topAbility: {fileID: 11400000, guid: 6dd9b3f0f5e855c428deb52ee92a5183, type: 2}
   bottomAbility: {fileID: 11400000, guid: 61ef16ee65647eb40b1eb8aa98165431, type: 2}
