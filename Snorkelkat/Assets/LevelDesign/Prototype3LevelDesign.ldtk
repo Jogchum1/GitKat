@@ -11,7 +11,7 @@
 	"iid": "887b70f0-6280-11ee-8653-c58dd9abfc94",
 	"jsonVersion": "1.4.1",
 	"appBuildId": 471015,
-	"nextUid": 154,
+	"nextUid": 155,
 	"identifierStyle": "Capitalize",
 	"toc": [],
 	"worldLayout": "GridVania",
@@ -2599,24 +2599,7 @@
 					"seed": 3345873,
 					"overrideTilesetUid": null,
 					"gridTiles": [],
-					"entityInstances": [
-						{
-							"__identifier": "Door_LeftWall",
-							"__grid": [5,18],
-							"__pivot": [0.5,1],
-							"__tags": ["Door"],
-							"__tile": null,
-							"__smartColor": "#733E39",
-							"__worldX": 344,
-							"__worldY": 304,
-							"iid": "030af5d0-6280-11ee-acb7-c39b2a6aae61",
-							"width": 16,
-							"height": 80,
-							"defUid": 148,
-							"px": [88,304],
-							"fieldInstances": []
-						}
-					]
+					"entityInstances": []
 				},
 				{
 					"__identifier": "Ground",
