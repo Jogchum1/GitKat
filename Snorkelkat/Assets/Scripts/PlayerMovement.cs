@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     public float hangTime = .2f;
     public float jumpBuggerLenght = .1f;
     public bool canGlide = false;
+    private bool isHangGliding = false;
     public float glideGrav = 0.1f;
 
     [Header("Wall Jumping")]
@@ -94,11 +95,11 @@ public class PlayerMovement : MonoBehaviour
 
         if(hangCounter > 0f)
         {
-            canGlide = false;
+            isHangGliding = false;
         }
         else
         {
-            canGlide = true;
+            isHangGliding = true;
         }
         //JumpBuffer
         if (Input.GetButtonDown("Jump"))
@@ -116,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
             WallJump();
         }
 
-        if (canGlide)
+        if (canGlide && isHangGliding)
         {
             Glide();
         }
