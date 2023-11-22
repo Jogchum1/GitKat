@@ -91,6 +91,15 @@ public class PlayerMovement : MonoBehaviour
             hangCounter -= Time.deltaTime;
         }
 
+
+        if(hangCounter > 0f)
+        {
+            canGlide = false;
+        }
+        else
+        {
+            canGlide = true;
+        }
         //JumpBuffer
         if (Input.GetButtonDown("Jump"))
         {
