@@ -49195,7 +49195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &340747416
 RectTransform:
   m_ObjectHideFlags: 0
@@ -49572,7 +49572,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &440808827
 RectTransform:
   m_ObjectHideFlags: 0
@@ -49828,7 +49828,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a0e7e833ea44b414fac721297f7f445c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 95128f35f2a9dee4697160bbc90b4272, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -56390,7 +56390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[1].Array.data[27].x
-      value: 64
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[1].Array.data[27].y
@@ -56398,7 +56398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[1].Array.data[28].x
-      value: 64
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[1].Array.data[28].y
@@ -56406,7 +56406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[1].Array.data[29].x
-      value: 66
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[1].Array.data[29].y
@@ -56414,7 +56414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[1].Array.data[30].x
-      value: 66
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[1].Array.data[30].y
@@ -58162,7 +58162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[1].Array.data[27].X
-      value: 640000000
+      value: 660000000
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[1].Array.data[27].Y
@@ -58170,7 +58170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[1].Array.data[28].X
-      value: 640000000
+      value: 660000000
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[1].Array.data[28].Y
@@ -58178,7 +58178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[1].Array.data[29].X
-      value: 660000000
+      value: 680000000
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[1].Array.data[29].Y
@@ -58186,7 +58186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[1].Array.data[30].X
-      value: 660000000
+      value: 680000000
       objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[1].Array.data[30].Y
@@ -59348,6 +59348,14 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[0].m_Collider
       value: 
       objectReference: {fileID: 1628464567}
+    - target: {fileID: -637741686957058187, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
+      propertyPath: m_ColliderPaths.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -637741686957058187, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
+      propertyPath: m_ColliderPaths.Array.data[0].m_Collider
+      value: 
+      objectReference: {fileID: 1628464568}
     - target: {fileID: 2012566674207582000, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_TileObjectToInstantiateArray.Array.size
       value: 1
@@ -59686,6 +59694,11 @@ TilemapCollider2D:
 --- !u!19719996 &1628464567 stripped
 TilemapCollider2D:
   m_CorrespondingSourceObject: {fileID: -6277394979032010565, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
+  m_PrefabInstance: {fileID: 1628464565}
+  m_PrefabAsset: {fileID: 0}
+--- !u!19719996 &1628464568 stripped
+TilemapCollider2D:
+  m_CorrespondingSourceObject: {fileID: -3366815490552519855, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
   m_PrefabInstance: {fileID: 1628464565}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1653051894
