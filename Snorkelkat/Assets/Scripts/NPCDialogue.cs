@@ -11,10 +11,10 @@ public class NPCDialogue : MonoBehaviour, IInteractable
     public string test;
     public GameObject textComponent;
     public bool isActive = false;
-
     [SerializeField]
     private UnityEvent NPCEvent;
-    
+
+    public UnityEvent onTalkEvent;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -35,7 +35,10 @@ public class NPCDialogue : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        Debug.Log("Interacting");
         dialogueRunner.StartDialogue(test);
+        
+        onTalkEvent.Invoke();
     }
 
     [YarnCommand("RunNPCEvent")]
