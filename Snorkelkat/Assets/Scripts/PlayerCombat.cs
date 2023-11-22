@@ -45,20 +45,20 @@ public class PlayerCombat : MonoBehaviour, IDamageable
 
     public void Attack()
     {
-        sword.SetActive(true);
-        StartCoroutine("ToggleSword");
-        Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayers);
-        foreach (Collider2D enemy in enemiesInRange)
-        {
-            //Debug.Log(enemy.name);
-            enemy.GetComponent<IDamageable>().TakeDamage(damageAmount);
-        }
+        //sword.SetActive(true);
+        //StartCoroutine("ToggleSword");
+        //Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayers);
+        //foreach (Collider2D enemy in enemiesInRange)
+        //{
+        //    //Debug.Log(enemy.name);
+        //    enemy.GetComponent<IDamageable>().TakeDamage(damageAmount);
+        //}
 
     }
     public void Shoot()
     {
-        GameObject tmpBullet;
-        tmpBullet = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
+        //GameObject tmpBullet;
+        //tmpBullet = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
     }
 
     public void TakeDamage(int damage)
