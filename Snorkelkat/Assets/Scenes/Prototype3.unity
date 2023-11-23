@@ -48919,7 +48919,7 @@ PrefabInstance:
     - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: yarnProject
       value: 
-      objectReference: {fileID: 7545569452688597077, guid: a1fb926ae582d72489595c37ddb1c990, type: 3}
+      objectReference: {fileID: 7545569452688597077, guid: c4bac2cf52ecc7140a1a405cec5838b7, type: 3}
     - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: startAutomatically
       value: 0
@@ -51301,7 +51301,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
       propertyPath: textTitle
-      value: Start
+      value: Hello
       objectReference: {fileID: 0}
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
       propertyPath: dialogueRunner
@@ -51580,7 +51580,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
       propertyPath: textTitle
-      value: Start
+      value: Puzzelblokje
       objectReference: {fileID: 0}
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
       propertyPath: dialogueRunner
