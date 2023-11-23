@@ -52,6 +52,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        //Quit
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         horizontal = Input.GetAxisRaw("Horizontal");
 
         if (jumpsLeft > 0)
