@@ -8,7 +8,7 @@ using Yarn.Unity;
 public class NPCDialogue : MonoBehaviour, IInteractable
 {
     public DialogueRunner dialogueRunner;
-    public string test;
+    public string textTitle;
     public GameObject textComponent;
     public bool isActive = false;
     [SerializeField]
@@ -36,7 +36,7 @@ public class NPCDialogue : MonoBehaviour, IInteractable
     public void Interact()
     {
         Debug.Log("Interacting");
-        dialogueRunner.StartDialogue(test);
+        dialogueRunner.StartDialogue(textTitle);
         
         onTalkEvent.Invoke();
     }

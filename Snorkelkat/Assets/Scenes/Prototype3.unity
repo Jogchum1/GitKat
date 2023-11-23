@@ -51300,6 +51300,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
+      propertyPath: textTitle
+      value: Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 201642151}
@@ -51574,6 +51578,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
+      propertyPath: textTitle
+      value: Start
+      objectReference: {fileID: 0}
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
       propertyPath: dialogueRunner
       value: 
