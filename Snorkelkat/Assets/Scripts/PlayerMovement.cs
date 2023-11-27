@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour, IDataPersistence
+public class PlayerMovement : MonoBehaviour
 {
-    private int jumpCountTest;
-
     private float horizontal;
 
     private bool isFacingRight = true;
@@ -23,15 +21,18 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     public float speed = 8f;
     public float jumpingPower = 16f;
     public int maxJumps = 2;
-    public int jumpsLeft;
+    private int jumpsLeft;
     public float hangTime = .2f;
     public float jumpBuggerLenght = .1f;
+    public bool canGlide = false;
+    private bool isHangGliding = false;
+    public float glideGrav = 0.1f;
 
     [Header("Wall Jumping")]
     public float wallJumpingDuration = 0.4f;
     public Vector2 wallJumpingPower = new Vector2(8f, 16f);
 
-    [HideInInspector] public bool canWallJump = false;
+    public bool canWallJump = false;
     private bool isWallSliding;
     private bool isWallJumping;
     private float wallJumpingDirection;
@@ -51,6 +52,12 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     void Update()
     {
+        //Quit
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         horizontal = Input.GetAxisRaw("Horizontal");
 
         if (jumpsLeft > 0)
@@ -61,22 +68,14 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
                 jumpBufferCount = 0;
                 jumpsLeft -= 1;
-               // Debug.Log("Jump 1");
+                Debug.Log("Jump 1");
             }
             else if (maxJumps > 1 && Input.GetButtonDown("Jump") && !IsGrounded())
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
                 jumpsLeft -= 1;
-                //Debug.Log("Jump 2");
+                Debug.Log("Jump 2");
             }
-
-        }
-        //Small jump
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f && jumpsLeft >= 0)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-            jumpBufferCount = 0;
-            //Debug.Log("Jump 3");
 
         }
         //Small jump
@@ -99,10 +98,18 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
             hangCounter -= Time.deltaTime;
         }
 
+
+        if(hangCounter > 0f)
+        {
+            isHangGliding = false;
+        }
+        else
+        {
+            isHangGliding = true;
+        }
         //JumpBuffer
         if (Input.GetButtonDown("Jump"))
         {
-            jumpCountTest++;
             jumpBufferCount = jumpBuggerLenght;
         }
         else
@@ -114,6 +121,15 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         {
             WallSlide();
             WallJump();
+        }
+
+        if (canGlide && isHangGliding)
+        {
+            Glide();
+        }
+        else
+        {
+            rb.gravityScale = 3;
         }
 
         if (!isWallJumping)
@@ -138,7 +154,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.4f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
     }
 
     private bool IsWalled()
@@ -214,6 +230,31 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         isWallJumping = false;
     }
 
+    private void Glide()
+    {
+        
+        if(!IsGrounded() && Input.GetKeyDown(KeyCode.Space))
+        {
+            
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+            
+            Debug.Log("Glide");
+            rb.gravityScale = glideGrav;
+
+        }
+
+        if (IsGrounded())
+        {
+            rb.gravityScale = 3f;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            rb.gravityScale = 3f;
+        }
+
+    }
+
     private void Flip()
     {
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
@@ -223,25 +264,5 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
             transform.Rotate(0f, 180f, 0f);
             aheadAmount = -aheadAmount;
         }
-    }
-
-    public void KnockBack(GameObject attacker, float power)
-    {
-        Vector2 knockbackDir = (rb.transform.position - attacker.transform.position).normalized;
-        Vector2 knockbackPow = knockbackDir * power;
-        //rb.AddForce(knockbackPow, ForceMode2D.Force);
-        //rb.velocity.y = Vector2.zero;
-    }
-
-    public void LoadData(GameData data)
-    {
-        this.jumpCountTest = data.jumpCount;
-        this.transform.position = data.playerPosition;
-    }
-
-    public void SaveData(ref GameData data)
-    {
-        data.jumpCount = this.jumpCountTest;
-        data.playerPosition = this.transform.position;
     }
 }

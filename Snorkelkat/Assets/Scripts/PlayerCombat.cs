@@ -15,17 +15,14 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     public LayerMask enemyLayers;
 
     public GameObject bullet;
-    public Transform lastDoor;
-    private SpriteRenderer sprite;
-
+    public GameObject sword;
+    public GameObject lastDoor;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
-        lastDoor = gameObject.transform;
-        sprite = GetComponentInChildren<SpriteRenderer>();
-
+        sword.SetActive(false);
     }
 
     // Update is called once per frame
@@ -49,39 +46,29 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     public void Attack()
     {
         //sword.SetActive(true);
-        StartCoroutine("ToggleSword");
-        Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayers);
-        foreach (Collider2D enemy in enemiesInRange)
-        {
-            //Debug.Log(enemy.name);
-            enemy.GetComponent<IDamageable>().TakeDamage(damageAmount);
-        }
+        //StartCoroutine("ToggleSword");
+        //Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayers);
+        //foreach (Collider2D enemy in enemiesInRange)
+        //{
+        //    //Debug.Log(enemy.name);
+        //    enemy.GetComponent<IDamageable>().TakeDamage(damageAmount);
+        //}
 
     }
     public void Shoot()
     {
-        GameObject tmpBullet;
-        tmpBullet = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
+        //GameObject tmpBullet;
+        //tmpBullet = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
     }
 
     public void TakeDamage(int damage)
     {
         Debug.Log("Played damaged");
         currentHealth -= damage;
-        sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0);
-        StartCoroutine("ChangeColor");
         if (currentHealth <= 0)
         {
             Die();
         }
-    }
-
-   
-
-    private IEnumerator ChangeColor()
-    {
-        yield return new WaitForSeconds(.1f);
-        sprite.color = Color.white;
     }
     public void Die()
     {
@@ -93,7 +80,7 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     private IEnumerator ToggleSword()
     {
         yield return new WaitForSeconds(.1f);
-        //sword.SetActive(false);
+        sword.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

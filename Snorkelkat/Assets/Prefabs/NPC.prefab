@@ -76,8 +76,8 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1062457849
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6733805855433857064
@@ -249,6 +249,12 @@ MonoBehaviour:
   test: Start
   textComponent: {fileID: 6733805855433857065}
   isActive: 0
+  NPCEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onTalkEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6733805857012390423
 GameObject:
   m_ObjectHideFlags: 0

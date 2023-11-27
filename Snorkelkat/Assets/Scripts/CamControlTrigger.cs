@@ -53,12 +53,12 @@ public class CustomInspectorObjects
     public bool swapCameras = false;
     public bool panCameraOnContact = false;
 
-    [HideInInspector] public CinemachineVirtualCamera cameraOnLeft;
-    [HideInInspector] public CinemachineVirtualCamera cameraOnRight;
+    public CinemachineVirtualCamera cameraOnLeft;
+    public CinemachineVirtualCamera cameraOnRight;
 
-    [HideInInspector] public PanDirection panDirection;
-    [HideInInspector] public float panDistance = 3f;
-    [HideInInspector] public float panTime = 0.35f;
+    public PanDirection panDirection;
+    public float panDistance = 3f;
+    public float panTime = 0.35f;
 }
 
 public enum PanDirection
@@ -69,41 +69,41 @@ public enum PanDirection
     Right
 }
 
-[CustomEditor(typeof(CamControlTrigger))]
-public class MyScriptEditor : Editor
-{
-    CamControlTrigger camControlTrigger;
+//[CustomEditor(typeof(CamControlTrigger))]
+//public class MyScriptEditor : Editor
+//{
+//    CamControlTrigger camControlTrigger;
 
-    private void OnEnable()
-    {
-        camControlTrigger = (CamControlTrigger)target;
-    }
+//    private void OnEnable()
+//    {
+//        camControlTrigger = (CamControlTrigger)target;
+//    }
 
-    public override void OnInspectorGUI()
-    {
-        DrawDefaultInspector();
+//    public override void OnInspectorGUI()
+//    {
+//        DrawDefaultInspector();
 
-        if (camControlTrigger.customInspectorObjects.swapCameras)
-        {
-            camControlTrigger.customInspectorObjects.cameraOnLeft = EditorGUILayout.ObjectField("Camera on Left", camControlTrigger.customInspectorObjects.cameraOnLeft,
-                typeof(CinemachineVirtualCamera), true) as CinemachineVirtualCamera;
+//        if (camControlTrigger.customInspectorObjects.swapCameras)
+//        {
+//            camControlTrigger.customInspectorObjects.cameraOnLeft = EditorGUILayout.ObjectField("Camera on Left", camControlTrigger.customInspectorObjects.cameraOnLeft,
+//                typeof(CinemachineVirtualCamera), true) as CinemachineVirtualCamera;
 
-            camControlTrigger.customInspectorObjects.cameraOnRight = EditorGUILayout.ObjectField("Camera on Right", camControlTrigger.customInspectorObjects.cameraOnRight,
-                typeof(CinemachineVirtualCamera), true) as CinemachineVirtualCamera;
-        }
+//            camControlTrigger.customInspectorObjects.cameraOnRight = EditorGUILayout.ObjectField("Camera on Right", camControlTrigger.customInspectorObjects.cameraOnRight,
+//                typeof(CinemachineVirtualCamera), true) as CinemachineVirtualCamera;
+//        }
 
-        if (camControlTrigger.customInspectorObjects.panCameraOnContact)
-        {
-            camControlTrigger.customInspectorObjects.panDirection = (PanDirection)EditorGUILayout.EnumPopup("Camera Pan Direction",
-                camControlTrigger.customInspectorObjects.panDirection);
+//        if (camControlTrigger.customInspectorObjects.panCameraOnContact)
+//        {
+//            camControlTrigger.customInspectorObjects.panDirection = (PanDirection)EditorGUILayout.EnumPopup("Camera Pan Direction",
+//                camControlTrigger.customInspectorObjects.panDirection);
 
-            camControlTrigger.customInspectorObjects.panDistance = EditorGUILayout.FloatField("Pan Distance", camControlTrigger.customInspectorObjects.panDistance);
-            camControlTrigger.customInspectorObjects.panTime = EditorGUILayout.FloatField("Pan Time", camControlTrigger.customInspectorObjects.panTime);
-        }
+//            camControlTrigger.customInspectorObjects.panDistance = EditorGUILayout.FloatField("Pan Distance", camControlTrigger.customInspectorObjects.panDistance);
+//            camControlTrigger.customInspectorObjects.panTime = EditorGUILayout.FloatField("Pan Time", camControlTrigger.customInspectorObjects.panTime);
+//        }
 
-        if (GUI.changed)
-        {
-            EditorUtility.SetDirty(camControlTrigger);
-        }
-    }
-}
+//        if (GUI.changed)
+//        {
+//            EditorUtility.SetDirty(camControlTrigger);
+//        }
+//    }
+//}

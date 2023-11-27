@@ -8,13 +8,13 @@ using Yarn.Unity;
 public class NPCDialogue : MonoBehaviour, IInteractable
 {
     public DialogueRunner dialogueRunner;
-    public string test;
+    public string textTitle;
     public GameObject textComponent;
     public bool isActive = false;
-
     [SerializeField]
     private UnityEvent NPCEvent;
-    
+
+    public UnityEvent onTalkEvent;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -35,7 +35,10 @@ public class NPCDialogue : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        dialogueRunner.StartDialogue(test);
+        Debug.Log("Interacting");
+        dialogueRunner.StartDialogue(textTitle);
+        
+        onTalkEvent.Invoke();
     }
 
     [YarnCommand("RunNPCEvent")]
