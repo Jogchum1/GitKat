@@ -359,7 +359,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2973701327932222143
 Transform:
   m_ObjectHideFlags: 0
@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 2280772047722110831}
   - component: {fileID: 6213756538626230296}
   - component: {fileID: 5579191290656132238}
-  - component: {fileID: 2269769891913039675}
+  - component: {fileID: 9006102040634329257}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -515,6 +515,7 @@ MonoBehaviour:
   speed: 8
   jumpingPower: 16
   maxJumps: 1
+  jumpsLeft: 0
   hangTime: 0.2
   jumpBuggerLenght: 0.1
   wallJumpingDuration: 0.4
@@ -544,7 +545,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   bullet: {fileID: 7609740630238738366, guid: 57a10744948a0fe47b461ead6eabfcc6, type: 3}
-  sword: {fileID: 8435932391345920729}
   lastDoor: {fileID: 0}
 --- !u!114 &5579191290656132238
 MonoBehaviour:
@@ -562,7 +562,7 @@ MonoBehaviour:
   interactLayers:
     serializedVersion: 2
     m_Bits: 256
---- !u!70 &2269769891913039675
+--- !u!70 &9006102040634329257
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -575,6 +575,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0016980767, y: 0.24946868}
-  m_Size: {x: 0.7408625, y: 1.498976}
+  m_Offset: {x: 0, y: 0.2499237}
+  m_Size: {x: 0.75122505, y: 1.4998474}
   m_Direction: 0

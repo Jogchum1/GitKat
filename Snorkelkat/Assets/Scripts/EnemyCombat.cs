@@ -12,6 +12,7 @@ public class EnemyCombat : MonoBehaviour, IDamageable
     public float attackRange;
     [Header("Attack rate (Attacks per second)")]
     public float attackRate;
+    public float knockbackAmount;
     float nextAttackTime = 0f;
     private SpriteRenderer sprite;
 
@@ -38,7 +39,8 @@ public class EnemyCombat : MonoBehaviour, IDamageable
         {
             if (Time.time >= nextAttackTime)
             {
-                player.GetComponent<PlayerCombat>().TakeDamage(damageAmount);    
+                player.GetComponent<PlayerCombat>().TakeDamage(damageAmount);
+                player.GetComponent<PlayerMovement>().KnockBack(gameObject, knockbackAmount);   
                 nextAttackTime = Time.time + 1f / attackRate;
                 
             }
@@ -50,11 +52,12 @@ public class EnemyCombat : MonoBehaviour, IDamageable
         Debug.Log("ouch, im the enemy and im hurt :(" + damage);
         currentHealth -= damage;
         sprite.color = Color.white;
-        StartCoroutine("ChangeColor");
         if (currentHealth <= 0)
         {
             Die();
+            return;
         }
+        StartCoroutine("ChangeColor");
     }
 
     private IEnumerator ChangeColor()
