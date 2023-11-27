@@ -15,14 +15,14 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     public LayerMask enemyLayers;
 
     public GameObject bullet;
-    public GameObject sword;
+    //public GameObject sword;
     public GameObject lastDoor;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
-        sword.SetActive(false);
+        //sword.SetActive(false);
     }
 
     // Update is called once per frame
@@ -80,7 +80,7 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     private IEnumerator ToggleSword()
     {
         yield return new WaitForSeconds(.1f);
-        sword.SetActive(false);
+        //sword.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

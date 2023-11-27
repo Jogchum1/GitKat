@@ -48964,6 +48964,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -50.11
       objectReference: {fileID: 0}
+    - target: {fileID: 3292657647476544606, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
       propertyPath: yarnProject
       value: 
@@ -51617,8 +51621,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.55985, y: -0.033550024, z: 0}
-    m_Extent: {x: 2.23475, y: 2.95125, z: 0}
+    m_Center: {x: -0.56324995, y: -0.031949997, z: 0}
+    m_Extent: {x: 2.2414498, y: 2.94295, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -62327,8 +62331,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.07704997, y: -1.6991999, z: 0}
-    m_Extent: {x: 2.64005, y: 2.3014, z: 0}
+    m_Center: {x: 0.06330001, y: -1.69695, z: 0}
+    m_Extent: {x: 2.6433, y: 2.29955, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -133065,8 +133069,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.59685004, y: -0.60090005, z: 0}
-    m_Extent: {x: 3.8281503, y: 2.0909, z: 0}
+    m_Center: {x: 0.59414995, y: -0.6056, z: 0}
+    m_Extent: {x: 3.8232498, y: 2.0830998, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
