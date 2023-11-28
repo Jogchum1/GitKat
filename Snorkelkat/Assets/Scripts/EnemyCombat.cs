@@ -40,7 +40,7 @@ public class EnemyCombat : MonoBehaviour, IDamageable
             if (Time.time >= nextAttackTime)
             {
                 player.GetComponent<PlayerCombat>().TakeDamage(damageAmount);
-                player.GetComponent<PlayerMovement>().KnockBack(gameObject, knockbackAmount);   
+                //player.GetComponent<PlayerMovement>().KnockBack(gameObject, knockbackAmount);   
                 nextAttackTime = Time.time + 1f / attackRate;
                 
             }
