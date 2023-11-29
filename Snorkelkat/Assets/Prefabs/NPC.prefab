@@ -76,8 +76,8 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1062457849
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6733805855433857064
@@ -220,7 +220,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 1.0983077}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -231,7 +231,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.75, y: 1}
+  m_Size: {x: 5.8113937, y: 3.1966155}
   m_EdgeRadius: 0
 --- !u!114 &6595609762484549876
 MonoBehaviour:
@@ -249,6 +249,12 @@ MonoBehaviour:
   test: Start
   textComponent: {fileID: 6733805855433857065}
   isActive: 0
+  NPCEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onTalkEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6733805857012390423
 GameObject:
   m_ObjectHideFlags: 0

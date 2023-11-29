@@ -15,18 +15,20 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     public LayerMask enemyLayers;
 
     public GameObject bullet;
+    //public GameObject sword;
     public GameObject lastDoor;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
+        //sword.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
-    {   
-        if(Time.time >= nextAttackTime)
+    {
+        if (Time.time >= nextAttackTime)
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -43,18 +45,20 @@ public class PlayerCombat : MonoBehaviour, IDamageable
 
     public void Attack()
     {
-        Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayers);
-        foreach (Collider2D enemy in enemiesInRange)
-        {
-            Debug.Log(enemy.name);
-            enemy.GetComponent<IDamageable>().TakeDamage(damageAmount);
-        }
+        //sword.SetActive(true);
+        //StartCoroutine("ToggleSword");
+        //Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayers);
+        //foreach (Collider2D enemy in enemiesInRange)
+        //{
+        //    //Debug.Log(enemy.name);
+        //    enemy.GetComponent<IDamageable>().TakeDamage(damageAmount);
+        //}
 
     }
     public void Shoot()
     {
-        GameObject tmpBullet;
-        tmpBullet = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
+        //GameObject tmpBullet;
+        //tmpBullet = Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
     }
 
     public void TakeDamage(int damage)
@@ -71,6 +75,20 @@ public class PlayerCombat : MonoBehaviour, IDamageable
         Debug.Log("Player died");
         gameObject.transform.position = lastDoor.transform.position;
 
+    }
+
+    private IEnumerator ToggleSword()
+    {
+        yield return new WaitForSeconds(.1f);
+        //sword.SetActive(false);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Death")
+        {
+            Die();
+        }
     }
 
 

@@ -15,11 +15,11 @@ TagManager:
   - Enemy
   - InteractableNPC
   - Wall
+  - post processing
+  - Foreground
+  - Background
   - 
-  - 
-  - 
-  - 
-  - 
+  - Effects(notRendered)
   - 
   - 
   - 
@@ -38,6 +38,36 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: skybox
+    uniqueID: 3561540779
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background5
+    uniqueID: 2116740897
+    locked: 0
+  - name: background4
+    uniqueID: 1139837165
+    locked: 0
+  - name: background3
+    uniqueID: 858423387
+    locked: 0
+  - name: background2
+    uniqueID: 1968865673
+    locked: 0
+  - name: background1
+    uniqueID: 3310466215
+    locked: 0
+  - name: playerBG
+    uniqueID: 3179848629
+    locked: 0
+  - name: playerGround
+    uniqueID: 2665703321
+    locked: 0
+  - name: foreground2
+    uniqueID: 253132417
+    locked: 0
+  - name: foreground1
+    uniqueID: 1062457849
     locked: 0
