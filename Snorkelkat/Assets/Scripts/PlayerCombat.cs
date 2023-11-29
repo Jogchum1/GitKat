@@ -22,7 +22,7 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     void Start()
     {
         currentHealth = maxHealth;
-        sword.SetActive(false);
+        //sword.SetActive(false);
     }
 
     // Update is called once per frame

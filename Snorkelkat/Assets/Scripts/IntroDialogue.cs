@@ -8,9 +8,7 @@ using TMPro;
 
 public class IntroDialogue : DialogueViewBase
 {
-    public List<LocalizedLine> lines = new List<LocalizedLine>();
-
-    public List<TMP_Text> textObjects = new List<TMP_Text>();
+    public string allText;
     [SerializeField] CanvasGroup canvasGroup;
 
     [SerializeField] private float appearanceTime = 0.5f;
@@ -70,59 +68,14 @@ public class IntroDialogue : DialogueViewBase
                 {
                     
                     advanceHandler = null;
-                    if (lines.Count < 5)
-                    {
-                        lines.Add(dialogueLine);
-                        Debug.Log("Add lines");
-                    }
-                    else
-                    {
-                        lines.RemoveAt(0);
-                        Debug.Log(lines.Count + " is dit dan 1 minder?");
-                        Debug.Log("Sort lines");
-                        SortLines();
-                        lines.Add(dialogueLine);
-                    }
-                    Debug.Log(lines.Count + " is lines count");
-
-
-                    UpdateTextBoxes();
-
+                    allText = allText + dialogueLine.Text.Text;
                     onDialogueLineFinished();
                 }
             }
             );
     }
 
-    public void UpdateTextBoxes()
-    {
-        for (int i = 0; i < lines.Count; i++)
-        {
-            string tmp = lines[i].Text.Text.ToString();
-            textObjects[i].text = tmp;
-            Debug.Log(i + " is i van update");
-        }
-    }
-
-    public void SortLines()
-    {
-        for (int i = 0; i < lines.Count; i++)
-        {
-            string tmp = lines[i].Text.Text.ToString();
-            textObjects[i].text = tmp;
-            Debug.Log(i + " is i van sort");
-        }
-    }
-
-    public override void DialogueComplete()
-    {
-        canvasGroup.alpha = 0;
-        lines.Clear();
-        for (int i = 0; i < textObjects.Count; i++)
-        {
-            textObjects[i].text = null;
-        }
-    }
+    
     public void test2()
     {
         Debug.Log("Test2");
