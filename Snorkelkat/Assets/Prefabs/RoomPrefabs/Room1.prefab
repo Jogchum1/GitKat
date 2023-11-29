@@ -3357,8 +3357,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.07585001, y: -1.7048, z: 0}
-    m_Extent: {x: 2.64925, y: 2.2994, z: 0}
+    m_Center: {x: 0.07634997, y: -1.6991001, z: 0}
+    m_Extent: {x: 2.64325, y: 2.3028002, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3439,8 +3439,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.59450006, y: -0.61125004, z: 0}
-    m_Extent: {x: 3.8174, y: 2.08805, z: 0}
+    m_Center: {x: 0.59220004, y: -0.60109997, z: 0}
+    m_Extent: {x: 3.8173, y: 2.0821, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3566,8 +3566,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.55785006, y: -0.04155004, z: 0}
-    m_Extent: {x: 2.24435, y: 2.94315, z: 0}
+    m_Center: {x: -0.5576001, y: -0.028899908, z: 0}
+    m_Extent: {x: 2.2376, y: 2.9405, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7611,7 +7611,7 @@ PrefabInstance:
     - target: {fileID: 8189894967650636697, guid: 171d458eee2522f44b441f4cc9c8383a, type: 3}
       propertyPath: goalDoor
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5397729712856018683}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 171d458eee2522f44b441f4cc9c8383a, type: 3}
 --- !u!4 &4166391610376661693 stripped
@@ -7619,6 +7619,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 184985821137524703, guid: 171d458eee2522f44b441f4cc9c8383a, type: 3}
   m_PrefabInstance: {fileID: 4269637329469701474}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5397729712856018683 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8189894967650636697, guid: 171d458eee2522f44b441f4cc9c8383a, type: 3}
+  m_PrefabInstance: {fileID: 4269637329469701474}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c72426967942f045b34263f5a0e9be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4269637329588872259
 PrefabInstance:
   m_ObjectHideFlags: 0
