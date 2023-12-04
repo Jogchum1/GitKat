@@ -14587,6 +14587,22 @@ PrefabInstance:
       propertyPath: customInspectorObjects.cameraOnRight
       value: 
       objectReference: {fileID: 631007764}
+    - target: {fileID: 1341011697549338007, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -88.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341011697549338007, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341011697549338007, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99103665
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341011697549338007, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.13359028
+      objectReference: {fileID: 0}
     - target: {fileID: 1482104768742352262, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: m_LocalPosition.y
       value: -4.47
@@ -14642,6 +14658,26 @@ PrefabInstance:
     - target: {fileID: 4269637329506640151, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4544557204411380448, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_Intensity
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 4544557204411380448, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_NormalMapDistance
+      value: 2.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4544557204411380448, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_PointLightInnerAngle
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 4544557204411380448, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 1.6937203
+      objectReference: {fileID: 0}
+    - target: {fileID: 4544557204411380448, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 3.703325
       objectReference: {fileID: 0}
     - target: {fileID: 5397729712856018683, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: goalDoor
