@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("General Movement")]
     public float speed = 8f;
     public float jumpingPower = 16f;
+    public float maxYVelocity = 20f;
     public int maxJumps = 2;
     private int jumpsLeft;
     public float hangTime = .2f;
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     public bool canGlide = false;
     private bool isHangGliding = false;
     public float glideGrav = 0.1f;
+    public bool isSlippery = false;
 
     [Header("Wall Jumping")]
     public float wallJumpingDuration = 0.4f;
@@ -146,8 +148,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (rb.velocity.y > maxYVelocity)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, maxYVelocity);
+        }
+
+        if (IsGrounded() && horizontal == 0)
+        {
+            return;
+        }
+
         if (!isWallJumping)
         {
+            //movement :)
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
         }
     }

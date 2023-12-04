@@ -8,9 +8,14 @@ public abstract class ModAbility : ScriptableObject
     
     public void InstantiateAbility(GameManager gm)
     {
-        gameManager = gm;
+        gameManager = GameManager.instance;
     }
 
     public abstract void ActivateAbility();
     public abstract void DeactivateAbility();
+
+    public virtual void UpdateAbility()
+    {
+
+    }
 }

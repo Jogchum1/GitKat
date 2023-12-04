@@ -27,12 +27,14 @@ public class AbilitySwitcher : MonoBehaviour
         updateModifierSlotsSprites();
     }
 
-    public void Update()
+    public void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
             SwitchModifierPos();
         }
+        bottomModifier?.UpdateActiveAbility();
+        topModifier?.UpdateActiveAbility();
     }
 
     public void SwitchModifierPos()
