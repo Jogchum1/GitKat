@@ -7538,7 +7538,7 @@ PrefabInstance:
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_Collider
       value: 
-      objectReference: {fileID: 1628464566}
+      objectReference: {fileID: 0}
     - target: {fileID: -6956954085250484549, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.size
       value: 56
@@ -13597,11 +13597,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -5765183769023986340, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
---- !u!19719996 &1628464566 stripped
-TilemapCollider2D:
-  m_CorrespondingSourceObject: {fileID: -4749423003453435444, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
-  m_PrefabInstance: {fileID: 1628464565}
-  m_PrefabAsset: {fileID: 0}
 --- !u!19719996 &1628464567 stripped
 TilemapCollider2D:
   m_CorrespondingSourceObject: {fileID: -6277394979032010565, guid: ddef65224c8265641967d482ff9c5e5c, type: 3}
@@ -14587,30 +14582,6 @@ PrefabInstance:
       propertyPath: customInspectorObjects.cameraOnRight
       value: 
       objectReference: {fileID: 631007764}
-    - target: {fileID: 1341011697549338007, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -88.97
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341011697549338007, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341011697549338007, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99103665
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341011697549338007, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.13359028
-      objectReference: {fileID: 0}
-    - target: {fileID: 1482104768742352262, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4.47
-      objectReference: {fileID: 0}
-    - target: {fileID: 1482104768742352262, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.37
-      objectReference: {fileID: 0}
     - target: {fileID: 4269637329506640144, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: m_Name
       value: Room1
@@ -14658,26 +14629,6 @@ PrefabInstance:
     - target: {fileID: 4269637329506640151, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544557204411380448, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: m_Intensity
-      value: 1.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544557204411380448, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: m_NormalMapDistance
-      value: 2.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544557204411380448, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: m_PointLightInnerAngle
-      value: 360
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544557204411380448, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: m_PointLightInnerRadius
-      value: 1.6937203
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544557204411380448, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: m_PointLightOuterRadius
-      value: 3.703325
       objectReference: {fileID: 0}
     - target: {fileID: 5397729712856018683, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: goalDoor
