@@ -153,7 +153,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, maxYVelocity);
         }
 
-        if (IsGrounded() && horizontal == 0)
+        if (IsGrounded() && horizontal == 0 || isSlippery)
         {
             return;
         }

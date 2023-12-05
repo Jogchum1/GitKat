@@ -8,13 +8,20 @@ public class BecomeSaus : ModAbility
     private bool isSaus;
     public float sausY = 0.5f;
 
+    [SerializeField]
+    private PhysicsMaterial2D slipperyPhysicsMaterial2D;
+    private PhysicsMaterial2D normalPhysicsMaterial2D;
+
     public override void ActivateAbility()
     {
+        normalPhysicsMaterial2D = playerRigidbody2D.sharedMaterial;
     }
 
     public override void DeactivateAbility()
     {
+        playerRigidbody2D.sharedMaterial = normalPhysicsMaterial2D;
         gameManager.player.transform.localScale = new Vector3(1, 1, 1);
+        playerMovement.isSlippery = false;
         isSaus = false;
     }
 
@@ -22,15 +29,17 @@ public class BecomeSaus : ModAbility
     {
         if (Input.GetKey(KeyCode.Mouse0) && !isSaus)
         {
-            gameManager.player.transform.localScale = new Vector3(1, sausY, 1);
+            player.transform.localScale = new Vector3(1, sausY, 1);
+            playerRigidbody2D.sharedMaterial = slipperyPhysicsMaterial2D;
+            playerMovement.isSlippery = true;
             isSaus = true;
-            gameManager.player.GetComponent<PlayerMovement>().isSlippery = true;
         }
         else if (!Input.GetKey(KeyCode.Mouse0) && isSaus)
         {
+            playerRigidbody2D.sharedMaterial = normalPhysicsMaterial2D;
             gameManager.player.transform.localScale = new Vector3(1, 1, 1);
+            playerMovement.isSlippery = false;
             isSaus = false;
-            gameManager.player.GetComponent<PlayerMovement>().isSlippery = false;
         }
     }
 }

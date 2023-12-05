@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: BecomeSaus
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  sausY: 0.5
+  player: {fileID: 0}
+  playerRigidbody2D: {fileID: 0}
+  playerMovement: {fileID: 0}
+  sausY: 4
+  slipperyPhysicsMaterial2D: {fileID: 6200000, guid: e0e554c50b049434b80495f76abdb2a5, type: 2}
