@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
-
+    
     private bool isFacingRight = true;
     private float hangCounter;
     private float jumpBufferCount;
