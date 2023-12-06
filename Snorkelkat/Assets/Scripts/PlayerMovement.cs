@@ -135,6 +135,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             rb.gravityScale = 3;
+            anim.SetBool("IsFloating", false);
         }
 
         if (!isWallJumping)
@@ -194,10 +195,12 @@ public class PlayerMovement : MonoBehaviour
         {
             isWallSliding = true;
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
+            anim.SetBool("IsWallSliding", true);
         }
         else
         {
             isWallSliding = false;
+            anim.SetBool("IsWallSliding", false);
         }
     }
 
@@ -263,10 +266,10 @@ public class PlayerMovement : MonoBehaviour
         {
             
             rb.velocity = new Vector2(rb.velocity.x, 0);
-            
+            anim.SetBool("IsFloating", true);
+
             Debug.Log("Glide");
             rb.gravityScale = glideGrav;
-
         }
 
         if (IsGrounded())
