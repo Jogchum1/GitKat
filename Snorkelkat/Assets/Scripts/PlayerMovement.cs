@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
     private float hangCounter;
     private float jumpBufferCount;
-
+    public Animator anim;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -64,9 +64,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (jumpsLeft > 0)
         {
-
             if (jumpBufferCount >= 0 && hangCounter > 0f)
             {
+                anim.SetBool("IsJumping", true);
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
                 jumpBufferCount = 0;
                 jumpsLeft -= 1;
@@ -74,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
             }
             else if (maxJumps > 1 && Input.GetButtonDown("Jump") && !IsGrounded())
             {
+                anim.SetBool("IsJumping", true);
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
                 jumpsLeft -= 1;
                 Debug.Log("Jump 2");
@@ -83,6 +84,7 @@ public class PlayerMovement : MonoBehaviour
         //Small jump
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f && jumpsLeft >= 0)
         {
+            //anim.SetBool("IsJumping", false);
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
             jumpBufferCount = 0;
             Debug.Log("Jump 3");
@@ -92,6 +94,7 @@ public class PlayerMovement : MonoBehaviour
         //Hantime
         if (IsGrounded() && rb.velocity.y <= 2)
         {
+            anim.SetBool("IsJumping", false);
             hangCounter = hangTime;
             jumpsLeft = maxJumps;
         }
@@ -148,6 +151,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(horizontal != 0)
+        {
+            anim.SetFloat("Speed", 1);
+
+        }
+        else
+        {
+            anim.SetFloat("Speed", 0);
+        }
+
         if (rb.velocity.y > maxYVelocity)
         {
             rb.velocity = new Vector2(rb.velocity.x, maxYVelocity);

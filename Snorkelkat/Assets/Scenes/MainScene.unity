@@ -604,6 +604,10 @@ PrefabInstance:
       value: -0.031794
       objectReference: {fileID: 0}
     - target: {fileID: 2280772047722110831, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 361146470}
+    - target: {fileID: 2280772047722110831, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: canGlide
       value: 0
       objectReference: {fileID: 0}
@@ -1498,6 +1502,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &361146470 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1432071369137243483, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
+  m_PrefabInstance: {fileID: 263003709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &427350282
 GameObject:
   m_ObjectHideFlags: 3
