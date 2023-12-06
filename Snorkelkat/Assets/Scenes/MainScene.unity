@@ -16834,6 +16834,26 @@ PrefabInstance:
       propertyPath: customInspectorObjects.cameraOnRight
       value: 
       objectReference: {fileID: 631007764}
+    - target: {fileID: 1444941588192333998, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804428417680138081, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380344181955550273, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782738135030856660, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933585389784111684, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.71
+      objectReference: {fileID: 0}
     - target: {fileID: 4269637329506640144, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: m_Name
       value: Room1
@@ -16886,9 +16906,49 @@ PrefabInstance:
       propertyPath: goalDoor
       value: 
       objectReference: {fileID: 1149612477382886110}
+    - target: {fileID: 5514892558221634969, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5974405492389902833, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075599451648742137, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 6300976588805373220, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 6617862870097671496, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.71
+      objectReference: {fileID: 0}
     - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 201642151}
+    - target: {fileID: 7011277532122969238, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171783748028997636, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321216465375980486, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 7613119127006576936, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918499464885537957, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.71
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
