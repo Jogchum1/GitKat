@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1072021701424919144}
   - component: {fileID: 1072021701424919147}
   - component: {fileID: 1072021701424919146}
-  - component: {fileID: 1072021701424919125}
+  - component: {fileID: 3348130610033980683}
+  - component: {fileID: 5457285430658779086}
   m_Layer: 13
   m_Name: LiquidParticle
   m_TagString: Untagged
@@ -101,8 +102,8 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
---- !u!50 &1072021701424919125
+  m_Radius: 0.89
+--- !u!50 &3348130610033980683
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -116,10 +117,24 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 0.05
   m_GravityScale: 3
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ec5794f3e1905b44282e216fa7f32917, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5457285430658779086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072021701424919124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c6f5c97ad380040b6692051357df66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  moveSpeed: 0.1

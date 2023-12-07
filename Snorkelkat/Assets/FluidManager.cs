@@ -14,7 +14,11 @@ public class FluidManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+		FluidParticle[] particles = GetComponentsInChildren<FluidParticle>();
+        foreach (FluidParticle particle in particles)
+        {
+			fluidParticles.Add(particle.gameObject);
+        }
     }
 
     // Update is called once per frame
