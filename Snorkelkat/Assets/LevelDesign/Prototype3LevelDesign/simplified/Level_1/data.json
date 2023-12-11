@@ -1,10 +1,10 @@
 {
 	"identifier": "Level_1",
-	"uniqueIdentifer": "5b7076c0-8990-11ee-8df1-8f6ae32d3b7a",
-	"x": 80,
+	"uniqueIdentifer": "d8db4b10-8990-11ee-a937-2f20f4ffbe7a",
+	"x": 352,
 	"y": 832,
-	"width": 1472,
-	"height": 1072,
+	"width": 1440,
+	"height": 688,
 	"bgColor": "#8B9BB4",
 	"neighbourLevels": [
 		{
@@ -20,9 +20,9 @@
 		"Door": [
 			{
 				"id": "Door",
-				"iid": "17113b10-8990-11ee-8df1-59acba333911",
+				"iid": "d8db4b12-8990-11ee-a937-cf1ae8ff73a1",
 				"layer": "Entities",
-				"x": 1440,
+				"x": 1408,
 				"y": 128,
 				"width": 16,
 				"height": 16,
@@ -31,9 +31,9 @@
 			},
 			{
 				"id": "Door",
-				"iid": "17c87d20-8990-11ee-8df1-adc181fb1edf",
+				"iid": "d8db4b13-8990-11ee-a937-050165d51485",
 				"layer": "Entities",
-				"x": 336,
+				"x": 208,
 				"y": 16,
 				"width": 16,
 				"height": 16,
@@ -44,43 +44,32 @@
 		"Collectable": [
 			{
 				"id": "Collectable",
-				"iid": "1b688740-8990-11ee-8df1-0dddb6b89500",
+				"iid": "d8db4b15-8990-11ee-a937-fdf85582496f",
 				"layer": "Entities",
-				"x": 64,
-				"y": 368,
-				"width": 16,
-				"height": 16,
-				"color": 6539085,
-				"customFields" : {}
-			},
-			{
-				"id": "Collectable",
-				"iid": "1d7e9600-8990-11ee-8df1-733447d07a64",
-				"layer": "Entities",
-				"x": 464,
-				"y": 560,
-				"width": 16,
-				"height": 16,
-				"color": 6539085,
-				"customFields" : {}
-			},
-			{
-				"id": "Collectable",
-				"iid": "1ec8f050-8990-11ee-8df1-b5aa5e054790",
-				"layer": "Entities",
-				"x": 1056,
-				"y": 224,
-				"width": 16,
-				"height": 16,
-				"color": 6539085,
-				"customFields" : {}
-			},
-			{
-				"id": "Collectable",
-				"iid": "1ff31870-8990-11ee-8df1-53073dfe3fdb",
-				"layer": "Entities",
-				"x": 1056,
+				"x": 928,
 				"y": 128,
+				"width": 16,
+				"height": 16,
+				"color": 6539085,
+				"customFields" : {}
+			},
+			{
+				"id": "Collectable",
+				"iid": "7091d5e0-8990-11ee-a937-8b3aa52b4f71",
+				"layer": "Entities",
+				"x": 992,
+				"y": 400,
+				"width": 16,
+				"height": 16,
+				"color": 6539085,
+				"customFields" : {}
+			},
+			{
+				"id": "Collectable",
+				"iid": "74e1a800-8990-11ee-a937-abe5822a2ba0",
+				"layer": "Entities",
+				"x": 96,
+				"y": 528,
 				"width": 16,
 				"height": 16,
 				"color": 6539085,
