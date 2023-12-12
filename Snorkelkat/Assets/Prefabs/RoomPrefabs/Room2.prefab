@@ -1767,7 +1767,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8618667460725399787}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.2819824, y: 6.932602, z: -2.0316374}
+  m_LocalPosition: {x: -3.2819824, y: 6.78, z: -2.0316374}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1815,7 +1815,7 @@ SpriteRenderer:
   m_SortingLayerID: -1629263975
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0b3cb339367362448bb6be0c0a5b5332, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cd8e55c5674c0ba4d883423a525f313a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2067,10 +2067,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kever_Fungi
       objectReference: {fileID: 0}
-    - target: {fileID: 7026928389432486680, guid: c1f75ce567e8edb47adaa60b513f3a48, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8283117068601559523, guid: c1f75ce567e8edb47adaa60b513f3a48, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -2085,7 +2081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8283117068601559523, guid: c1f75ce567e8edb47adaa60b513f3a48, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.08869077
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8283117068601559523, guid: c1f75ce567e8edb47adaa60b513f3a48, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2463,10 +2459,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kever
       objectReference: {fileID: 0}
-    - target: {fileID: 707415924008938941, guid: c8239c12f5b043e4f9f4268fe4a6f88f, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1920255541477789510, guid: c8239c12f5b043e4f9f4268fe4a6f88f, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -2481,7 +2473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1920255541477789510, guid: c8239c12f5b043e4f9f4268fe4a6f88f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.08869077
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1920255541477789510, guid: c8239c12f5b043e4f9f4268fe4a6f88f, type: 3}
       propertyPath: m_LocalRotation.w
