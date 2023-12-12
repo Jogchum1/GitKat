@@ -8,12 +8,12 @@ public class Glide : ModAbility
 {
     public override void ActivateAbility()
     {
-        gameManager.player.GetComponent<PlayerMovement>().canGlide = true;
+        gameManager.playerMovement.canGlide = true;
     }
 
     public override void DeactivateAbility()
     {
-        gameManager.player.GetComponent<PlayerMovement>().canGlide = false;
+        gameManager.playerMovement.canGlide = false;
     }
 
 

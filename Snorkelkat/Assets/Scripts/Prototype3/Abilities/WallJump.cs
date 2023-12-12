@@ -7,11 +7,11 @@ public class WallJump : ModAbility
 {
     public override void ActivateAbility()
     {
-        gameManager.player.GetComponent<PlayerMovement>().canWallJump = true;
+        gameManager.playerMovement.canWallJump = true;
     }
 
     public override void DeactivateAbility()
     {
-        gameManager.player.GetComponent<PlayerMovement>().canWallJump = false;
+        gameManager.playerMovement.canWallJump = false;
     }
 }

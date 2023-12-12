@@ -5,12 +5,10 @@ using UnityEngine;
 public class DieTile : MonoBehaviour
 {
     private GameManager gameManager;
-    private PlayerCombat playerCombat;
 
     private void Start()
     {
         gameManager = GameManager.instance;
-        playerCombat = gameManager.player.GetComponent<PlayerCombat>();
 
     }
 
@@ -18,7 +16,7 @@ public class DieTile : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            playerCombat.Die();
+            gameManager.playerCombat.Die();
         }
     }
 }

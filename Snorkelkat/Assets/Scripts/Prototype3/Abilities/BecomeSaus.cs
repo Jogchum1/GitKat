@@ -5,41 +5,50 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "BecomeSaus", menuName = "AbilitySystem/Abilities/BecomeSaus")]
 public class BecomeSaus : ModAbility
 {
-    private bool isSaus;
-    public float sausY = 0.5f;
-
+    public float changedPlayerScaleY = 0.5f;
     [SerializeField]
-    private PhysicsMaterial2D slipperyPhysicsMaterial2D;
-    private PhysicsMaterial2D normalPhysicsMaterial2D;
+    private PlayerPhysicsStateMachine.State sausState;
+    private CapsuleCollider2D playerCollider;
+    private Vector2 colliderSize;
 
     public override void ActivateAbility()
     {
-        normalPhysicsMaterial2D = playerRigidbody2D.sharedMaterial;
+        playerCollider = gameManager.player.GetComponent<CapsuleCollider2D>();
+        colliderSize = playerCollider.size;
     }
 
     public override void DeactivateAbility()
     {
-        playerRigidbody2D.sharedMaterial = normalPhysicsMaterial2D;
-        gameManager.player.transform.localScale = new Vector3(1, 1, 1);
-        playerMovement.isSlippery = false;
-        isSaus = false;
+        playerCollider.size = colliderSize;
+        gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.Normal;
+        gameManager.playerMovement.isSaus = false;
     }
 
     public override void UpdateAbility()
     {
-        if (Input.GetKey(KeyCode.Mouse0) && !isSaus)
+        if (Input.GetKey(KeyCode.Mouse0) && !gameManager.playerMovement.isSaus)
         {
-            player.transform.localScale = new Vector3(1, sausY, 1);
-            playerRigidbody2D.sharedMaterial = slipperyPhysicsMaterial2D;
-            playerMovement.isSlippery = true;
-            isSaus = true;
+            playerCollider.size = new Vector2(playerCollider.size.x, changedPlayerScaleY);
+            CenterCollider();
+
+            gameManager.playerPhysicsStateMachine.state = sausState;
+            gameManager.playerMovement.isSaus = true;
+            gameManager.playerMovement.anim.SetBool("IsSaus", true);
         }
-        else if (!Input.GetKey(KeyCode.Mouse0) && isSaus)
+        else if (!Input.GetKey(KeyCode.Mouse0) && gameManager.playerMovement.isSaus)
         {
-            playerRigidbody2D.sharedMaterial = normalPhysicsMaterial2D;
-            gameManager.player.transform.localScale = new Vector3(1, 1, 1);
-            playerMovement.isSlippery = false;
-            isSaus = false;
+            playerCollider.size = new Vector2(playerCollider.size.x, colliderSize.y);
+            CenterCollider();
+
+            gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.Normal;
+            gameManager.playerMovement.isSaus = false;
+            gameManager.playerMovement.anim.SetBool("IsSaus", false);
         }
+    }
+
+    private void CenterCollider()
+    {
+        float offsetY = (playerCollider.size.y * 0.5f) - 1;
+        playerCollider.offset = new Vector2(playerCollider.offset.x, offsetY);
     }
 }

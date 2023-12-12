@@ -9,11 +9,11 @@ public class DoubleJump : ModAbility
 
     public override void ActivateAbility()
     {
-        gameManager.player.GetComponent<PlayerMovement>().maxJumps = amountOfJumps;
+        gameManager.playerMovement.maxJumps = amountOfJumps;
     }
 
     public override void DeactivateAbility()
     {
-        gameManager.player.GetComponent<PlayerMovement>().maxJumps = 1;
+        gameManager.playerMovement.maxJumps = 1;
     }
 }

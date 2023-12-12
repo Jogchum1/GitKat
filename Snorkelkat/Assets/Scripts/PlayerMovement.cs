@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    private GameManager gameManager;
     private float horizontal;
     
     private bool isFacingRight = true;
@@ -28,15 +30,18 @@ public class PlayerMovement : MonoBehaviour
     public bool canGlide = false;
     private bool isHangGliding = false;
     public float glideGrav = 0.1f;
-    public bool isSlippery = false;
 
     [Header("Wall Jumping")]
     public float wallJumpingDuration = 0.4f;
     public Vector2 wallJumpingPower = new Vector2(8f, 16f);
 
     public bool canWallJump = false;
-    private bool isWallSliding;
+    [HideInInspector]
+    public bool isWallSliding;
     private bool isWallJumping;
+    private bool isInAir;
+    [HideInInspector]
+    public bool isSaus;
     private float wallJumpingDirection;
     private float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
@@ -50,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         jumpsLeft = maxJumps;
+        gameManager = GameManager.instance;
     }
 
     void Update()
@@ -90,6 +96,16 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Jump 3");
         }
 
+        if (IsGrounded() && isInAir && !isSaus)
+        {
+            isInAir = false;
+            gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.Normal;
+        }
+        else if (!IsGrounded() && !isInAir && !isSaus)
+        {
+            isInAir = true;
+            gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.NoFriction;
+        }
 
         //Hantime
         if (IsGrounded() && rb.velocity.y <= 2)
@@ -115,6 +131,10 @@ public class PlayerMovement : MonoBehaviour
         //JumpBuffer
         if (Input.GetButtonDown("Jump"))
         {
+            if (!isSaus)
+            {
+                gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.NoFriction;
+            }
             jumpBufferCount = jumpBuggerLenght;
         }
         else
@@ -144,10 +164,10 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Move camera point
-        if (Input.GetAxisRaw("Horizontal") != 0)
-        {
-            camTarget.localPosition = new Vector3(Mathf.Lerp(camTarget.localPosition.x, aheadAmount * Input.GetAxisRaw("Horizontal"), aheadSpeed * Time.deltaTime), camTarget.localPosition.y, camTarget.localPosition.z);
-        }
+        //if (Input.GetAxisRaw("Horizontal") != 0)
+        //{
+        //    camTarget.localPosition = new Vector3(Mathf.Lerp(camTarget.localPosition.x, aheadAmount * Input.GetAxisRaw("Horizontal"), aheadSpeed * Time.deltaTime), camTarget.localPosition.y, camTarget.localPosition.z);
+        //}
     }
 
     private void FixedUpdate()
@@ -167,7 +187,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, maxYVelocity);
         }
 
-        if (IsGrounded() && horizontal == 0 || isSlippery)
+        if (IsGrounded() && horizontal == 0 || isSaus)
         {
             return;
         }
@@ -193,14 +213,22 @@ public class PlayerMovement : MonoBehaviour
     {
         if (IsWalled() && !IsGrounded() && horizontal != 0f)
         {
-            isWallSliding = true;
+            if (!isWallSliding)
+            {
+                isWallSliding = true;
+                anim.SetBool("IsWallSliding", true);
+                //gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.NoFriction;
+            }
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
-            anim.SetBool("IsWallSliding", true);
         }
         else
         {
-            isWallSliding = false;
-            anim.SetBool("IsWallSliding", false);
+            if (isWallSliding)
+            {
+                isWallSliding = false;
+                anim.SetBool("IsWallSliding", false);
+                //gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.Normal;
+            }
         }
     }
 
