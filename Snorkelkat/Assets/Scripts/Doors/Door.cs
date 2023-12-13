@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Door : MonoBehaviour
 {
+    public GameObject room;
     [SerializeField]
     private Door goalDoor;
     [SerializeField]
@@ -17,7 +18,6 @@ public class Door : MonoBehaviour
     private Image transScreen;
     private GameManager gameManager;
     private CamManager camManager;
-    private GameObject room;
 
     private void Start()
     {
@@ -25,6 +25,11 @@ public class Door : MonoBehaviour
         goalPos = transform.position + spawnpoint;
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         transScreen = GameObject.Find("BlackScreen").GetComponent<Image>();
+
+        if (room == null)
+        {
+            Debug.LogError("No room assigned in " + gameObject.name);
+        }
     }
     public void EnterDoor(Collider2D collider)
     {
@@ -40,7 +45,10 @@ public class Door : MonoBehaviour
 
         gameManager.StopPlayerVelocity();
         playerCol.gameObject.transform.position = goalDoor.goalPos;
-        camManager.currentCamera.transform.position = goalDoor.goalPos;
+        camManager.currentCamera.ForceCameraPosition(goalDoor.goalPos, Quaternion.identity);
+        room.gameObject.SetActive(false);
+        goalDoor.room.SetActive(true);
+
         yield return new WaitForSeconds(transTime/3);
 
         yield return TransitionScreen(Color.black, Color.clear, duration);
