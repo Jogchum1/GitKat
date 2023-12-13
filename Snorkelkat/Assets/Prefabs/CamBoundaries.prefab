@@ -53,6 +53,7 @@ GameObject:
   - component: {fileID: 205212231288934235}
   - component: {fileID: 205212231288934232}
   - component: {fileID: 6511773422282895679}
+  - component: {fileID: 6454829919910442211}
   m_Layer: 0
   m_Name: Boundary
   m_TagString: Untagged
@@ -214,6 +215,14 @@ CompositeCollider2D:
         Y: -1380000000
       - X: -6267500032
         Y: -1380000000
+  - m_Collider: {fileID: 6454829919910442211}
+    m_ColliderPaths:
+    - - X: -6401557504
+        Y: -1379407744
+      - X: -6488384000
+        Y: -1359334016
+      - X: -6447152128
+        Y: -1444973568
   m_CompositePaths:
     m_Paths:
     - - {x: -275.75, y: 111.50001}
@@ -225,7 +234,8 @@ CompositeCollider2D:
       - {x: -753.25, y: -135.50002}
       - {x: -753.25, y: -156.5}
       - {x: -644.25, y: -156.5}
-      - {x: -644.25, y: -138}
+      - {x: -644.25, y: -143.8284}
+      - {x: -640.1969, y: -138}
       - {x: -626.75, y: -138}
       - {x: -626.75, y: -113}
     - - {x: -731.25006, y: -206.25}
@@ -500,3 +510,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 39, y: 22}
   m_EdgeRadius: 0
+--- !u!60 &6454829919910442211
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205212231288934190}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: -640.23, y: -141.1}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.07421875, y: 3.1592255}
+      - {x: -8.608398, y: 5.1666107}
+      - {x: -4.4852295, y: -3.3973541}
