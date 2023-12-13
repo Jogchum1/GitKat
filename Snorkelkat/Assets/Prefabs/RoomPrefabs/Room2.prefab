@@ -18549,10 +18549,6 @@ PrefabInstance:
       value: Door (RightWall) (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8189894967650636697, guid: 1ff0b9d73c1b30c4ba0faa33c62ec8a5, type: 3}
-      propertyPath: goalDoor
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8189894967650636697, guid: 1ff0b9d73c1b30c4ba0faa33c62ec8a5, type: 3}
       propertyPath: spawnpoint.x
       value: 6.69
       objectReference: {fileID: 0}
@@ -18621,10 +18617,6 @@ PrefabInstance:
     - target: {fileID: 3901521205299043480, guid: 1ff0b9d73c1b30c4ba0faa33c62ec8a5, type: 3}
       propertyPath: m_Name
       value: Door (RightWall)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8189894967650636697, guid: 1ff0b9d73c1b30c4ba0faa33c62ec8a5, type: 3}
-      propertyPath: goalDoor
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ff0b9d73c1b30c4ba0faa33c62ec8a5, type: 3}
