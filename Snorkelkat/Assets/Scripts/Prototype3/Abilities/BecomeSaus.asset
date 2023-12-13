@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: BecomeSaus
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  changedPlayerScaleY: 1
+  changedPlayerScaleY: 0.75
   sausState: 1

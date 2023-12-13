@@ -77,19 +77,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ComponentVersion: 1
   m_LightType: 3
-  m_BlendStyleIndex: 0
+  m_BlendStyleIndex: 1
   m_FalloffIntensity: 0.695
-  m_Color: {r: 1, g: 0.82002425, b: 0.7018868, a: 1}
-  m_Intensity: 0.15
+  m_Color: {r: 1, g: 0.7067321, b: 0.48490566, a: 1}
+  m_Intensity: 0.75
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 9967e39eb5a388bd
+  m_ApplyToSortingLayers: b5a388bda7b451c59967e39e
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
-  m_NormalMapDistance: 1.59
+  m_NormalMapDistance: 0.24
   m_NormalMapQuality: 1
   m_UseNormalMap: 0
   m_ShadowIntensityEnabled: 0
@@ -101,8 +101,8 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 2.1265693
-  m_PointLightOuterRadius: 3.3978581
+  m_PointLightInnerRadius: 1.6640359
+  m_PointLightOuterRadius: 3.3216233
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -219,7 +219,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4ab41397a9ae16c418a591d1d9f25f85, type: 3}
-  m_Color: {r: 0.054894965, g: 0.06835171, b: 0.11320752, a: 1}
+  m_Color: {r: 0.25824136, g: 0.29542115, b: 0.3679245, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -344,10 +344,11 @@ MonoBehaviour:
   jumpBuggerLenght: 0.1
   canGlide: 0
   glideGrav: 0.1
-  isSlippery: 0
   wallJumpingDuration: 0.4
   wallJumpingPower: {x: 8, y: 16}
   canWallJump: 0
+  isWallSliding: 0
+  isSaus: 0
   wallSlidingSpeed: 2
   camTarget: {fileID: 0}
   aheadAmount: 5
