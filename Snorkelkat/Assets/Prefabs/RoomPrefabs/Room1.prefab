@@ -1676,7 +1676,7 @@ EdgeCollider2D:
   m_GameObject: {fileID: 1572805083712775473}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ec5794f3e1905b44282e216fa7f32917, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1853,7 +1853,7 @@ EdgeCollider2D:
   m_GameObject: {fileID: 1840210152316620257}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ec5794f3e1905b44282e216fa7f32917, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -6134,7 +6134,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 4269637330058877299}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: e0e554c50b049434b80495f76abdb2a5, type: 2}
+  m_Material: {fileID: 6200000, guid: c85e1a069e634234b928b01fbdc47c59, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -6279,7 +6279,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 4269637330520977801}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: e0e554c50b049434b80495f76abdb2a5, type: 2}
+  m_Material: {fileID: 6200000, guid: c85e1a069e634234b928b01fbdc47c59, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -6518,7 +6518,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 4269637331055219421}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: e0e554c50b049434b80495f76abdb2a5, type: 2}
+  m_Material: {fileID: 6200000, guid: c85e1a069e634234b928b01fbdc47c59, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -7997,7 +7997,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 4822253266680562886}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ec5794f3e1905b44282e216fa7f32917, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
@@ -10945,7 +10945,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 7419097717554994731}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ec5794f3e1905b44282e216fa7f32917, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
