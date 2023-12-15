@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b17bbf05aa78fc4f8e2d676c7a7ba52, type: 3}
   m_Name: DoubleJump
   m_EditorClassIdentifier: 
-  abilitySprite: {fileID: 21300000, guid: 1bf829169327319448781df4315428be, type: 3}
+  abilitySprite: {fileID: 21300000, guid: e38388ff54e25bf49bcb6a9fb647a5c6, type: 3}
   gameManager: {fileID: 0}
   amountOfJumps: 2
