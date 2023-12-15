@@ -3,21 +3,12 @@ using UnityEngine;
 
 public abstract class ModAbility : ScriptableObject
 {
+    public Sprite abilitySprite;
     [HideInInspector]
     public GameManager gameManager;
-    //[HideInInspector]
-    //public GameObject player;
-    //[HideInInspector]
-    //public Rigidbody2D playerRigidbody2D;
-    //[HideInInspector]
-    //public PlayerMovement playerMovement;
-
     public void InstantiateAbility(GameManager gm)
     {
         gameManager = GameManager.instance;
-        //player = gameManager.player;
-        //playerRigidbody2D = player.GetComponent<Rigidbody2D>();
-        //playerMovement = player.GetComponent<PlayerMovement>();
     }
 
     public abstract void ActivateAbility();

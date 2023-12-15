@@ -10,7 +10,8 @@ public class ModifierScript : ScriptableObject
     private ModAbility topAbility;
     [SerializeField]
     private ModAbility bottomAbility;
-    private ModAbility activeAbility;
+    [HideInInspector]
+    public ModAbility activeAbility;
 
     public void InstatiateAbilities(GameManager gameManager)
     {
@@ -20,7 +21,7 @@ public class ModifierScript : ScriptableObject
 
     public void UpdateActiveAbility()
     {
-        activeAbility.UpdateAbility();
+        activeAbility?.UpdateAbility();
     }
 
     public void SwitchToTop()
