@@ -1,5 +1,6 @@
 ﻿title: Hello
-tags:
+tags: 
+position: 165.41254806518555,383.66522789001465
 ---
 Narrator: A cluster of glowing mushrooms catches your eye. They're a welcome sight in the barren wasteland that is this planet's surface.
     -> Reach out to touch them.
@@ -17,6 +18,8 @@ Narrator: This sounds like a beneficial plan. You need to prove to the Company t
 -> "I'll see what I can do..."
 ===
 title: Puzzelblokje
+tags: 
+position: 398,381
 ---
 Narrator: A rather particular looking shape stands before you. You are not quite sure how, but it seems to be asking for your attention. 
 -> "Hello..."
