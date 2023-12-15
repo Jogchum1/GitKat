@@ -27,7 +27,9 @@ public class AbilitySwitcher : MonoBehaviour
             bottomModifier.InstatiateAbilities(gameManager);
             bottomModifier.SwitchToBottom();
         }
-        updateModifierSlotSprites();
+
+        topModifierSlot.SetModifierAndAbilitySprite(topModifier);
+        bottomModifierSlot.SetModifierAndAbilitySprite(bottomModifier);
     }
 
     public void Update()
