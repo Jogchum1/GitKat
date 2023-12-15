@@ -474,7 +474,9 @@ MonoBehaviour:
   bottomModifier: {fileID: 11400000, guid: 452abbf0c13b05d44a481395bab52600, type: 2}
   topModifierSlot: {fileID: 0}
   bottomModifierSlot: {fileID: 0}
-  switchTimeSeconds: 1
+  topModifierSprite: {fileID: 0}
+  bottomModifierSprite: {fileID: 0}
+  switchTimeSeconds: 0.5
   animator: {fileID: 0}
 --- !u!114 &5761819700880405429
 MonoBehaviour:

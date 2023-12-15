@@ -7,7 +7,9 @@ public class AbilitySwitcher : MonoBehaviour
     [SerializeField] private ModifierScript topModifier;
     [SerializeField] private ModifierScript bottomModifier;
     [SerializeField] private ModifierSlot topModifierSlot;
-    [SerializeField] private ModifierSlot bottomModifierSlot;
+    [SerializeField] private ModifierSlot bottomModifierSlot; 
+    [SerializeField] private GameObject topModifierSprite;
+    [SerializeField] private GameObject bottomModifierSprite;
     [SerializeField] private float switchTimeSeconds;
     [SerializeField] private Animator animator;
     private bool switching = false;
@@ -96,19 +98,15 @@ public class AbilitySwitcher : MonoBehaviour
     {
         //changes order of children to keep ability on top in UI
         Transform lastChild;
-        if (topModifierSlot.gameObject.transform.GetSiblingIndex() != 0)
+        if (topModifierSprite.transform.GetSiblingIndex() != 0)
         {
-            lastChild = topModifierSlot.gameObject.transform;
+            lastChild = topModifierSprite.transform;
         }
         else
         {
-            lastChild = bottomModifierSlot.gameObject.transform;
+            lastChild = bottomModifierSprite.transform;
         }
         lastChild.SetAsFirstSibling();
-
-        //switch sprites
-        topModifierSlot.SetModifierAndAbilitySprite(topModifier);
-        bottomModifierSlot.SetModifierAndAbilitySprite(bottomModifier);
     }
 
     private IEnumerator animateAndChangeModSlots(float showForSeconds)
@@ -117,12 +115,21 @@ public class AbilitySwitcher : MonoBehaviour
         bottomModifierSlot.gameObject.SetActive(true);
         animator.speed = 1 / showForSeconds;
         animator.SetTrigger("modSlotChange");
+        topModifierSlot.SetAbilitySprite(topModifier);
+        bottomModifierSlot.SetAbilitySprite(bottomModifier);
+
         yield return new WaitForSeconds(showForSeconds / 2);
+
         updateModifierSlotSprites();
+        //switch sprites
+        topModifierSlot.SetModifierSprite(topModifier);
+        bottomModifierSlot.SetModifierSprite(bottomModifier);
+
         yield return new WaitForSeconds(showForSeconds/2);
+
+        //topModifierSlot.SetAbilitySprite(topModifier);
+        //bottomModifierSlot.SetAbilitySprite(bottomModifier);
         switching = false;
-        //topModifierSlot.gameObject.SetActive(false);
-        //bottomModifierSlot.gameObject.SetActive(false);
     }
 
 }

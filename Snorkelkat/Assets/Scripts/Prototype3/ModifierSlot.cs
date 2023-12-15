@@ -19,4 +19,23 @@ public class ModifierSlot : MonoBehaviour
         modifierImage.sprite = modifier.modSprite;
         abilityImage.sprite = modifier.activeAbility.abilitySprite;
     }
+
+    public void SetModifierSprite(ModifierScript modifier)
+    {
+        if (modifier == null)
+        {
+            modifierImage.sprite = null;
+            return;
+        }
+        modifierImage.sprite = modifier.modSprite;
+    }
+    public void SetAbilitySprite(ModifierScript modifier)
+    {
+        if (modifier == null)
+        {
+            abilityImage.sprite = null;
+            return;
+        }
+        abilityImage.sprite = modifier.activeAbility.abilitySprite;
+    }
 }
