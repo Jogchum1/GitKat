@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Door : MonoBehaviour
 {
-    public GameObject room;
+    public List<GameObject> gameObjectsToEnable;
     [SerializeField]
     private Door goalDoor;
     [SerializeField]
@@ -26,7 +26,7 @@ public class Door : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         transScreen = GameObject.Find("BlackScreen").GetComponent<Image>();
 
-        if (room == null)
+        if (gameObjectsToEnable == null)
         {
             Debug.LogError("No room assigned in " + gameObject.name);
         }
@@ -46,8 +46,16 @@ public class Door : MonoBehaviour
         gameManager.StopPlayerVelocity();
         playerCol.gameObject.transform.position = goalDoor.goalPos;
         camManager.currentCamera.ForceCameraPosition(goalDoor.goalPos, Quaternion.identity);
-        room.gameObject.SetActive(false);
-        goalDoor.room.SetActive(true);
+
+        foreach (GameObject gameObject in gameObjectsToEnable)
+        {
+            gameObject.SetActive(false);
+        }
+
+        foreach (GameObject gameObject1 in goalDoor.gameObjectsToEnable)
+        {
+            gameObject1.SetActive(true);
+        }
 
         yield return new WaitForSeconds(transTime/3);
 

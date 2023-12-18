@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f2e0029dbb9d584bafb80c4dac5164c, type: 3}
   m_Name: WallJump
   m_EditorClassIdentifier: 
+  abilitySprite: {fileID: 21300000, guid: f5fd6739dcc4d3642a115877250dc81f, type: 3}
+  gameManager: {fileID: 0}
