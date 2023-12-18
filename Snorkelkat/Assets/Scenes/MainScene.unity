@@ -1737,17 +1737,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 550425410221957419, guid: 9059eab492f74844a8cc1e82cad73e12, type: 3}
   m_PrefabInstance: {fileID: 493926888}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &775430502 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2401482247894526526, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
-  m_PrefabInstance: {fileID: 1149612477382886109}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c72426967942f045b34263f5a0e9be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &819104172
 GameObject:
   m_ObjectHideFlags: 0
@@ -18432,17 +18421,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4269637329506640144, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
   m_PrefabInstance: {fileID: 4269637331012846635}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2077349535 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1454310146183823111, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
-  m_PrefabInstance: {fileID: 5865324335247052756}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c72426967942f045b34263f5a0e9be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2103226865
 GameObject:
   m_ObjectHideFlags: 0
@@ -18599,6 +18577,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 785699394452262295, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 1351645199}
+    - target: {fileID: 785699394452262295, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: goalDoor
       value: 
       objectReference: {fileID: 0}
@@ -18609,7 +18591,7 @@ PrefabInstance:
     - target: {fileID: 2401482247894526526, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: goalDoor
       value: 
-      objectReference: {fileID: 2077349535}
+      objectReference: {fileID: 0}
     - target: {fileID: 4012271128325768351, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -18666,27 +18648,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room2
       objectReference: {fileID: 0}
-    - target: {fileID: 6946736559030403427, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7412750886717056319, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
---- !u!114 &1149612477382886110 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 785699394452262295, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
-  m_PrefabInstance: {fileID: 1149612477382886109}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c72426967942f045b34263f5a0e9be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2685542624088985460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18856,9 +18823,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5397729712856018683, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 1908754969}
+    - target: {fileID: 5397729712856018683, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: goalDoor
       value: 
-      objectReference: {fileID: 1149612477382886110}
+      objectReference: {fileID: 0}
     - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: dialogueRunner
       value: 
@@ -18873,9 +18844,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1454310146183823111, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 1440103952}
+    - target: {fileID: 1454310146183823111, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
       propertyPath: goalDoor
       value: 
-      objectReference: {fileID: 775430502}
+      objectReference: {fileID: 0}
     - target: {fileID: 1454310146183823111, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
       propertyPath: spawnpoint.y
       value: -4.13
@@ -18935,10 +18910,6 @@ PrefabInstance:
     - target: {fileID: 8279637967677716264, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
       propertyPath: m_Name
       value: Room3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8279637967677716264, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
