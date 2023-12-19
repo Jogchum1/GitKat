@@ -1553,8 +1553,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 76.1594, y: -39.30265, z: 0}
-    m_Extent: {x: 12.027397, y: 6.2479496, z: 0}
+    m_Center: {x: 76.14695, y: -39.306297, z: 0}
+    m_Extent: {x: 12.025948, y: 6.2614, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3258,9 +3258,10 @@ GameObject:
   m_Component:
   - component: {fileID: 9192594384773696011}
   - component: {fileID: 4282715490706770352}
+  - component: {fileID: 1857508836586920647}
   m_Layer: 0
   m_Name: DangerGround_01_FG
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3332,6 +3333,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1857508836586920647
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246327879908795362}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.015686035, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 11.000225, y: 4.775}
+    newSize: {x: 11.000225, y: 4.775}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.026855, y: 0.94436646}
+  m_EdgeRadius: 0
 --- !u!1 &1301033517942734956
 GameObject:
   m_ObjectHideFlags: 0
@@ -3798,9 +3825,10 @@ GameObject:
   m_Component:
   - component: {fileID: 513297236743562119}
   - component: {fileID: 855177117655692049}
+  - component: {fileID: 2241752191916217631}
   m_Layer: 0
   m_Name: DangerGround_02_FG
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3872,6 +3900,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2241752191916217631
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550174005029075381}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.09152222, y: -0.0592041}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.5, y: 4.775}
+    newSize: {x: 8.5, y: 4.775}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.3756714, y: 1.0223999}
+  m_EdgeRadius: 0
 --- !u!1 &1553283032710908021
 GameObject:
   m_ObjectHideFlags: 0
@@ -4356,8 +4410,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -2.2993, y: -0.31359994, z: 0}
-    m_Extent: {x: 2.0921, y: 3.6388001, z: 0}
+    m_Center: {x: -2.29695, y: -0.30895007, z: 0}
+    m_Extent: {x: 2.09355, y: 3.64845, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5139,7 +5193,7 @@ GameObject:
   - component: {fileID: 5676523961025812896}
   m_Layer: 0
   m_Name: DangerGround_03_FG (1)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5801,8 +5855,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.35004997, y: -1.6546001, z: 0}
-    m_Extent: {x: 16.00555, y: 11.4784, z: 0}
+    m_Center: {x: -0.34595013, y: -1.6485, z: 0}
+    m_Extent: {x: 16.013649, y: 11.4855995, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5972,8 +6026,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.92765, y: -0.47484994, z: 0}
-    m_Extent: {x: 2.18895, y: 8.43595, z: 0}
+    m_Center: {x: -1.92065, y: -0.4795003, z: 0}
+    m_Extent: {x: 2.18435, y: 8.431601, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6001,7 +6055,7 @@ GameObject:
   - component: {fileID: 7841228110288181787}
   m_Layer: 0
   m_Name: DangerGround_02_FG (1)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7799,7 +7853,7 @@ GameObject:
   - component: {fileID: 3390510420514329555}
   m_Layer: 0
   m_Name: DangerGround_01_BG
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8134,7 +8188,7 @@ GameObject:
   - component: {fileID: 3453881673696036301}
   m_Layer: 0
   m_Name: DangerGrounds
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8314,8 +8368,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 38.419, y: -38.22245, z: 0}
-    m_Extent: {x: 15.131499, y: 6.6255493, z: 0}
+    m_Center: {x: 38.4296, y: -38.220848, z: 0}
+    m_Extent: {x: 15.127399, y: 6.625449, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9094,8 +9148,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.68765, y: -2.44145, z: 0}
-    m_Extent: {x: 1.60465, y: 3.51155, z: 0}
+    m_Center: {x: -1.68015, y: -2.4461, z: 0}
+    m_Extent: {x: 1.60355, y: 3.5213, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -10085,8 +10139,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.8963, y: -2.30895, z: 0}
-    m_Extent: {x: 1.3948, y: 4.42705, z: 0}
+    m_Center: {x: -0.9, y: -2.3196, z: 0}
+    m_Extent: {x: 1.4018, y: 4.4302998, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -10251,8 +10305,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.9003, y: -1.8120501, z: 0}
-    m_Extent: {x: 1.7986, y: 4.1508503, z: 0}
+    m_Center: {x: -0.89944994, y: -1.8132999, z: 0}
+    m_Extent: {x: 1.79645, y: 4.1570997, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -10754,8 +10808,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.085099936, y: 0.23749995, z: 0}
-    m_Extent: {x: 4.5277996, y: 2.0407, z: 0}
+    m_Center: {x: 0.08019996, y: 0.24374998, z: 0}
+    m_Extent: {x: 4.5263996, y: 2.0430498, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -11252,8 +11306,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -2.9951992, y: 10.439549, z: 0}
-    m_Extent: {x: 57.9634, y: 20.140549, z: 0}
+    m_Center: {x: -2.9900494, y: 10.4361, z: 0}
+    m_Extent: {x: 57.969353, y: 20.1442, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -11419,8 +11473,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.7897, y: -1.32865, z: 0}
-    m_Extent: {x: 2.0604, y: 7.08705, z: 0}
+    m_Center: {x: -1.79425, y: -1.3242502, z: 0}
+    m_Extent: {x: 2.05625, y: 7.09655, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -11502,8 +11556,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.8921001, y: -1.0048001, z: 0}
-    m_Extent: {x: 1.8987, y: 5.8789997, z: 0}
+    m_Center: {x: -1.89735, y: -1.0040498, z: 0}
+    m_Extent: {x: 1.90445, y: 5.87815, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -12064,8 +12118,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.4993, y: -1.2205501, z: 0}
-    m_Extent: {x: 2.5066, y: 3.63385, z: 0}
+    m_Center: {x: -1.4939001, y: -1.22265, z: 0}
+    m_Extent: {x: 2.4938, y: 3.63585, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -12366,7 +12420,7 @@ GameObject:
   - component: {fileID: 3688593249012080362}
   m_Layer: 0
   m_Name: DangerGround_01_BG
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12916,8 +12970,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.10369992, y: 0.26189995, z: 0}
-    m_Extent: {x: 5.6244, y: 2.4563, z: 0}
+    m_Center: {x: 0.09500003, y: 0.25690007, z: 0}
+    m_Extent: {x: 5.6259003, y: 2.4586, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -13248,8 +13302,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.79335, y: -0.056849957, z: 0}
-    m_Extent: {x: 8.29665, y: 8.26985, z: 0}
+    m_Center: {x: 0.7948501, y: -0.06480026, z: 0}
+    m_Extent: {x: 8.28825, y: 8.2599, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -13443,9 +13497,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7334375732585911947}
   - component: {fileID: 84139811718090699}
+  - component: {fileID: 1281306382196798746}
   m_Layer: 0
   m_Name: DangerGround_01_FG
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13517,6 +13572,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1281306382196798746
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5938466039049662632}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.08670044, y: 0.03717041}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 11.000225, y: 4.775}
+    newSize: {x: 11.000225, y: 4.775}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.835632, y: 0.73583984}
+  m_EdgeRadius: 0
 --- !u!1 &5972732452958722212
 GameObject:
   m_ObjectHideFlags: 0
@@ -14161,8 +14242,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -2.09405, y: -2.32585, z: 0}
-    m_Extent: {x: 1.69765, y: 4.59265, z: 0}
+    m_Center: {x: -2.0978, y: -2.3292499, z: 0}
+    m_Extent: {x: 1.7005, y: 4.59455, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -15797,8 +15878,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -2.10635, y: 0.15405005, z: 0}
-    m_Extent: {x: 2.68465, y: 2.03405, z: 0}
+    m_Center: {x: -2.1114001, y: 0.15179998, z: 0}
+    m_Extent: {x: 2.6717, y: 2.039, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -16072,9 +16153,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8090094693287809702}
   - component: {fileID: 5330368262482989986}
+  - component: {fileID: 6567322364840740556}
   m_Layer: 0
   m_Name: DangerGround_03_FG
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16146,6 +16228,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &6567322364840740556
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7129333631483410676}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.032196045, y: -0.54724884}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4.775}
+    newSize: {x: 4, y: 4.775}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.6780396, y: 0.7446594}
+  m_EdgeRadius: 0
 --- !u!1 &7150483203960221966
 GameObject:
   m_ObjectHideFlags: 0
@@ -16212,8 +16320,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.15699995, y: 0.44534993, z: 0}
-    m_Extent: {x: 3.3795, y: 2.65045, z: 0}
+    m_Center: {x: -0.15784991, y: 0.4526, z: 0}
+    m_Extent: {x: 3.36945, y: 2.6553, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -16983,8 +17091,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.35669994, y: 0.26179993, z: 0}
-    m_Extent: {x: 5.841, y: 2.4502, z: 0}
+    m_Center: {x: -0.3413, y: 0.25830007, z: 0}
+    m_Extent: {x: 5.8409, y: 2.4577, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -17739,9 +17847,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1829445156924963629}
   - component: {fileID: 6459720681599494288}
+  - component: {fileID: 2249030616350858143}
   m_Layer: 0
   m_Name: DangerGround_01_FG
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17813,6 +17922,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2249030616350858143
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7808111425074936699}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.061950684, y: 0.049560547}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 11.000225, y: 4.775}
+    newSize: {x: 11.000225, y: 4.775}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.53833, y: 0.8597412}
+  m_EdgeRadius: 0
 --- !u!1 &7813652859965622084
 GameObject:
   m_ObjectHideFlags: 0
@@ -18047,8 +18182,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.22455001, y: 0.1458, z: 0}
-    m_Extent: {x: 4.9045496, y: 1.6337, z: 0}
+    m_Center: {x: 0.22254992, y: 0.15085, z: 0}
+    m_Extent: {x: 4.90195, y: 1.64165, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -19432,8 +19567,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -2.1086001, y: -3.7522001, z: 0}
-    m_Extent: {x: 1.6948, y: 3.1646, z: 0}
+    m_Center: {x: -2.1066, y: -3.74955, z: 0}
+    m_Extent: {x: 1.6975, y: 3.16935, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -19764,8 +19899,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.89844996, y: -2.21665, z: 0}
-    m_Extent: {x: 1.39135, y: 4.33975, z: 0}
+    m_Center: {x: -0.89415, y: -2.22445, z: 0}
+    m_Extent: {x: 1.40065, y: 4.32975, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -20182,8 +20317,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.63125, y: -1.1907, z: 0}
-    m_Extent: {x: 1.68795, y: 4.7764, z: 0}
+    m_Center: {x: -1.63565, y: -1.17835, z: 0}
+    m_Extent: {x: 1.69025, y: 4.78025, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -20712,7 +20847,7 @@ GameObject:
   - component: {fileID: 2394192633917691798}
   m_Layer: 0
   m_Name: DangerGround_01_BG
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
