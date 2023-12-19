@@ -349,7 +349,7 @@ MonoBehaviour:
   jumpingPaddo: {fileID: 0}
   wallJumpingDuration: 0.4
   wallJumpingPower: {x: 8, y: 16}
-  canWallJump: 1
+  canWallJump: 0
   isWallSliding: 0
   wallSlidingSpeed: 2
   camTarget: {fileID: 0}
@@ -379,6 +379,9 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   dieTime: 2
   redScreen: {fileID: 0}
+  deathAlpha: 0.6
+  deathTick: 0.2
+  deathWaitTime: 0.25
 --- !u!114 &5579191290656132238
 MonoBehaviour:
   m_ObjectHideFlags: 0

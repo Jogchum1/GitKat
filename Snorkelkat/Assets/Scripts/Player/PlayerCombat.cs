@@ -28,9 +28,11 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     public Image redScreen;
     Color redScreenColor;
     float alpha;
-    float deathAlpha = 1;
+    public float deathAlpha = 1;
     bool dying = false;
     bool dmgCooldown = false;
+    public float deathTick = 0.2f;
+    public float deathWaitTime = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -115,7 +117,7 @@ public class PlayerCombat : MonoBehaviour, IDamageable
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Death")
+        if (collision.tag == "Death" && !dying)
         {
             //alpha = alpha + 0.1f;
             if(dmgCooldown == false)
@@ -138,9 +140,9 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     public IEnumerator TurnScreenRed()
     {
         //yield return new WaitForSeconds(1);
-        alpha = alpha + 0.1f;
+        alpha = alpha + deathTick;
         Debug.Log("test");
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(deathWaitTime);
         dmgCooldown = false;
 
     }
@@ -168,6 +170,7 @@ public class PlayerCombat : MonoBehaviour, IDamageable
 
     private IEnumerator Dying()
     {
+        gameManager.playerMovement.anim.SetBool("IsDying", true);
         dying = true;
         gameManager.TogglePlayerMovement();
         gameManager.StopPlayerVelocity();
@@ -186,6 +189,7 @@ public class PlayerCombat : MonoBehaviour, IDamageable
 
         Color color = new Color(redScreen.color.r, redScreen.color.g, redScreen.color.b, 0);
         redScreen.color = color;
+        gameManager.playerMovement.anim.SetBool("IsDying", false);
         dying = false;
     }
 

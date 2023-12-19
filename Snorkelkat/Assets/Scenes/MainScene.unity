@@ -240,10 +240,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2280772047722110831, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
-      propertyPath: canWallJump
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5422440861744908603, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: animator
       value: 
@@ -283,10 +279,6 @@ PrefabInstance:
     - target: {fileID: 6010893755168876126, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.2804
-      objectReference: {fileID: 0}
-    - target: {fileID: 6213756538626230296, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
-      propertyPath: dieTime
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6213756538626230296, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: lastDoor
