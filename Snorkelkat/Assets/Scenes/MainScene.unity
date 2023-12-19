@@ -16979,6 +16979,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2134731342}
     - target: {fileID: 2548317078872746105, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
+      propertyPath: yarnProject
+      value: 
+      objectReference: {fileID: 7545569452688597077, guid: 8bd51f818d6bbd044ab0159f118ba395, type: 3}
+    - target: {fileID: 2548317078872746105, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
       propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 819104173}
