@@ -238,7 +238,7 @@ public class PlayerMovement : MonoBehaviour
                 Vector3 spawnLocation = new Vector3(ray.point.x, ray.point.y + 0.5f);
                 StartCoroutine(SpawnPaddo(spawnLocation, 0f));
             }
-            rb.velocity = new Vector2(0, -10);
+            //rb.velocity = new Vector2(0, -10);
         }
     }
 
