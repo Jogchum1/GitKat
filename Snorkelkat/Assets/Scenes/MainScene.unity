@@ -302,6 +302,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
+--- !u!114 &288639579 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2685542623878739365, guid: 141f515165775c643a656dc626f3510f, type: 3}
+  m_PrefabInstance: {fileID: 2685542624088985460}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83e7ede068b7de4bb82661fc3ed4979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &340747419 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1364843180378361390, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
@@ -475,7 +486,7 @@ MonoBehaviour:
   playerPhysicsStateMachine: {fileID: 0}
   playerRigidbody2D: {fileID: 0}
   abilitySwitcher: {fileID: 0}
-  camManager: {fileID: 0}
+  camManager: {fileID: 288639579}
   inventory: {fileID: 686611333}
   playerActive: 1
 --- !u!4 &819104174
