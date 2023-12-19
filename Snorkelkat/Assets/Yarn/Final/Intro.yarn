@@ -1,6 +1,6 @@
-﻿title: Intro
+﻿title: Intro1
 tags: 
-position: 5,0
+position: -216,-1
 ---
 EEEE I3000000032940xf100110303B77500EEEE I400000004294_M8_BL1_10221D113B323EEEE5
 NERVOUS SYSTEM STARTUP INITIALIZED
@@ -8,10 +8,25 @@ INITIALIZING NEUROTRANSCIEVER
 INITIALIZING 
 INITIALIZING
 MODEL: Implant X V.21
+CONNECTING TO HIVEMIND
 The Hive: "GOOD MORNING."
 The Hive: "PLEASE STATE YOUR DESIGNATION."
     -> "We are the Hive. My designation is C5041."
 The Hive: "VERY WELL."
-The Hive: "MAKE YOUR WAY TO GRID 902 OF SUBJUNCTION 12 TO PROCEED WITH YOUR TASKS FOR TODAY."
+The Hive: "MAKE YOUR WAY TO GRID 902 OF SUBJUNCTION 12 TO START YOUR TASKS FOR TODAY."
+The Hive: "YOUR SUPERIOR, A7120, HAS BEEN TERMINATED."
+The Hive: "YOU WILL NOW ANSWER TO A9091."
 The Hive: "PROCEED."
+<<jump Intro2>>
 ===
+title: Intro2
+tags: 
+position: 1,0
+---
+Your superior stands before you.
+A9091: "You are on atmospheric distillation of the humus today. Get to your station. You can take over from G1920"
+//    -> Say nothing. (Would be cool if other choices disappear when you hover over them. You have no choice.)
+    -> "Acknowledged."
+You walk to your station, where an exhausted drone slides out of their seat. You take their place.
+===
+
