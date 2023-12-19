@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
         playerPhysicsStateMachine = player.GetComponent<PlayerPhysicsStateMachine>();
         playerRigidbody2D = player.GetComponent<Rigidbody2D>();
         abilitySwitcher = player.GetComponent<AbilitySwitcher>();
+        camManager = FindObjectOfType<CamManager>();
     }
 
     private void Update()

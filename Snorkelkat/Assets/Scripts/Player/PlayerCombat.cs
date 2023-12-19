@@ -28,9 +28,9 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     public Image redScreen;
     Color redScreenColor;
     float alpha;
-    float deathAlpha;
+    float deathAlpha = 1;
     bool dying = false;
-
+    bool dmgCooldown = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -117,7 +117,13 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     {
         if (collision.tag == "Death")
         {
-            alpha = alpha + 0.1f;
+            //alpha = alpha + 0.1f;
+            if(dmgCooldown == false)
+            {
+                dmgCooldown = true;
+                StartCoroutine(TurnScreenRed());
+            }
+
             if (alpha >= deathAlpha)
             {
                 Die();
@@ -129,12 +135,22 @@ public class PlayerCombat : MonoBehaviour, IDamageable
         }
     }
 
+    public IEnumerator TurnScreenRed()
+    {
+        //yield return new WaitForSeconds(1);
+        alpha = alpha + 0.1f;
+        Debug.Log("test");
+        yield return new WaitForSeconds(1);
+        dmgCooldown = false;
+
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Death")
         {
             alpha = 0;
-            TransitionRedScreen(redScreen.color, redScreenColor, 0.5f);
+            StartCoroutine(TransitionRedScreen(redScreen.color, redScreenColor, 0.5f));
         }
     }
 
@@ -144,7 +160,8 @@ public class PlayerCombat : MonoBehaviour, IDamageable
         {
             float normalizedTime = t / duration;
             redScreen.color = Color.Lerp(start, end, normalizedTime);
-            yield return null;
+            Debug.Log("Turn unred");
+            yield return new WaitForSeconds(0);
         }
         redScreen.color = end;
     }
@@ -166,6 +183,9 @@ public class PlayerCombat : MonoBehaviour, IDamageable
         yield return door.TransitionScreen(Color.black, Color.clear, duration);
 
         gameManager.TogglePlayerMovement();
+
+        Color color = new Color(redScreen.color.r, redScreen.color.g, redScreen.color.b, 0);
+        redScreen.color = color;
         dying = false;
     }
 
