@@ -9,7 +9,12 @@ public class PaddoJump : ModAbility
     
     public override void ActivateAbility()
     {
-        if(gameManager.playerMovement.jumpingPaddo == null)
+        if (gameManager == null)
+        {
+            gameManager = FindObjectOfType<GameManager>();
+        }
+
+        if (gameManager.playerMovement.jumpingPaddo == null)
         {
             gameManager.playerMovement.jumpingPaddo = paddo;
         }
@@ -19,6 +24,11 @@ public class PaddoJump : ModAbility
 
     public override void DeactivateAbility()
     {
+        if (gameManager == null)
+        {
+            gameManager = FindObjectOfType<GameManager>();
+        }
+
         gameManager.playerMovement.canPaddoJump = false;
     }
 }

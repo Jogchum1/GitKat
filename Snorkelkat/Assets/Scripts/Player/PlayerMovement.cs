@@ -32,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     public float glideGrav = 0.1f;
 
     public bool canPaddoJump = false;
+    public bool isSaus;
     [HideInInspector] public GameObject jumpingPaddo;
 
     [Header("Wall Jumping")]
@@ -44,7 +45,6 @@ public class PlayerMovement : MonoBehaviour
     private bool isWallJumping;
     private bool isInAir;
     [HideInInspector]
-    public bool isSaus;
     private float wallJumpingDirection;
     private float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
