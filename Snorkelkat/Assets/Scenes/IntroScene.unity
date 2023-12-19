@@ -10329,9 +10329,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 1
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1974926328
 RectTransform:
@@ -10377,6 +10377,12 @@ MonoBehaviour:
   - {fileID: 1419222280}
   - {fileID: 128517545}
   - {fileID: 176533646}
+  wrongButtonPrefab: {fileID: 3983639175064841760, guid: aa6a2447890961d4dab38b61389b83c3, type: 3}
+  rightButtonPrefab: {fileID: 355688312110635077, guid: 5fe8d2d597add544b834ac7d54d8c28e, type: 3}
+  leftPoint: {x: 0, y: 0, z: 0}
+  rightPoint: {x: 1920, y: 1080, z: 0}
+  offset: 100
+  padding: 100
 --- !u!1 &2001813187
 GameObject:
   m_ObjectHideFlags: 0
