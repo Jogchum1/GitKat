@@ -6,12 +6,7 @@
 	"width": 2080,
 	"height": 752,
 	"bgColor": "#8B9BB4",
-	"neighbourLevels": [
-		{
-			"levelIid": "d8db4b10-8990-11ee-a937-2f20f4ffbe7a",
-			"dir": "s"
-		}
-	],
+	"neighbourLevels": [],
 	"customFields" : {},
 	"layers": [
 		"Ground.png"

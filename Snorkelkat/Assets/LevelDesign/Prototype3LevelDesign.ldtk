@@ -6070,14 +6070,14 @@
 					"entityInstances": []
 				}
 			],
-			"__neighbours": [{ "levelIid": "d8db4b10-8990-11ee-a937-2f20f4ffbe7a", "dir": "s" }]
+			"__neighbours": []
 		},
 		{
 			"identifier": "Level_1",
 			"iid": "d8db4b10-8990-11ee-a937-2f20f4ffbe7a",
 			"uid": 163,
-			"worldX": 112,
-			"worldY": 832,
+			"worldX": 160,
+			"worldY": 1552,
 			"worldDepth": 0,
 			"pxWid": 1680,
 			"pxHei": 688,
@@ -6124,8 +6124,8 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#BE4A2F",
-							"__worldX": 1760,
-							"__worldY": 960,
+							"__worldX": 1808,
+							"__worldY": 1680,
 							"iid": "d8db4b12-8990-11ee-a937-cf1ae8ff73a1",
 							"width": 16,
 							"height": 16,
@@ -6140,8 +6140,8 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#BE4A2F",
-							"__worldX": 560,
-							"__worldY": 848,
+							"__worldX": 608,
+							"__worldY": 1568,
 							"iid": "d8db4b13-8990-11ee-a937-050165d51485",
 							"width": 16,
 							"height": 16,
@@ -6156,8 +6156,8 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#63C74D",
-							"__worldX": 1280,
-							"__worldY": 960,
+							"__worldX": 1328,
+							"__worldY": 1680,
 							"iid": "d8db4b15-8990-11ee-a937-fdf85582496f",
 							"width": 16,
 							"height": 16,
@@ -6172,8 +6172,8 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#63C74D",
-							"__worldX": 1360,
-							"__worldY": 1248,
+							"__worldX": 1408,
+							"__worldY": 1968,
 							"iid": "7091d5e0-8990-11ee-a937-8b3aa52b4f71",
 							"width": 16,
 							"height": 16,
@@ -6188,8 +6188,8 @@
 							"__tags": [],
 							"__tile": null,
 							"__smartColor": "#63C74D",
-							"__worldX": 448,
-							"__worldY": 1344,
+							"__worldX": 496,
+							"__worldY": 2064,
 							"iid": "74e1a800-8990-11ee-a937-abe5822a2ba0",
 							"width": 16,
 							"height": 16,
@@ -8548,7 +8548,7 @@
 					"entityInstances": []
 				}
 			],
-			"__neighbours": [{ "levelIid": "c7a19020-8990-11ee-a5a9-c54b27fdeae4", "dir": "n" }]
+			"__neighbours": []
 		}
 	],
 	"worlds": [],

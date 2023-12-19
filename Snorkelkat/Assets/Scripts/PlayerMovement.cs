@@ -184,11 +184,12 @@ public class PlayerMovement : MonoBehaviour
         if(horizontal != 0)
         {
             anim.SetFloat("Speed", 1);
-
+            gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.NoFriction;
         }
         else
         {
             anim.SetFloat("Speed", 0);
+            gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.Normal;
         }
 
         if (rb.velocity.y > maxYVelocity)

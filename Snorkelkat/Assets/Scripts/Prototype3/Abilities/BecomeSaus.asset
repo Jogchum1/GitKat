@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac3ac114a99b8d64d8fc7e8073b0ee39, type: 3}
   m_Name: BecomeSaus
   m_EditorClassIdentifier: 
+  abilitySprite: {fileID: 21300000, guid: a2795eb8ce2389a48896847351486c4a, type: 3}
   gameManager: {fileID: 0}
-  changedPlayerScaleY: 1
+  changedPlayerScaleY: 0.75
   sausState: 1

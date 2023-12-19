@@ -1,0 +1,54 @@
+﻿title: Fungi_Meeting
+tags: 
+position: 0,0
+---
+A cluster of glowing mushrooms catches your eye. They're a welcome sight in the barren wasteland that is this planet's surface.
+    -> Reach out to touch them.
+The mushroom's light pulsates the moment your fingers touch it. Suddenly, the chattering sound of multiple people speaking at once fills your mind.
+The Web: "mmmmmmm / bbzz mm zm / grrr..."
+Startled, you pull your hand back.
+    -> "What was that?"
+    -> "Who's there?."
+Your voice sounds hoarse. Speaking hurts, just like the rest of your injured body.
+The Web: "nog meer gebrabbel dat nu iets meer lijkt op woorden"
+    -> "Are you.. a person?"
+You look around the tree, but find nobody else. After a few more seconds of strange noises, the voices start to speak in turns.
+The Web: "please refer to / us / as plural"
+The Web: "we are / both / few / many / several"
+    -> "Who is speaking? Identify yourself!"
+The Web: "we designate / class / tag / name ourselves / the Web"
+The Web: "how should / we / refer to / you?"
+    //would be cool om hier een prompt te hebben dat de speler zelf een naam in kan typen!! idk of dat kan tho
+    -> PROMPT: NAME YOURSELF
+The Web: "we greet / you / INSERTNAME"
+    -> "You're a mushroom, how can you speak?"
+The Web: "we are not one mushroom / it is one of us / a node / connected / intertwined / with our network"
+The Web: "we are / the Cloud / the Virus / the Stream / the Cells / the Web"
+The Web: "we learned / your syntax / so you would accept / and hear us"
+The Web: "your languages / are difficult / we would rather speak our own"
+    -> "Those are computer terms."
+The Web: "we copy / your language / like you copied / ours"
+The Web: "we are organic / as well as machine / cybernetic organism / just like the company / made / you"
+The voices are silent for a moment.
+The Web: "what is it like / to be / you?"
+    -> "We are the Hive. My designation is C5041" // callback to the intro dialogue
+The Web: "The Web meets the Hive / except / your mind is / disconnected"
+    -> "They cast me out! My performance was insufficient."
+"I didn't work hard enough, I- I have to get back, I don't know where I am.."
+The reality of the situation dawns on you. The AI cast you out to prove yourself. You either have to find your way back to the safety of the Hivemind and show them you can do your job, or die out in this wasteland of a planet, alone.
+The only living thing you've found out here is this damn mushroom.
+    -> "Can you help me return?"
+The Web are silent. For a second you think you might have imagined your conversation. It could've been a hallucination. The polluted air is probably not doing you any good.
+The Web: "praat over dat de company het ecosysteem heeft verwoest en hun goal en dat ze de speler kunnen helpen te herstellen wat ze missen"
+Speler krijgt opdracht om spores te verspreiden
+
+// NOTES
+// cloud, virus, bug, root, stream, cells, web . Biomimicry!!!
+
+// stuff I wrote but don't know where to put
+    -> "What business is that of yours?"
+        "I'm going crazy. Because I'm talking to a mushroom."
+        The Web: "not just / the mushroom / but a network / a web"
+        "Yes, the Web, whatever."
+---
+===
