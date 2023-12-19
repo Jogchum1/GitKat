@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class AbilitySwitcher : MonoBehaviour
 {
-    [SerializeField] private ModifierScript topModifier;
-    [SerializeField] private ModifierScript bottomModifier;
+    public ModifierScript topModifier;
+    public ModifierScript bottomModifier;
     [SerializeField] private ModifierSlot topModifierSlot;
     [SerializeField] private ModifierSlot bottomModifierSlot; 
     [SerializeField] private GameObject topModifierSprite;

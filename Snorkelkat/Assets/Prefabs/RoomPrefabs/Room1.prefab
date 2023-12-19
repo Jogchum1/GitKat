@@ -902,8 +902,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.6463499, y: 0.24105024, z: 0}
-    m_Extent: {x: 10.88915, y: 8.36305, z: 0}
+    m_Center: {x: 0.6543498, y: 0.2414999, z: 0}
+    m_Extent: {x: 10.890249, y: 8.3597, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3724,8 +3724,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.16785002, y: -7.9810495, z: 0}
-    m_Extent: {x: 7.22305, y: 12.15915, z: 0}
+    m_Center: {x: -0.171, y: -7.97665, z: 0}
+    m_Extent: {x: 7.2196, y: 12.153851, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5045,8 +5045,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.5692, y: 1.46225, z: 0}
-    m_Extent: {x: 9.700001, y: 7.0511503, z: 0}
+    m_Center: {x: 1.5717502, y: 1.4533999, z: 0}
+    m_Extent: {x: 9.690849, y: 7.0499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7906,8 +7906,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.30215025, y: -2.4568496, z: 0}
-    m_Extent: {x: 11.794149, y: 13.75985, z: 0}
+    m_Center: {x: -0.30725002, y: -2.4509, z: 0}
+    m_Extent: {x: 11.79015, y: 13.7611, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9009,8 +9009,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.022650003, y: 0.19489992, z: 0}
-    m_Extent: {x: 5.49815, y: 4.0666, z: 0}
+    m_Center: {x: 0.012650013, y: 0.19784999, z: 0}
+    m_Extent: {x: 5.49905, y: 4.0651503, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -12430,6 +12430,10 @@ PrefabInstance:
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6733805855433857065, guid: cf08124525319a543867ed7e719e3544, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -12510,7 +12514,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1435044671019516429, guid: cf08124525319a543867ed7e719e3544, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cf08124525319a543867ed7e719e3544, type: 3}
 --- !u!4 &7364375193653634938 stripped
 Transform:

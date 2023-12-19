@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 6733805856435676537}
   - component: {fileID: 6733805856435676536}
   - component: {fileID: 6595609762484549876}
+  - component: {fileID: 1435044671019516429}
   m_Layer: 8
   m_Name: NPC
   m_TagString: Untagged
@@ -246,7 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 0}
-  textTitle: 
+  textTitle: Puzzelblokje
   textComponent: {fileID: 6733805855433857065}
   isActive: 0
   NPCEvent:
@@ -254,7 +255,33 @@ MonoBehaviour:
       m_Calls: []
   onTalkEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1435044671019516429}
+        m_TargetAssemblyTypeName: AbilityGiver, Assembly-CSharp
+        m_MethodName: ActivateAbility
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1435044671019516429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6733805856435676535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2571229a319340545b3b8bcff7f197ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  modifierToGive: {fileID: 11400000, guid: 452abbf0c13b05d44a481395bab52600, type: 2}
 --- !u!1 &6733805857012390423
 GameObject:
   m_ObjectHideFlags: 0

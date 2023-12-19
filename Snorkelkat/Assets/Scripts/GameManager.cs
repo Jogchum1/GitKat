@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     /*[HideInInspector]*/ public PlayerCombat playerCombat;
     /*[HideInInspector]*/ public PlayerPhysicsStateMachine playerPhysicsStateMachine;
     /*[HideInInspector]*/ public Rigidbody2D playerRigidbody2D;
+    /*[HideInInspector]*/ public AbilitySwitcher abilitySwitcher;
 
     public GameObject inventory;
     private bool inventoryActive;
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour
         playerCombat = player.GetComponent<PlayerCombat>();
         playerPhysicsStateMachine = player.GetComponent<PlayerPhysicsStateMachine>();
         playerRigidbody2D = player.GetComponent<Rigidbody2D>();
+        abilitySwitcher = player.GetComponent<AbilitySwitcher>();
     }
 
     private void Update()
