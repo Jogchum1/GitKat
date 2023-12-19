@@ -21280,6 +21280,7 @@ PrefabInstance:
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
       propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.size
       value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
       propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
