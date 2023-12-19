@@ -31,6 +31,9 @@ public class PlayerMovement : MonoBehaviour
     private bool isHangGliding = false;
     public float glideGrav = 0.1f;
 
+    public bool canPaddoJump = false;
+    [HideInInspector] public GameObject jumpingPaddo;
+
     [Header("Wall Jumping")]
     public float wallJumpingDuration = 0.4f;
     public Vector2 wallJumpingPower = new Vector2(8f, 16f);
@@ -51,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Camera")]
     public Transform camTarget;
     public float aheadAmount, aheadSpeed;
+    List<GameObject> paddos = new List<GameObject>();
 
     private void Start()
     {
@@ -163,6 +167,11 @@ public class PlayerMovement : MonoBehaviour
             Flip();
         }
 
+        if (canPaddoJump)
+        {
+            DoPaddoJump();
+        }
+
         //Move camera point
         //if (Input.GetAxisRaw("Horizontal") != 0)
         //{
@@ -208,6 +217,45 @@ public class PlayerMovement : MonoBehaviour
     private bool IsWalled()
     {
         return Physics2D.OverlapCircle(wallCheck.position, 0.2f, wallLayer);
+    }
+
+    private void DoPaddoJump()
+    {
+        if (Input.GetMouseButtonDown(0) && IsGrounded())
+        {
+            Vector3 currentLocation = new Vector3(transform.position.x, transform.position.y -0.5f, transform.position.z);
+            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            StartCoroutine(SpawnPaddo(currentLocation, 0.5f));
+        }
+        else if (Input.GetMouseButtonDown(0))
+        {
+            RaycastHit2D ray;
+            float distance = 100;
+            ray = Physics2D.Raycast(transform.position, Vector2.down, distance, groundLayer);
+            Debug.Log(ray + " is ray");
+            if (ray)
+            {
+                Vector3 spawnLocation = new Vector3(ray.point.x, ray.point.y + 0.5f);
+                StartCoroutine(SpawnPaddo(spawnLocation, 0f));
+            }
+            rb.velocity = new Vector2(0, -10);
+        }
+    }
+
+    private IEnumerator SpawnPaddo(Vector3 pos, float time)
+    {
+        yield return new WaitForSeconds(time);
+        if(paddos.Count > 0)
+        {
+            Destroy(paddos[0]);
+            paddos.Clear();
+            Debug.Log("Gebeurt dit?");
+        }
+
+        Debug.Log(paddos.Count);
+        
+        GameObject tmpPaddo = Instantiate(jumpingPaddo, pos, Quaternion.identity);
+        paddos.Add(tmpPaddo);
     }
 
     private void WallSlide()
