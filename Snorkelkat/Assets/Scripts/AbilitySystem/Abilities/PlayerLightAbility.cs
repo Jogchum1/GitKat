@@ -7,11 +7,11 @@ public class PlayerLightAbility : ModAbility
 {
     public override void ActivateAbility()
     {
-        gameManager.player.GetComponent<LightAbility>().PlayerLight();
+        //gameManager.player.GetComponent<LightAbility>().PlayerLight();
     }
 
     public override void DeactivateAbility()
     {
-        gameManager.player.GetComponent<LightAbility>().FungiLight();
+        //gameManager.player.GetComponent<LightAbility>().FungiLight();
     }
 }

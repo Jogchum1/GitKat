@@ -35,12 +35,12 @@ public class InventorySlot : MonoBehaviour, IDropHandler
     public void AddAbility()
     {
         Debug.Log("ADDING ABILITY TO PLAYER");
-        item.gameObject.GetComponent<Ability>().Activate();
+        //item.gameObject.GetComponent<Ability>().Activate();
     }
 
     public void RemoveAbility()
     {
-        item.gameObject.GetComponent<Ability>().Deactivate();
+        //item.gameObject.GetComponent<Ability>().Deactivate();
     }
 
     
