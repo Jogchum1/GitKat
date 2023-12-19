@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     /*[HideInInspector]*/ public PlayerPhysicsStateMachine playerPhysicsStateMachine;
     /*[HideInInspector]*/ public Rigidbody2D playerRigidbody2D;
     /*[HideInInspector]*/ public AbilitySwitcher abilitySwitcher;
+    public CamManager camManager;
 
     public GameObject inventory;
     private bool inventoryActive;

@@ -16,11 +16,16 @@ public class PlayerCombat : MonoBehaviour, IDamageable
 
     public GameObject bullet;
     //public GameObject sword;
-    public GameObject lastDoor;
+    public GameObject respawnPoint;
+
+    public GameManager gameManager;
+    public float dieTime;
+    private Door door;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = GameManager.instance;
         currentHealth = maxHealth;
         //sword.SetActive(false);
     }
@@ -70,10 +75,12 @@ public class PlayerCombat : MonoBehaviour, IDamageable
             Die();
         }
     }
+
+    [ContextMenu("Die")]
     public void Die()
     {
         Debug.Log("Player died");
-        gameObject.transform.position = lastDoor.transform.position;
+        StartCoroutine(Dying());
 
     }
 
@@ -89,6 +96,31 @@ public class PlayerCombat : MonoBehaviour, IDamageable
         {
             Die();
         }
+
+        if (collision.tag == "Respawn")
+        {
+            door = collision.GetComponentInParent<Door>();
+            //respawnPoint.transform.position = door.goalPos;
+            respawnPoint.transform.SetPositionAndRotation(door.goalDoor.goalPos, Quaternion.identity);
+        }
+    }
+
+    private IEnumerator Dying()
+    {
+        gameManager.TogglePlayerMovement();
+        gameManager.StopPlayerVelocity();
+
+        float duration = dieTime / 3;
+        yield return door.TransitionScreen(Color.clear, Color.black, duration);
+
+        gameObject.transform.position = respawnPoint.transform.position;
+        gameManager.camManager.currentCamera.ForceCameraPosition(respawnPoint.transform.position, Quaternion.identity);
+
+        yield return new WaitForSeconds(dieTime / 3);
+
+        yield return door.TransitionScreen(Color.black, Color.clear, duration);
+
+        gameManager.TogglePlayerMovement();
     }
 
 

@@ -7,7 +7,7 @@ public class Door : MonoBehaviour
 {
     public List<GameObject> gameObjectsToEnable;
     [SerializeField]
-    private Door goalDoor;
+    public Door goalDoor;
     [SerializeField]
     private Vector3 spawnpoint;
     [SerializeField]
@@ -64,7 +64,7 @@ public class Door : MonoBehaviour
         gameManager.TogglePlayerMovement();
     }
 
-    private IEnumerator TransitionScreen(Color start, Color end, float duration)
+    public IEnumerator TransitionScreen(Color start, Color end, float duration)
     {
         for (float t = 0f; t < duration; t += Time.deltaTime)
         {

@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c72426967942f045b34263f5a0e9be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  gameObjectsToEnable: []
   goalDoor: {fileID: 8189894967650636697}
   spawnpoint: {x: 1.6, y: 0.5, z: 0}
   transTime: 1
@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 2039655457507404188}
   m_Layer: 6
   m_Name: TriggerBox
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
