@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCombat : MonoBehaviour, IDamageable
 {
@@ -22,11 +24,19 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     public float dieTime;
     private Door door;
 
+    //health indicator
+    public Image redScreen;
+    Color redScreenColor;
+    float alpha;
+    float deathAlpha;
+    bool dying = false;
+
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameManager.instance;
         currentHealth = maxHealth;
+        redScreenColor = redScreen.color;
         //sword.SetActive(false);
     }
 
@@ -80,7 +90,10 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     public void Die()
     {
         Debug.Log("Player died");
-        StartCoroutine(Dying());
+        if (!dying)
+        {
+            StartCoroutine(Dying());
+        }
 
     }
 
@@ -92,11 +105,6 @@ public class PlayerCombat : MonoBehaviour, IDamageable
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Death")
-        {
-            Die();
-        }
-
         if (collision.tag == "Respawn")
         {
             door = collision.GetComponentInParent<Door>();
@@ -105,8 +113,45 @@ public class PlayerCombat : MonoBehaviour, IDamageable
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Death")
+        {
+            alpha = alpha + 0.1f;
+            if (alpha >= deathAlpha)
+            {
+                Die();
+                alpha = 0;
+                return;
+            }
+            Color color = new Color(redScreen.color.r, redScreen.color.g, redScreen.color.b, alpha);
+            redScreen.color = color;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Death")
+        {
+            alpha = 0;
+            TransitionRedScreen(redScreen.color, redScreenColor, 0.5f);
+        }
+    }
+
+    public IEnumerator TransitionRedScreen(Color start, Color end, float duration)
+    {
+        for (float t = 0f; t < duration; t += Time.deltaTime)
+        {
+            float normalizedTime = t / duration;
+            redScreen.color = Color.Lerp(start, end, normalizedTime);
+            yield return null;
+        }
+        redScreen.color = end;
+    }
+
     private IEnumerator Dying()
     {
+        dying = true;
         gameManager.TogglePlayerMovement();
         gameManager.StopPlayerVelocity();
 
@@ -121,6 +166,7 @@ public class PlayerCombat : MonoBehaviour, IDamageable
         yield return door.TransitionScreen(Color.black, Color.clear, duration);
 
         gameManager.TogglePlayerMovement();
+        dying = false;
     }
 
 

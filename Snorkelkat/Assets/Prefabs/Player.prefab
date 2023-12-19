@@ -345,12 +345,12 @@ MonoBehaviour:
   canGlide: 0
   glideGrav: 0.1
   canPaddoJump: 0
+  isSaus: 0
   jumpingPaddo: {fileID: 0}
   wallJumpingDuration: 0.4
   wallJumpingPower: {x: 8, y: 16}
   canWallJump: 1
   isWallSliding: 0
-  isSaus: 0
   wallSlidingSpeed: 2
   camTarget: {fileID: 0}
   aheadAmount: 5
@@ -375,7 +375,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   bullet: {fileID: 7609740630238738366, guid: 57a10744948a0fe47b461ead6eabfcc6, type: 3}
-  lastDoor: {fileID: 0}
+  respawnPoint: {fileID: 0}
+  gameManager: {fileID: 0}
+  dieTime: 2
+  redScreen: {fileID: 0}
 --- !u!114 &5579191290656132238
 MonoBehaviour:
   m_ObjectHideFlags: 0

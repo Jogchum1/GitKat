@@ -293,6 +293,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1467476407}
     - target: {fileID: 6213756538626230296, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
+      propertyPath: redScreen
+      value: 
+      objectReference: {fileID: 1364843180584757942}
+    - target: {fileID: 6213756538626230296, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1991226029}
@@ -434,11 +438,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &686611333 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1536683338005099125, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
-  m_PrefabInstance: {fileID: 1364843180584757941}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &819104172
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,7 +475,7 @@ MonoBehaviour:
   playerRigidbody2D: {fileID: 0}
   abilitySwitcher: {fileID: 0}
   camManager: {fileID: 0}
-  inventory: {fileID: 686611333}
+  inventory: {fileID: 0}
   playerActive: 1
 --- !u!4 &819104174
 Transform:
@@ -16982,6 +16981,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
+--- !u!114 &1364843180584757942 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8349954882956174641, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
+  m_PrefabInstance: {fileID: 1364843180584757941}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2685542624088985460
 PrefabInstance:
   m_ObjectHideFlags: 0
