@@ -10,7 +10,6 @@ public class BecomeSaus : ModAbility
     private PlayerPhysicsStateMachine.State sausState;
     private CapsuleCollider2D playerCollider;
     private Vector2 colliderSize;
-
     public override void ActivateAbility()
     {
         playerCollider = gameManager.player.GetComponent<CapsuleCollider2D>();
@@ -26,6 +25,11 @@ public class BecomeSaus : ModAbility
 
     public override void UpdateAbility()
     {
+        if(gameManager == null)
+        {
+            gameManager = FindObjectOfType<GameManager>();
+        }
+
         if (Input.GetKey(KeyCode.Mouse0) && !gameManager.playerMovement.isSaus)
         {
             playerCollider.size = new Vector2(playerCollider.size.x, changedPlayerScaleY);

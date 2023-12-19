@@ -240,10 +240,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2280772047722110831, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
+      propertyPath: canWallJump
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5422440861744908603, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 1885115565}
+    - target: {fileID: 5422440861744908603, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5422440861744908603, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
+      propertyPath: topModifier
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5422440861744908603, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
+      propertyPath: bottomModifier
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5422440861744908603, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: topModifierSlot
       value: 
@@ -450,6 +466,7 @@ MonoBehaviour:
   playerCombat: {fileID: 0}
   playerPhysicsStateMachine: {fileID: 0}
   playerRigidbody2D: {fileID: 0}
+  abilitySwitcher: {fileID: 0}
   inventory: {fileID: 686611333}
   playerActive: 1
 --- !u!4 &819104174
@@ -514,6 +531,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8279637967677716264, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
   m_PrefabInstance: {fileID: 5865324335247052756}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1455825668 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2548317078872746105, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
+  m_PrefabInstance: {fileID: 1364843180584757941}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1457602578 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2685542624980356966, guid: 141f515165775c643a656dc626f3510f, type: 3}
@@ -535,6 +563,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5946852445404483100, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
   m_PrefabInstance: {fileID: 1149612477382886109}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1467476409 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2026184370755987814, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+  m_PrefabInstance: {fileID: 1149612477382886109}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467476407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2571229a319340545b3b8bcff7f197ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1596655488 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1364843181374795061, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
@@ -16673,6 +16712,34 @@ PrefabInstance:
     - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: dialogueRunner
       value: 
+      objectReference: {fileID: 1455825668}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1467476409}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GiveModifier
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AbilityGiver, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6946736559030403427, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: m_Name
@@ -17039,7 +17106,7 @@ PrefabInstance:
     - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: dialogueRunner
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1455825668}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
 --- !u!1001 &4664213657098531835
@@ -17253,6 +17320,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: dialogueRunner
+      value: 
+      objectReference: {fileID: 1455825668}
     - target: {fileID: 7445486952265511395, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
       propertyPath: endScreen
       value: 
