@@ -4,21 +4,28 @@ using UnityEngine;
 
 public class AbilityGiver : MonoBehaviour
 {
-    public GameManager gameManager;
+    private GameManager gameManager;
     public ModifierScript modifierToGive;
+
+    private void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+    }
+
     public void ActivateAbility()
     {
         Debug.Log("ACTIVATE ABILITY");
         FindObjectOfType<AbilitySwitcher>().enabled = true;
     }
 
-    public void GiveTopModifier()
+    public void GiveModifier()
     {
-        gameManager.abilitySwitcher.topModifier = modifierToGive;
-    }
-
-    public void GiveBottomModifier()
-    {
-        gameManager.abilitySwitcher.bottomModifier = modifierToGive;
+        if(gameManager.abilitySwitcher.topModifier == null)
+        {
+            gameManager.abilitySwitcher.topModifier = modifierToGive;
+        }else if(gameManager.abilitySwitcher.bottomModifier == null)
+        {
+            gameManager.abilitySwitcher.bottomModifier = modifierToGive;
+        }
     }
 }
