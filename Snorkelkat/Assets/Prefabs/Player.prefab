@@ -344,9 +344,11 @@ MonoBehaviour:
   jumpBuggerLenght: 0.1
   canGlide: 0
   glideGrav: 0.1
+  canPaddoJump: 0
+  jumpingPaddo: {fileID: 0}
   wallJumpingDuration: 0.4
   wallJumpingPower: {x: 8, y: 16}
-  canWallJump: 0
+  canWallJump: 1
   isWallSliding: 0
   isSaus: 0
   wallSlidingSpeed: 2
