@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
-
+using UnityEngine.SceneManagement;
 public class IntroTask : MonoBehaviour
 {
     [SerializeField]
@@ -17,7 +17,11 @@ public class IntroTask : MonoBehaviour
     private float offset;
     [SerializeField]
     private float padding;
+    [SerializeField]
+    private Image backGround;
 
+    public int numberOfButtons = 5;
+    public float alpha = 0;
     public Slider timer;
     public float timerSpeed = 1;
     public float speedIncrease = 0.1f;
@@ -33,7 +37,7 @@ public class IntroTask : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SpawnButtons(100);
+        SpawnButtons(5);
     }
 
     // Update is called once per frame
@@ -55,7 +59,7 @@ public class IntroTask : MonoBehaviour
             Destroy(buttonGameObject);
         }
         buttons.Clear();
-        SpawnButtons(5);
+        SpawnButtons(numberOfButtons);
 
         //questionList[currentQuestion].SetActive(false);
         //currentQuestion++;
@@ -71,13 +75,20 @@ public class IntroTask : MonoBehaviour
 
     public void PressedWrongButton()
     {
+        alpha += 0.1f;
+        numberOfButtons += 1;
+        backGround.color = new Color(backGround.color.r, backGround.color.g, backGround.color.b, alpha);
         timer.value = 1;
         foreach (GameObject buttonGameObject in buttons)
         {
             Destroy(buttonGameObject);
         }
         buttons.Clear();
-        SpawnButtons(5);
+        SpawnButtons(numberOfButtons);
+        if(alpha >= 1)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     private void SpawnButtons(int amountWrongButtons)
