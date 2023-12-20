@@ -12,7 +12,12 @@ public class BecomeSaus : ModAbility
     private Vector2 colliderSize;
     public override void ActivateAbility()
     {
-        Debug.Log(gameManager.name);
+        if (gameManager == null)
+        {
+            gameManager = FindObjectOfType<GameManager>();
+        }
+        Debug.Log(gameManager);
+        Debug.Log("HALLO?");
         playerCollider = gameManager.player.GetComponent<CapsuleCollider2D>();
         colliderSize = playerCollider.size;
     }
