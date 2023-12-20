@@ -475,7 +475,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 15.931127954150224
+    m_Start: 14.55
     m_ClipIn: 0
     m_Asset: {fileID: -5522834049961558633}
     m_Duration: 2.0166666666666666
@@ -541,7 +541,7 @@ MonoBehaviour:
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: Infinity
-    m_PreExtrapolationTime: 15.931127954150224
+    m_PreExtrapolationTime: 14.55
     m_DisplayName: HornFungiAnim
   m_Markers:
     m_Objects: []
@@ -1360,7 +1360,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 14.55
+    m_Start: 15.716666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 1844131871416441602}
     m_Duration: 2.0166666666666666
@@ -1426,7 +1426,7 @@ MonoBehaviour:
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: Infinity
-    m_PreExtrapolationTime: 14.55
+    m_PreExtrapolationTime: 15.716666666666667
     m_DisplayName: HeadFungiAnim
   m_Markers:
     m_Objects: []
@@ -1671,7 +1671,7 @@ MonoBehaviour:
     m_Start: 32.50000000000004
     m_ClipIn: 0
     m_Asset: {fileID: -9122218649962213325}
-    m_Duration: 10.849999999999959
+    m_Duration: 19.31666666666662
     m_TimeScale: 1
     m_ParentTrack: {fileID: 6407498523082684128}
     m_EaseInDuration: 0
