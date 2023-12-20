@@ -4,6 +4,7 @@ using UnityEngine;
 public abstract class ModAbility : ScriptableObject
 {
     public Sprite abilitySprite;
+    public Sprite controlsSprite;
     [HideInInspector]
     public GameManager gameManager;
     public void InstantiateAbility(GameManager gm)
