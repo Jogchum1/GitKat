@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: PaddoJump
   m_EditorClassIdentifier: 
   abilitySprite: {fileID: 21300000, guid: e38388ff54e25bf49bcb6a9fb647a5c6, type: 3}
+  controlsSprite: {fileID: 21300000, guid: 2ee15d8d11d70a749b9e12bb0c225f36, type: 3}
   gameManager: {fileID: 0}
   paddo: {fileID: 3635531572129897165, guid: 021ebf865d1940b4bba43f7ec9497905, type: 3}
