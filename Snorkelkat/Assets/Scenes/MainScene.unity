@@ -16605,6 +16605,10 @@ PlayableDirector:
     value: {fileID: 1147463468}
   - key: {fileID: -8136843064359947885, guid: c52f9a667a8a2954f99135b7441e7a0c, type: 2}
     value: {fileID: 1467476407}
+  - key: {fileID: -4721680715702519883, guid: c52f9a667a8a2954f99135b7441e7a0c, type: 2}
+    value: {fileID: 1149612477382886115}
+  - key: {fileID: 7843346652581696358, guid: c52f9a667a8a2954f99135b7441e7a0c, type: 2}
+    value: {fileID: 1149612477382886114}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1822957945 stripped
@@ -16895,6 +16899,16 @@ Animator:
 --- !u!95 &1149612477382886113 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4285387231944698091, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+  m_PrefabInstance: {fileID: 1149612477382886109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1149612477382886114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3415233950999411499, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+  m_PrefabInstance: {fileID: 1149612477382886109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1149612477382886115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2867423586324805972, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
   m_PrefabInstance: {fileID: 1149612477382886109}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1364843180584757941
