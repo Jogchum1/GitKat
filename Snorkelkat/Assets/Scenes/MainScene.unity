@@ -610,6 +610,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5946852445404483100, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
   m_PrefabInstance: {fileID: 1149612477382886109}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1471945922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3440771232243656617, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+  m_PrefabInstance: {fileID: 1149612477382886109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1471945923
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471945922}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1596655488 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1364843181374795061, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
@@ -16609,6 +16635,10 @@ PlayableDirector:
     value: {fileID: 1149612477382886115}
   - key: {fileID: 7843346652581696358, guid: c52f9a667a8a2954f99135b7441e7a0c, type: 2}
     value: {fileID: 1149612477382886114}
+  - key: {fileID: -2082837790323280654, guid: c52f9a667a8a2954f99135b7441e7a0c, type: 2}
+    value: {fileID: 1471945922}
+  - key: {fileID: 7393074931915561921, guid: c52f9a667a8a2954f99135b7441e7a0c, type: 2}
+    value: {fileID: 1471945923}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1822957945 stripped
@@ -16782,6 +16812,10 @@ PrefabInstance:
     - target: {fileID: 2401482247894526526, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: goalDoor
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3440771232243656617, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4012271128325768351, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: m_RootOrder
