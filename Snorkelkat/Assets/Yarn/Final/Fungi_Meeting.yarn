@@ -1,4 +1,4 @@
-﻿title: Fungi_Meeting
+﻿title: Fungi_Room1
 tags: 
 position: 0,0
 ---
@@ -58,4 +58,38 @@ Spores fly into the air around you. You should find a place to spread them.
 //        The Web: "not just / the mushroom / but a network / a web"
 //        "Yes, the Web, whatever."
 ---
+===
+title: Creature_Room3
+tags: 
+position: 524.0000038146973,-0.9999980926513672
+---
+The corpse of an animal lays on the ground before you. The sight of its rotting body sends a shiver through your spine.
+To your surprise, there is still light in the creature's eyes. It's not dead yet.
+    -> "Can you speak, as well?"
+Its gaze lands on you.
+The Creature: "NAME. You are a long way from home."
+    -> "How do you know that?"
+The Creature: "We spoke before, through the Web. I am one of many of its voices."
+Mushrooms fruit from its body and wounds. You look away from the rot.
+The Creature: "The sight of me repulses you, why?"
+    -> "You're on the brink of death."
+The Creature: "Yet I do not fear it, why do you?"
+    -> "I'm not afraid of death! We have technology that heals us."
+        The Creature: "You built religions to make the though of dying bearable. Now you seek to live forever through machines."
+    -> "It will hurt.. And I don't know what comes after."
+        The Creature: "There will always be violence in death. But so will there be peace."
+        The Creature: "You say you do not know what it feels like to die, but you were dead once already."
+The Creature: "You fear the end, but I will begin anew."
+The Creature: "I will regrow, my elements transformed. My cells will nurture life anew."
+The Creature: "We were once stars and now we are animals and after this we’ll be flowers."
+// later, elements of the creature's design are present in the flora you encounter.
+The Creature: "And my story will live on in you."
+The Creature: "Do you feel it? The connectedness of all things?"
+The light in their eyes slowly fades. It stares unfocused in your direction.
+===
+title: Fungi_Room2
+tags: 
+position: 263.00000381469727,-1
+---
+wip
 ===
