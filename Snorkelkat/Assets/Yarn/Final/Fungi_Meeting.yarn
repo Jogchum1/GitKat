@@ -70,6 +70,7 @@ Its gaze lands on you.
 The Creature: "NAME. You are a long way from home."
     -> "How do you know that?"
 The Creature: "We spoke before, through the Web. I am one of many of its voices."
+The Creature: "You helped restore our network, so now I can finally die."
 Mushrooms fruit from its body and wounds. You look away from the rot.
 The Creature: "The sight of me repulses you, why?"
     -> "You're on the brink of death."
@@ -89,7 +90,16 @@ The light in their eyes slowly fades. It stares unfocused in your direction.
 ===
 title: Fungi_Room2
 tags: 
-position: 263.00000381469727,-1
+position: 265.00000381469727,-1.9999998807907104
 ---
-wip
+ask about the changes to your body
+you connected to us, so you changed
+do you not want this? you are free to let it go
+no it's freeing. I like to fly. I can reach further than before.
+we ask you again what is it like to be you
+I don't know who I am outside of the Hivemind
+does that scare you?
+yes
+Is it not exhilirating?
+to change and grow and find yourself and connect to others
 ===
