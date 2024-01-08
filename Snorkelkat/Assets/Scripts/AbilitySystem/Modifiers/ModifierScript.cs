@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Modifier", menuName = "AbilitySystem/Modifier", order = 1)]
@@ -36,5 +37,23 @@ public class ModifierScript : ScriptableObject
         topAbility.DeactivateAbility();
         bottomAbility.ActivateAbility();
         activeAbility = bottomAbility;
+    }
+
+    public void SwitchAbility()
+    {
+        if (activeAbility == bottomAbility)
+        {
+            activeAbility = topAbility;
+
+            bottomAbility.DeactivateAbility();
+            activeAbility.ActivateAbility();
+        }
+        else if (activeAbility == topAbility)
+        {
+            activeAbility = bottomAbility;
+
+            topAbility.DeactivateAbility();
+            activeAbility.ActivateAbility();
+        }
     }
 }

@@ -59,35 +59,35 @@ public class AbilitySwitcher : MonoBehaviour
 
         if (topModifier == null)
         {
-            Debug.Log("topmodifier null starting");
-            bottomModifier.SwitchToTop();
-            topModifier = bottomModifier;
-            bottomModifier = null;
+            //Debug.Log("topmodifier null starting");
+            bottomModifier.SwitchAbility();
+            //topModifier = bottomModifier;
+            //bottomModifier = null;
             animateAndUpdateModSlotSprites(switchTimeSeconds);
-            Debug.Log("topmodifier null finished");
+            //Debug.Log("topmodifier null finished");
             return;
         }
 
         if (bottomModifier == null)
         {
-            Debug.Log("bottommodifier null starting");
-            topModifier.SwitchToBottom();
-            bottomModifier = topModifier;
-            topModifier = null;
+            //Debug.Log("bottommodifier null starting");
+            topModifier.SwitchAbility();
+            //bottomModifier = topModifier;
+            //topModifier = null;
             animateAndUpdateModSlotSprites(switchTimeSeconds);
-            Debug.Log("bottommodifier null finished");
+            //Debug.Log("bottommodifier null finished");
             return;
         }
 
-        Debug.Log("modifier switch starting");
-        topModifier.SwitchToBottom();
-        bottomModifier.SwitchToTop();
-        ModifierScript newTopMod = bottomModifier;
-        ModifierScript newBottomMod = topModifier;
-        topModifier = newTopMod;
-        bottomModifier = newBottomMod;
+        //Debug.Log("modifier switch starting");
+        topModifier.SwitchAbility();
+        bottomModifier.SwitchAbility();
+        //ModifierScript newTopMod = bottomModifier;
+        //ModifierScript newBottomMod = topModifier;
+        //topModifier = newTopMod;
+        //bottomModifier = newBottomMod;
         animateAndUpdateModSlotSprites(switchTimeSeconds); 
-        Debug.Log("modifier switch finished");
+        //Debug.Log("modifier switch finished");
     }
 
     private void animateAndUpdateModSlotSprites(float animateSlotsForSeconds)
@@ -117,13 +117,13 @@ public class AbilitySwitcher : MonoBehaviour
         bottomModifierSlot.gameObject.SetActive(true);
         animator.speed = 1 / showForSeconds;
         animator.SetTrigger("modSlotChange");
-        topModifierSlot.SetAbilitySprite(topModifier);
-        bottomModifierSlot.SetAbilitySprite(bottomModifier);
 
         yield return new WaitForSeconds(showForSeconds / 2);
 
         updateModifierSlotSprites();
         //switch sprites
+        topModifierSlot.SetAbilitySprite(topModifier);
+        bottomModifierSlot.SetAbilitySprite(bottomModifier);
         topModifierSlot.SetModifierSprite(topModifier);
         bottomModifierSlot.SetModifierSprite(bottomModifier);
 
