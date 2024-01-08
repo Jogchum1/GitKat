@@ -16811,6 +16811,11 @@ CompositeCollider2D:
   m_CorrespondingSourceObject: {fileID: 1726666385210002719, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
   m_PrefabInstance: {fileID: 205212229834812689}
   m_PrefabAsset: {fileID: 0}
+--- !u!60 &205212229834812691 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 9157790147007642105, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+  m_PrefabInstance: {fileID: 205212229834812689}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1149612477382886109
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16995,6 +17000,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7412750886717056319, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8473611214089519645, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -17341,6 +17350,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3559103273218469351, guid: 141f515165775c643a656dc626f3510f, type: 3}
+      propertyPath: m_BoundingShape2D
+      value: 
+      objectReference: {fileID: 205212229834812691}
     - target: {fileID: 6858079002408597282, guid: 141f515165775c643a656dc626f3510f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -686.2
