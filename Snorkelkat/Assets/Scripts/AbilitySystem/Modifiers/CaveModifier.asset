@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0edf55f944d104f478084a1b94645399, type: 3}
-  m_Name: TestModifier
+  m_Name: CaveModifier
   m_EditorClassIdentifier: 
-  modName: Test Modifier
+  modName: CaveModifier
   modSprite: {fileID: 5808756890278545198, guid: fca58957f501fe34fabea88f58822067, type: 3}
   topAbility: {fileID: 11400000, guid: 1d99f7c0af1558549a5ada6ab6ed9b3d, type: 2}
   bottomAbility: {fileID: 11400000, guid: 14d8d6cc90456da4795b7d2aa8cb891b, type: 2}
