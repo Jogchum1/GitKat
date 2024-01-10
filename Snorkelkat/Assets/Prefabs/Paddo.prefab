@@ -57,7 +57,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.5437012, y: 0.85705566}
+  m_Size: {x: 2.4787388, y: 0.85705566}
   m_EdgeRadius: 0
 --- !u!251 &7954156417083772153
 PlatformEffector2D:
@@ -72,12 +72,12 @@ PlatformEffector2D:
     serializedVersion: 2
     m_Bits: 64
   m_RotationalOffset: 0
-  m_UseOneWay: 1
+  m_UseOneWay: 0
   m_UseOneWayGrouping: 0
   m_SurfaceArc: 148.29
   m_UseSideFriction: 0
   m_UseSideBounce: 0
-  m_SideArc: 32.77
+  m_SideArc: 50
 --- !u!1 &3635531572129897165
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +89,6 @@ GameObject:
   - component: {fileID: 5477175391896519631}
   - component: {fileID: 5398091842518859518}
   - component: {fileID: -9206200592323623112}
-  - component: {fileID: 421374561653444471}
   m_Layer: 0
   m_Name: Paddo
   m_TagString: Untagged
@@ -125,9 +124,9 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.049987793, y: 0.42}
+  m_Offset: {x: 0.049987793, y: 0.51}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -138,7 +137,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.5428467, y: 0.5563965}
+  m_Size: {x: 2.01, y: 0.01}
   m_EdgeRadius: 0
 --- !u!114 &-9206200592323623112
 MonoBehaviour:
@@ -155,25 +154,6 @@ MonoBehaviour:
   paddoTime: 10
   animator: {fileID: 4686930318893205325}
   col: {fileID: 5398091842518859518}
---- !u!251 &421374561653444471
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3635531572129897165}
-  m_Enabled: 1
-  m_UseColliderMask: 0
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 64
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 23.45
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 154.9
 --- !u!1 &6814050366443601983
 GameObject:
   m_ObjectHideFlags: 0
