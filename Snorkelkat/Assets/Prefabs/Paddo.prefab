@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3111382908239049195}
   - component: {fileID: 2677397724280933780}
   - component: {fileID: 7954156417083772153}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 5477175391896519631}
   - component: {fileID: 5398091842518859518}
   - component: {fileID: -9206200592323623112}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Paddo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 7617230224108239371}
   - component: {fileID: 3201706718099271361}
   - component: {fileID: 4686930318893205325}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BouncePaddo2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

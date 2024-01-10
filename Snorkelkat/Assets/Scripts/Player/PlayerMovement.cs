@@ -103,11 +103,17 @@ public class PlayerMovement : MonoBehaviour
         if (IsGrounded() && isInAir && !isSaus)
         {
             isInAir = false;
+
+            anim.SetBool("IsFalling", false);
+
             gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.Normal;
         }
         else if (!IsGrounded() && !isInAir && !isSaus)
         {
             isInAir = true;
+
+            anim.SetBool("IsFalling", true);
+
             gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.NoFriction;
         }
 
@@ -224,8 +230,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && IsGrounded())
         {
             Vector3 currentLocation = new Vector3(transform.position.x, transform.position.y -0.5f, transform.position.z);
-            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-            StartCoroutine(SpawnPaddo(currentLocation, 0.5f));
+            StartCoroutine(SpawnPaddo(currentLocation, 0f));
+            StartCoroutine(JumpAfterDelay(0.1f, jumpingPower/3));
         }
         else if (Input.GetMouseButtonDown(0))
         {
@@ -240,6 +246,12 @@ public class PlayerMovement : MonoBehaviour
             }
             //rb.velocity = new Vector2(0, -10);
         }
+    }
+
+    private IEnumerator JumpAfterDelay(float delaySeconds, float delayedJumpPower)
+    {
+        yield return new WaitForSeconds(delaySeconds);
+        rb.velocity = new Vector2(rb.velocity.x, delayedJumpPower);
     }
 
     private IEnumerator SpawnPaddo(Vector3 pos, float time)

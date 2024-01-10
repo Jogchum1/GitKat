@@ -335,7 +335,7 @@ MonoBehaviour:
   wallCheck: {fileID: 8606042356006008394}
   wallLayer:
     serializedVersion: 2
-    m_Bits: 576
+    m_Bits: 66112
   speed: 8
   jumpingPower: 15
   maxYVelocity: 20
@@ -355,6 +355,7 @@ MonoBehaviour:
   camTarget: {fileID: 0}
   aheadAmount: 5
   aheadSpeed: 0.1
+  paddos: []
 --- !u!114 &6213756538626230296
 MonoBehaviour:
   m_ObjectHideFlags: 0
