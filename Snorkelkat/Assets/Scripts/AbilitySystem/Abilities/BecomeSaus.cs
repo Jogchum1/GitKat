@@ -36,6 +36,12 @@ public class BecomeSaus : ModAbility
             gameManager = FindObjectOfType<GameManager>();
         }
 
+        if(playerCollider == null)
+        {
+            playerCollider = gameManager.player.GetComponent<CapsuleCollider2D>();
+            colliderSize = playerCollider.size;
+        }
+
         if (Input.GetKey(KeyCode.Mouse0) && !gameManager.playerMovement.isSaus)
         {
             playerCollider.size = new Vector2(playerCollider.size.x, changedPlayerScaleY);

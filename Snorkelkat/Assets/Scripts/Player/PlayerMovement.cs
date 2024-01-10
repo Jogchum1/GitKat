@@ -56,10 +56,15 @@ public class PlayerMovement : MonoBehaviour
     public float aheadAmount, aheadSpeed;
     public List<GameObject> paddos = new List<GameObject>();
 
+    public float paddoCooldown = 2f;
+    public float paddoTimer;
+    public bool paddoTimerDone = false;
+
     private void Start()
     {
         jumpsLeft = maxJumps;
         gameManager = GameManager.instance;
+        paddoTimer = paddoCooldown;
     }
 
     void Update()
@@ -178,6 +183,15 @@ public class PlayerMovement : MonoBehaviour
             DoPaddoJump();
         }
 
+        if(paddoTimer >= 0)
+        {
+            paddoTimer = paddoTimer - 0.1f * Time.deltaTime;
+        }
+        else
+        {
+            paddoTimerDone = true;
+        }
+
         //Move camera point
         //if (Input.GetAxisRaw("Horizontal") != 0)
         //{
@@ -227,13 +241,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void DoPaddoJump()
     {
-        if (Input.GetMouseButtonDown(0) && IsGrounded())
+        if (Input.GetMouseButtonDown(0) && IsGrounded() && paddoTimerDone)
         {
             Vector3 currentLocation = new Vector3(transform.position.x, transform.position.y -0.5f, transform.position.z);
             StartCoroutine(SpawnPaddo(currentLocation, 0f));
             StartCoroutine(JumpAfterDelay(0.1f, jumpingPower/3));
+            paddoTimerDone = false;
+            paddoTimer = paddoCooldown;
         }
-        else if (Input.GetMouseButtonDown(0))
+        else if (Input.GetMouseButtonDown(0) && paddoTimerDone)
         {
             RaycastHit2D ray;
             float distance = 100;
@@ -244,6 +260,8 @@ public class PlayerMovement : MonoBehaviour
                 Vector3 spawnLocation = new Vector3(ray.point.x, ray.point.y + 0.5f);
                 StartCoroutine(SpawnPaddo(spawnLocation, 0f));
             }
+            paddoTimerDone = false;
+            paddoTimer = paddoCooldown;
             //rb.velocity = new Vector2(0, -10);
         }
     }

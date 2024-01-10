@@ -356,6 +356,9 @@ MonoBehaviour:
   aheadAmount: 5
   aheadSpeed: 0.1
   paddos: []
+  paddoCooldown: 0.1
+  paddoTimer: 0
+  paddoTimerDone: 0
 --- !u!114 &6213756538626230296
 MonoBehaviour:
   m_ObjectHideFlags: 0
