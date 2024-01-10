@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Camera")]
     public Transform camTarget;
     public float aheadAmount, aheadSpeed;
-    List<GameObject> paddos = new List<GameObject>();
+    public List<GameObject> paddos = new List<GameObject>();
 
     private void Start()
     {
@@ -245,9 +245,9 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator SpawnPaddo(Vector3 pos, float time)
     {
         yield return new WaitForSeconds(time);
-        if(paddos.Count > 0)
+        if(paddos.Count > 0 && paddos[0] != null)
         {
-            paddos[0].GetComponent<Paddo>().DespawnPaddo();
+            paddos[0].GetComponent<Paddo>().DespawnPaddo(); 
             //Destroy(paddos[0]);
             paddos.Clear();
             Debug.Log("Gebeurt dit?");

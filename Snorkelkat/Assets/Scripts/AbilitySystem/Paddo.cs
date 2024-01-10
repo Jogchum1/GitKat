@@ -8,11 +8,13 @@ public class Paddo : MonoBehaviour
 
     [SerializeField] private Animator animator;
     [SerializeField] private Collider2D col;
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
         //DisablePaddoCollider();
+        gameManager = GameManager.instance;
         StartCoroutine(DestoryPaddo());
     }
 
@@ -41,6 +43,7 @@ public class Paddo : MonoBehaviour
     //plays despawn animation and destroys gameobject after
     public void DespawnPaddo ()
     {
+        gameManager.playerMovement.paddos.Remove(gameObject);
         animator.SetTrigger("Despawn");
     }
 

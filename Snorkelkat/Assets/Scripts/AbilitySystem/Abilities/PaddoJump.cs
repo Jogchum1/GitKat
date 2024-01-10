@@ -11,7 +11,7 @@ public class PaddoJump : ModAbility
     {
         if (gameManager == null)
         {
-            gameManager = FindObjectOfType<GameManager>();
+            gameManager = GameManager.instance;
         }
 
         if (gameManager.playerMovement.jumpingPaddo == null)
@@ -26,7 +26,7 @@ public class PaddoJump : ModAbility
     {
         if (gameManager == null)
         {
-            gameManager = FindObjectOfType<GameManager>();
+            gameManager = GameManager.instance;
         }
 
         gameManager.playerMovement.canPaddoJump = false;
