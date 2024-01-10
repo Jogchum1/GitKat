@@ -16943,6 +16943,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5957090614837312348, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: MaxDistance
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5957090614837312348, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: MinDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5957090614837312348, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: dialogueRunner
       value: 
@@ -17448,6 +17460,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4142699811516675425, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4269637329506640144, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: m_Name
       value: Room1
@@ -17503,6 +17519,14 @@ PrefabInstance:
     - target: {fileID: 5397729712856018683, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: goalDoor
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593971127864317713, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593971127864317713, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: MaxDistance
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: dialogueRunner

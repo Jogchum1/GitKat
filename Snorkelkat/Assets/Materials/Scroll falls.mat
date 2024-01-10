@@ -55,6 +55,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
+    - _OutlineSize: 45.76
+    - _Outlinesize: 1.04
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ScrollSpeed: 0.5
@@ -63,6 +65,9 @@ Material:
     m_Colors:
     - _Color: {r: 0.5493876, g: 0.8980392, b: 0.3843137, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 1, g: 0, b: 0, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _OutlineSize: {r: 25.94, g: 22.58, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _Tiling: {r: 0.4, g: 5, b: 0, a: 0}
   m_BuildTextureStacks: []
