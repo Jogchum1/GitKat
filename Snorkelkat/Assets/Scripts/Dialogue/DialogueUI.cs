@@ -39,6 +39,8 @@ public class DialogueUI : DialogueViewBase
     // the line.
     Action advanceHandler = null;
 
+    public bool isTalking = false;
+
     // Sets the scale of the container view.
     private float Scale
     {
@@ -53,6 +55,15 @@ public class DialogueUI : DialogueViewBase
         // On start, we'll hide the line view by setting the scale to zero
         Scale = 0;
         canvasGroup.alpha = 0;
+    }
+
+    public void Update()
+    {
+        if (Input.GetMouseButtonDown(0) && isTalking == true)
+        {
+            Debug.Log("Click");
+            UserRequestedViewAdvancement();
+        }
     }
 
     // RunLine receives a localized line, and is in charge of displaying it to
@@ -81,7 +92,7 @@ public class DialogueUI : DialogueViewBase
         // text.
         Scale = 0;
         //text.text = dialogueLine.Text.Text;
-
+        isTalking = true;
         // During presentation, if we get an advance signal, we'll indicate that
         // we want to interrupt.
         advanceHandler = requestInterrupt;
@@ -105,17 +116,6 @@ public class DialogueUI : DialogueViewBase
                     // continue. Don't signal that we're done; instead, when we
                     // get a signal to continue, we'll notify that the user
                     // wants to interrupt this view.
-                    advanceHandler = requestInterrupt;
-                }
-                else
-                {
-                    // We're all done presenting. If we get a signal to advance,
-                    // we have nothing to do - we're now awaiting the dialogue
-                    // runner to tell us to dismiss. (This might happen
-                    // immediately after we indicate that we're done, or it
-                    // might happen after other views have completed that
-                    // they're done.)
-                    advanceHandler = null;
                     if(lines.Count < 5)
                     {
                         lines.Add(dialogueLine);
@@ -133,6 +133,17 @@ public class DialogueUI : DialogueViewBase
 
 
                     UpdateTextBoxes();
+                    advanceHandler = requestInterrupt;
+                }
+                else
+                {
+                    // We're all done presenting. If we get a signal to advance,
+                    // we have nothing to do - we're now awaiting the dialogue
+                    // runner to tell us to dismiss. (This might happen
+                    // immediately after we indicate that we're done, or it
+                    // might happen after other views have completed that
+                    // they're done.)
+                    advanceHandler = null;
 
                     onDialogueLineFinished();
                 }
@@ -164,6 +175,7 @@ public class DialogueUI : DialogueViewBase
     {
         canvasGroup.alpha = 0;
         lines.Clear();
+        isTalking = false;
         for (int i = 0; i < textObjects.Count; i++)
         {
             textObjects[i].text = null;

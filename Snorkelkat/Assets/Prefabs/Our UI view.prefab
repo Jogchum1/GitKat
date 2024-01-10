@@ -293,7 +293,8 @@ MonoBehaviour:
   disappearanceTime: 1
   text: {fileID: 7397045861904560867}
   container: {fileID: 7397045861803735967}
-  waitForInput: 0
+  waitForInput: 1
+  isTalking: 0
 --- !u!114 &7397045861671676621
 MonoBehaviour:
   m_ObjectHideFlags: 0
