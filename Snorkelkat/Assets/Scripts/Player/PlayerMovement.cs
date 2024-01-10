@@ -247,7 +247,8 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(time);
         if(paddos.Count > 0)
         {
-            Destroy(paddos[0]);
+            paddos[0].GetComponent<Paddo>().DespawnPaddo();
+            //Destroy(paddos[0]);
             paddos.Clear();
             Debug.Log("Gebeurt dit?");
         }

@@ -38,6 +38,7 @@ public class Paddo : MonoBehaviour
         Destroy(gameObject);
     }
 
+    //plays despawn animation and destroys gameobject after
     public void DespawnPaddo ()
     {
         animator.SetTrigger("Despawn");
