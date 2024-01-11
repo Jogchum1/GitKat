@@ -204,12 +204,18 @@ public class PlayerMovement : MonoBehaviour
         if(horizontal != 0)
         {
             anim.SetFloat("Speed", 1);
-            gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.NoFriction;
+            if (!isSaus)
+            {
+                gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.NoFriction;
+            }
         }
         else
         {
             anim.SetFloat("Speed", 0);
-            gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.Normal;
+            if (!isSaus)
+            {
+                gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.Normal;
+            }
         }
 
         if (rb.velocity.y > maxYVelocity)
@@ -394,6 +400,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Flip()
     {
+        if (isSaus)
+        {
+            return;
+        }
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
         {
             isFacingRight = !isFacingRight;
