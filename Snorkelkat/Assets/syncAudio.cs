@@ -7,6 +7,7 @@ public class syncAudio : MonoBehaviour
     public AudioSource source;
     public AudioClip footstepR;
     public AudioClip footstepL;
+    public AudioClip flutteringWings;
 
     void PlayFootstepR()
     {
@@ -17,4 +18,10 @@ public class syncAudio : MonoBehaviour
     {
         source.PlayOneShot(footstepL);
     }
+
+    void PlayFlutteringWings()
+    {
+        source.PlayOneShot(flutteringWings);
+    }
+
 }
