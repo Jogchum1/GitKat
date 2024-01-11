@@ -223,7 +223,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, maxYVelocity);
         }
 
-        if (IsGrounded() && horizontal == 0 || isSaus)
+        if (IsGrounded() && horizontal == 0 /* || isSaus */)
         {
             return;
         }
