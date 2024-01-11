@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -112,12 +113,18 @@ public class PlayerCombat : MonoBehaviour, IDamageable
             //respawnPoint.transform.position = door.goalPos;
             respawnPoint.transform.SetPositionAndRotation(door.goalDoor.goalPos, Quaternion.identity);
         }
+
+        if (collision.tag == "Saus")
+        {
+            gameManager.playerMovement.anim.SetFloat("InSaus", 1);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Death" && !dying)
         {
+            //gameManager.playerMovement.anim.SetFloat("InSaus", 1);
             //alpha = alpha + 0.1f;
             if(dmgCooldown == false)
             {
@@ -150,8 +157,14 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     {
         if (collision.tag == "Death")
         {
+            //gameManager.playerMovement.anim.SetFloat("InSaus", 0);
             alpha = 0;
             StartCoroutine(TransitionRedScreen(redScreen.color, redScreenColor, 0.5f));
+        }
+
+        if (collision.tag == "Saus")
+        {
+            gameManager.playerMovement.anim.SetFloat("InSaus", 0);
         }
     }
 
