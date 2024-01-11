@@ -456,7 +456,7 @@ MonoBehaviour:
   maxJumps: 1
   hangTime: 0.2
   jumpBuggerLenght: 0.1
-  canGlide: 1
+  canGlide: 0
   glideGrav: 0.1
   canPaddoJump: 0
   isSaus: 0
