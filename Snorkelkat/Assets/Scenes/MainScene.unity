@@ -309,6 +309,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03c0e05938a1e8b4d916a2200c42bde1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &345187187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3562355828845795079, guid: d763f04576d1ddb44b3cf1061ccd186f, type: 3}
+  m_PrefabInstance: {fileID: 4664213657098531835}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &349310765
 GameObject:
   m_ObjectHideFlags: 0
@@ -17908,24 +17913,32 @@ PrefabInstance:
       objectReference: {fileID: 1351645199}
     - target: {fileID: 1179260317899800864, guid: 2d78ddbaf35006a418ededf3629ff156, type: 3}
       propertyPath: gameObjectsToEnable.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1179260317899800864, guid: 2d78ddbaf35006a418ededf3629ff156, type: 3}
       propertyPath: gameObjectsToEnable.Array.data[0]
       value: 
       objectReference: {fileID: 1351645199}
+    - target: {fileID: 1179260317899800864, guid: 2d78ddbaf35006a418ededf3629ff156, type: 3}
+      propertyPath: gameObjectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 4664213657098531837}
     - target: {fileID: 1179260318484732273, guid: 2d78ddbaf35006a418ededf3629ff156, type: 3}
       propertyPath: room
       value: 
       objectReference: {fileID: 1440103952}
     - target: {fileID: 1179260318484732273, guid: 2d78ddbaf35006a418ededf3629ff156, type: 3}
       propertyPath: gameObjectsToEnable.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1179260318484732273, guid: 2d78ddbaf35006a418ededf3629ff156, type: 3}
       propertyPath: gameObjectsToEnable.Array.data[0]
       value: 
       objectReference: {fileID: 1440103952}
+    - target: {fileID: 1179260318484732273, guid: 2d78ddbaf35006a418ededf3629ff156, type: 3}
+      propertyPath: gameObjectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 345187187}
     - target: {fileID: 7036808291871080791, guid: 2d78ddbaf35006a418ededf3629ff156, type: 3}
       propertyPath: m_Name
       value: Doors
