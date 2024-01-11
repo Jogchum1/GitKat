@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 036c75ecfcb4d2149a7eb21250076544, type: 3}
   m_Name: Glide
   m_EditorClassIdentifier: 
-  abilitySprite: {fileID: 21300000, guid: debbb6d3cd03b824e84d654ee96eb0ab, type: 3}
+  abilitySprite: {fileID: 21300000, guid: 7d49c1b4739ab984d8c3f869b533a14a, type: 3}
   controlsSprite: {fileID: 21300000, guid: 904a9a79e646f1249bc1d723dd2f6be6, type: 3}
   gameManager: {fileID: 0}
