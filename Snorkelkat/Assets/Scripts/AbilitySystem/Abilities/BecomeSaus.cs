@@ -7,9 +7,12 @@ public class BecomeSaus : ModAbility
 {
     public float changedPlayerScaleY = 0.5f;
     [SerializeField]
+    public float activationForwardSpeed;
+    [SerializeField]
     private PlayerPhysicsStateMachine.State sausState;
     private CapsuleCollider2D playerCollider;
     private Vector2 colliderSize;
+    private Rigidbody2D rigidbody;
     public override void ActivateAbility()
     {
         if (gameManager == null)
@@ -19,6 +22,7 @@ public class BecomeSaus : ModAbility
         Debug.Log(gameManager);
         Debug.Log("HALLO?");
         playerCollider = gameManager.player.GetComponent<CapsuleCollider2D>();
+        rigidbody = gameManager.playerMovement.rb;
         colliderSize = playerCollider.size;
     }
 
@@ -47,6 +51,10 @@ public class BecomeSaus : ModAbility
             playerCollider.size = new Vector2(playerCollider.size.x, changedPlayerScaleY);
             CenterCollider();
 
+            if (gameManager.playerMovement.IsGrounded() && rigidbody.velocity.x < activationForwardSpeed)
+            {
+                rigidbody.velocity = new Vector2(activationForwardSpeed * gameManager.playerMovement.aheadAmount, rigidbody.velocity.y);
+            }
             gameManager.playerPhysicsStateMachine.state = sausState;
             gameManager.playerMovement.isSaus = true;
             gameManager.playerMovement.anim.SetBool("IsSaus", true);

@@ -12,8 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private float hangCounter;
     private float jumpBufferCount;
     public Animator anim;
+    public Rigidbody2D rb;
 
-    [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform wallCheck;
@@ -235,7 +235,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
     }
@@ -375,21 +375,34 @@ public class PlayerMovement : MonoBehaviour
 
     private void Glide()
     {
-        
-        if(!IsGrounded() && Input.GetKeyDown(KeyCode.Space))
-        {
-            
-            rb.velocity = new Vector2(rb.velocity.x, 0);
-            anim.SetBool("IsFloating", true);
-
-            Debug.Log("Glide");
-            rb.gravityScale = glideGrav;
-        }
 
         if (IsGrounded())
         {
             rb.gravityScale = 3f;
+            return;
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (rb.velocity.y <= 0)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, 0);
+            }
+            anim.SetBool("IsFloating", true);
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            if (rb.velocity.y <= 0)
+            {
+                rb.gravityScale = glideGrav;
+            }
+            else
+            {
+                rb.gravityScale = 3f;
+            }
+        }
+
 
         if (Input.GetKeyUp(KeyCode.Space))
         {

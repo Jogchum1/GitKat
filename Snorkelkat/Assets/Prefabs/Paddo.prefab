@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3111382908239049195}
   - component: {fileID: 2677397724280933780}
   - component: {fileID: 7954156417083772153}
+  - component: {fileID: 5786601910663253181}
   m_Layer: 16
   m_Name: Collider
   m_TagString: Untagged
@@ -78,6 +79,20 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 50
+--- !u!114 &5786601910663253181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18968035405250152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b9c2219b71cdb4497773593b1a9823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerIncoming: 0
+  bounceAmount: 0
 --- !u!1 &3635531572129897165
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,6 +169,8 @@ MonoBehaviour:
   paddoTime: 10
   animator: {fileID: 4686930318893205325}
   col: {fileID: 5398091842518859518}
+  bouncyPlatform: {fileID: 5786601910663253181}
+  bounceAmount: 10
 --- !u!1 &6814050366443601983
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,4 +16,5 @@ MonoBehaviour:
   controlsSprite: {fileID: 21300000, guid: 8e606d895f2b4e648bdbe66c859ed041, type: 3}
   gameManager: {fileID: 0}
   changedPlayerScaleY: 0.75
+  activationForwardSpeed: 1
   sausState: 1
