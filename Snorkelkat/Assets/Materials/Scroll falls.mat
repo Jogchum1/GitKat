@@ -29,7 +29,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: e45e458a2a09a98419c0e92a87bb75ec, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2333fedfe2a5f46469dd6294d976f674, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskTex:
@@ -37,6 +37,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SecondaryTexture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -65,7 +69,7 @@ Material:
     m_Colors:
     - _Color: {r: 0.5493876, g: 0.8980392, b: 0.3843137, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 1, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0.9622642, g: 0, b: 0, a: 1}
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
     - _OutlineSize: {r: 25.94, g: 22.58, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
