@@ -445,6 +445,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &696294036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8451866586423137653, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
+  m_PrefabInstance: {fileID: 1364843180584757941}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &702802561 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2685542623878739364, guid: 141f515165775c643a656dc626f3510f, type: 3}
@@ -17789,6 +17794,10 @@ PrefabInstance:
       propertyPath: MaxDistance
       value: 55
       objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: textComponent
+      value: 
+      objectReference: {fileID: 696294036}
     - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: dialogueRunner
       value: 
