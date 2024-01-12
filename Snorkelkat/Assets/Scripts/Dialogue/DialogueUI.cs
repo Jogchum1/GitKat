@@ -212,6 +212,26 @@ public class DialogueUI : DialogueViewBase
         advanceHandler = null;
 
         Debug.Log($"{this.name} was interrupted while presenting {dialogueLine.TextID}");
+        //Debug.Log(lines[lines.Count -1].Text.Text.ToString() + "TEEEEEEEEEEEEST");
+
+        if(lines[lines.Count - 1].Text.Text.ToString() != dialogueLine.Text.Text)
+        {
+            if (lines.Count < 5)
+            {
+                lines.Add(dialogueLine);
+                Debug.Log("Add lines");
+            }
+            else
+            {
+                lines.RemoveAt(0);
+                Debug.Log(lines.Count + " is dit dan 1 minder?");
+                Debug.Log("Sort lines");
+                SortLines();
+                lines.Add(dialogueLine);
+            }
+            Debug.Log(lines.Count + " is lines count");
+            UpdateTextBoxes();
+        }
 
         // If we're in the middle of an animation, stop it.
         if (currentAnimation != null)
