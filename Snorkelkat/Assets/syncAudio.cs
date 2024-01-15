@@ -10,6 +10,7 @@ public class syncAudio : MonoBehaviour
     public AudioClip flutteringWings;
     public AudioClip sausfootstepR;
     public AudioClip sausfootstepL;
+    public AudioClip becomeSaus;
 
     void PlayFootstepR()
     {
@@ -36,4 +37,8 @@ public class syncAudio : MonoBehaviour
         source.PlayOneShot(sausfootstepL);
     }
 
+    public void PlaybecomeSaus()
+    {
+        source.PlayOneShot(becomeSaus);
+    }
 }

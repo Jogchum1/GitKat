@@ -366,6 +366,7 @@ MonoBehaviour:
   flutteringWings: {fileID: 8300000, guid: abbf598891fbfd443a685ba2caa6665f, type: 3}
   sausfootstepR: {fileID: 8300000, guid: 7fc3b8e5803c66544afbd45e0e9aa7ae, type: 3}
   sausfootstepL: {fileID: 8300000, guid: 45d24f37f0492404eb12ceb37ab12040, type: 3}
+  becomeSaus: {fileID: 8300000, guid: 45d24f37f0492404eb12ceb37ab12040, type: 3}
 --- !u!1 &8607489187868692277
 GameObject:
   m_ObjectHideFlags: 0

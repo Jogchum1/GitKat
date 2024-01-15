@@ -245,6 +245,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2280772047722110831, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
+      propertyPath: canPaddoJump
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5422440861744908603, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: animator
       value: 
@@ -16607,7 +16611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1796619926
 Transform:
   m_ObjectHideFlags: 0
