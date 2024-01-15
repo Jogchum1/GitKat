@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     /*[HideInInspector]*/ public PlayerPhysicsStateMachine playerPhysicsStateMachine;
     /*[HideInInspector]*/ public Rigidbody2D playerRigidbody2D;
     /*[HideInInspector]*/ public AbilitySwitcher abilitySwitcher;
+    public syncAudio syncAudio;
     public CamManager camManager;
 
     public GameObject inventory;
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour
         playerRigidbody2D = player.GetComponent<Rigidbody2D>();
         abilitySwitcher = player.GetComponent<AbilitySwitcher>();
         camManager = FindObjectOfType<CamManager>();
+        syncAudio = FindObjectOfType<syncAudio>();
     }
 
     private void Update()

@@ -48,6 +48,7 @@ public class BecomeSaus : ModAbility
 
         if (Input.GetKey(KeyCode.Mouse0) && !gameManager.playerMovement.isSaus)
         {
+            gameManager.syncAudio.PlaybecomeSaus();
             playerCollider.size = new Vector2(playerCollider.size.x, changedPlayerScaleY);
             CenterCollider();
 
