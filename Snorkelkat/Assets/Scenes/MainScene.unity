@@ -450,7 +450,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 2685542624088985460}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
@@ -524,6 +524,11 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1364843179832675218, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
   m_PrefabInstance: {fileID: 1364843180584757941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &1083623820 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2234441850117307059, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+  m_PrefabInstance: {fileID: 205212229834812689}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1147463468 stripped
 GameObject:
@@ -17491,7 +17496,7 @@ PrefabInstance:
       objectReference: {fileID: 118220258}
     - target: {fileID: 2685542624303244603, guid: 141f515165775c643a656dc626f3510f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -286.7516
+      value: -287.1016
       objectReference: {fileID: 0}
     - target: {fileID: 2685542624303244603, guid: 141f515165775c643a656dc626f3510f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17545,14 +17550,30 @@ PrefabInstance:
       propertyPath: m_BoundingShape2D
       value: 
       objectReference: {fileID: 205212229834812690}
+    - target: {fileID: 6545194809680195777, guid: 141f515165775c643a656dc626f3510f, type: 3}
+      propertyPath: m_BoundingShape2D
+      value: 
+      objectReference: {fileID: 1083623820}
     - target: {fileID: 6663026763286601841, guid: 141f515165775c643a656dc626f3510f, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
       objectReference: {fileID: 205212229834812693}
+    - target: {fileID: 6718211963293591452, guid: 141f515165775c643a656dc626f3510f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -277.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6718211963293591452, guid: 141f515165775c643a656dc626f3510f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.696972
+      objectReference: {fileID: 0}
     - target: {fileID: 7371594852564182616, guid: 141f515165775c643a656dc626f3510f, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
       objectReference: {fileID: 205212229834812692}
+    - target: {fileID: 8225518917066268586, guid: 141f515165775c643a656dc626f3510f, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 118220258}
     - target: {fileID: 8777385362827674874, guid: 141f515165775c643a656dc626f3510f, type: 3}
       propertyPath: m_Follow
       value: 
