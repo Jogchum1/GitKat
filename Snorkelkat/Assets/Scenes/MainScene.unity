@@ -253,10 +253,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 2.13373
       objectReference: {fileID: 0}
-    - target: {fileID: 2280772047722110831, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
-      propertyPath: canPaddoJump
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5422440861744908603, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: animator
       value: 
@@ -649,27 +645,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bda7ab36ec8c604d92a8fdb4a7970d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &1457793648
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!114 &1457793654 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2280772047722110831, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
+  m_PrefabInstance: {fileID: 263003709}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457793645}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52bfdb74407f9d498259c0ce5396d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1467476407 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5946852445404483100, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
@@ -17948,6 +17934,34 @@ PrefabInstance:
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 1455825668}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1457793654}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StopStrompeling
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
 --- !u!1001 &4664213657098531835

@@ -522,6 +522,8 @@ MonoBehaviour:
   paddoCooldown: 0.1
   paddoTimer: 0
   paddoTimerDone: 0
+  strompelMoveSpeed: 4
+  strompelOnStart: 1
 --- !u!114 &6213756538626230296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -645,8 +647,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bda7ab36ec8c604d92a8fdb4a7970d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topModifier: {fileID: 11400000, guid: ae1ed116495578c438738c147b79d4ab, type: 2}
-  bottomModifier: {fileID: 11400000, guid: 452abbf0c13b05d44a481395bab52600, type: 2}
+  topModifier: {fileID: 0}
+  bottomModifier: {fileID: 0}
   topModifierSlot: {fileID: 0}
   bottomModifierSlot: {fileID: 0}
   topModifierSprite: {fileID: 0}

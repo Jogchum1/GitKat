@@ -60,11 +60,21 @@ public class PlayerMovement : MonoBehaviour
     public float paddoTimer;
     public bool paddoTimerDone = false;
 
+    [Header("Strompel")]
+    [SerializeField] private float strompelMoveSpeed;
+    [SerializeField] private bool strompelOnStart;
+    private bool isStrompeling;
+
     private void Start()
     {
         jumpsLeft = maxJumps;
         gameManager = GameManager.instance;
         paddoTimer = paddoCooldown;
+
+        if (strompelOnStart)
+        {
+            StartStrompeling();
+        }
     }
 
     void Update()
@@ -77,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
 
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (jumpsLeft > 0 && anim.GetFloat("InSaus") != 2f)
+        if (jumpsLeft > 0 && !isStrompeling)
         {
             if (jumpBufferCount >= 0 && hangCounter > 0f)
             {
@@ -97,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
 
         }
         //Small jump
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f && jumpsLeft >= 0 && anim.GetFloat("InSaus") != 2f)
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f && jumpsLeft >= 0 && !isStrompeling)
         {
             //anim.SetBool("IsJumping", false);
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
@@ -231,9 +241,9 @@ public class PlayerMovement : MonoBehaviour
 
         //changes movespeed if strompeling
         float movementSpeed;
-        if (anim.GetFloat("InSaus") == 2f)
+        if (isStrompeling)
         {
-            movementSpeed = speed / 3;
+            movementSpeed = strompelMoveSpeed;
         }
         else
         {
@@ -375,6 +385,18 @@ public class PlayerMovement : MonoBehaviour
             }
             Invoke(nameof(StopWallJumping), wallJumpingDuration);
         }
+    }
+
+    private void StartStrompeling()
+    {
+        anim.SetFloat("InSaus", 2);
+        isStrompeling = true;
+    }
+
+    public void StopStrompeling()
+    {
+        anim.SetFloat("InSaus", 0);
+        isStrompeling = false;
     }
 
     private void StopWallJumping()
