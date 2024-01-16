@@ -98,25 +98,25 @@ public class CamManager : MonoBehaviour
     #region Swap Cameras
 
     //checks the exit direction and swaps to the corresponding camera
-    public void CameraCheckAndSwap(CinemachineVirtualCamera cameraFromLeft, CinemachineVirtualCamera cameraFromRight, Vector2 triggerExitDirection)
+    public void CameraCheckAndSwap(CinemachineVirtualCamera cameraFromLeft, CinemachineVirtualCamera cameraFromRight, float triggerExitDirection)
     {
         //if the current camera is the camera on the left and our trigger exit direction was on the right
-        if (currentCamera == cameraFromLeft && triggerExitDirection.x > 0f)
+        if (triggerExitDirection > 0f)
         {
-            CameraSwap(cameraFromLeft, cameraFromRight);
+            CameraSwap(cameraFromRight);
         }
 
         //if the current camera is the camera on the right and our trigger exit direction was on the left
-        else if (currentCamera == cameraFromRight && triggerExitDirection.x < 0f)
+        else if (triggerExitDirection < 0f)
         {
-            CameraSwap(cameraFromRight, cameraFromLeft);
+            CameraSwap(cameraFromLeft);
         }
     }
 
-    private void CameraSwap(CinemachineVirtualCamera oldCam, CinemachineVirtualCamera newCam)
+    private void CameraSwap(CinemachineVirtualCamera newCam)
     {
         newCam.enabled = true;
-        oldCam.enabled = false;
+        currentCamera.enabled = false;
         currentCamera = newCam;
 
         framingTransposer = newCam.GetCinemachineComponent<CinemachineFramingTransposer>();
