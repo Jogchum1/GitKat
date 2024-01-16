@@ -12,24 +12,12 @@ public class AbilitySwitcher : MonoBehaviour
     [SerializeField] private GameObject bottomModifierSprite;
     [SerializeField] private float switchTimeSeconds;
     [SerializeField] private Animator animator;
+    private GameManager gameManager;
     private bool switching = false;
 
     private void Start()
-    {
-        GameManager gameManager = GameManager.instance;
-        if (topModifier != null)
-        {
-            topModifier.InstatiateAbilities(gameManager);
-            topModifier.SwitchToTop();
-        }
-        if (bottomModifier != null)
-        {
-            bottomModifier.InstatiateAbilities(gameManager);
-            bottomModifier.SwitchToBottom();
-        }
-
-        topModifierSlot.SetModifierAndAbilitySprite(topModifier);
-        bottomModifierSlot.SetModifierAndAbilitySprite(bottomModifier);
+    {   gameManager = GameManager.instance;
+        StartAbilities();
     }
 
     public void Update()
@@ -44,6 +32,23 @@ public class AbilitySwitcher : MonoBehaviour
         }
         bottomModifier?.UpdateActiveAbility();
         topModifier?.UpdateActiveAbility();
+    }
+
+    public void StartAbilities()
+    {
+        if (topModifier != null)
+        {
+            topModifier.InstatiateAbilities(gameManager);
+            topModifier.SwitchToTop();
+        }
+        if (bottomModifier != null)
+        {
+            bottomModifier.InstatiateAbilities(gameManager);
+            bottomModifier.SwitchToBottom();
+        }
+
+        topModifierSlot.SetModifierAndAbilitySprite(topModifier);
+        bottomModifierSlot.SetModifierAndAbilitySprite(bottomModifier);
     }
 
     public void SwitchModifierPos()
@@ -120,12 +125,10 @@ public class AbilitySwitcher : MonoBehaviour
 
         yield return new WaitForSeconds(showForSeconds / 2);
 
-        updateModifierSlotSprites();
+        //updateModifierSlotSprites();
         //switch sprites
-        topModifierSlot.SetAbilitySprite(topModifier);
-        bottomModifierSlot.SetAbilitySprite(bottomModifier);
-        topModifierSlot.SetModifierSprite(topModifier);
-        bottomModifierSlot.SetModifierSprite(bottomModifier);
+        topModifierSlot.SetModifierAndAbilitySprite(topModifier);
+        bottomModifierSlot.SetModifierAndAbilitySprite(bottomModifier);
 
         yield return new WaitForSeconds(showForSeconds/2);
 

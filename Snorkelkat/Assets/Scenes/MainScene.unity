@@ -16856,12 +16856,28 @@ PrefabInstance:
       propertyPath: customInspectorObjects.cameraOnRight
       value: 
       objectReference: {fileID: 2092380030}
+    - target: {fileID: 417377507541177326, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 1457602578}
+    - target: {fileID: 417377507541177326, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
+      value: 
+      objectReference: {fileID: 2092380030}
     - target: {fileID: 1321718470460786940, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
       propertyPath: customInspectorObjects.cameraOnLeft
       value: 
       objectReference: {fileID: 1457602578}
     - target: {fileID: 1321718470460786940, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
       propertyPath: customInspectorObjects.cameraOnRight
+      value: 
+      objectReference: {fileID: 2685542624088985464}
+    - target: {fileID: 1321718470460786940, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 1457602578}
+    - target: {fileID: 1321718470460786940, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
       value: 
       objectReference: {fileID: 2685542624088985464}
     - target: {fileID: 1385378393561435982, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
@@ -16874,6 +16890,14 @@ PrefabInstance:
       objectReference: {fileID: 1457602578}
     - target: {fileID: 1387885637284076790, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
       propertyPath: customInspectorObjects.cameraOnRight
+      value: 
+      objectReference: {fileID: 2092380030}
+    - target: {fileID: 1387885637284076790, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 1457602578}
+    - target: {fileID: 1387885637284076790, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
       value: 
       objectReference: {fileID: 2092380030}
     - target: {fileID: 1831431410646135285, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
@@ -16896,6 +16920,14 @@ PrefabInstance:
       propertyPath: customInspectorObjects.cameraOnRight
       value: 
       objectReference: {fileID: 2685542624088985465}
+    - target: {fileID: 2327946594682474164, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 1457602578}
+    - target: {fileID: 2327946594682474164, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
+      value: 
+      objectReference: {fileID: 2685542624088985465}
     - target: {fileID: 3606720836127515973, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
       propertyPath: customInspectorObjects.cameraOnLeft
       value: 
@@ -16904,12 +16936,28 @@ PrefabInstance:
       propertyPath: customInspectorObjects.cameraOnRight
       value: 
       objectReference: {fileID: 1457602578}
+    - target: {fileID: 3606720836127515973, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 2133695368}
+    - target: {fileID: 3606720836127515973, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
+      value: 
+      objectReference: {fileID: 1457602578}
     - target: {fileID: 3797196306028408158, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
       propertyPath: customInspectorObjects.cameraOnLeft
       value: 
       objectReference: {fileID: 1457602578}
     - target: {fileID: 3797196306028408158, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
       propertyPath: customInspectorObjects.cameraOnRight
+      value: 
+      objectReference: {fileID: 2685542624088985464}
+    - target: {fileID: 3797196306028408158, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 1457602578}
+    - target: {fileID: 3797196306028408158, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
       value: 
       objectReference: {fileID: 2685542624088985464}
     - target: {fileID: 3897801506531937985, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
@@ -16936,12 +16984,28 @@ PrefabInstance:
       propertyPath: customInspectorObjects.cameraOnRight
       value: 
       objectReference: {fileID: 2133695368}
+    - target: {fileID: 4346136062186486788, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 1457602578}
+    - target: {fileID: 4346136062186486788, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
+      value: 
+      objectReference: {fileID: 2133695368}
     - target: {fileID: 5139035331713468563, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
       propertyPath: customInspectorObjects.cameraOnLeft
       value: 
       objectReference: {fileID: 2133695368}
     - target: {fileID: 5139035331713468563, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
       propertyPath: customInspectorObjects.cameraOnRight
+      value: 
+      objectReference: {fileID: 1457602578}
+    - target: {fileID: 5139035331713468563, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 2133695368}
+    - target: {fileID: 5139035331713468563, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
       value: 
       objectReference: {fileID: 1457602578}
     - target: {fileID: 5155001003144981964, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
@@ -16952,12 +17016,28 @@ PrefabInstance:
       propertyPath: customInspectorObjects.cameraOnRight
       value: 
       objectReference: {fileID: 1457602578}
+    - target: {fileID: 5155001003144981964, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 2092380030}
+    - target: {fileID: 5155001003144981964, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
+      value: 
+      objectReference: {fileID: 1457602578}
     - target: {fileID: 5274301564075278747, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
       propertyPath: customInspectorObjects.cameraOnLeft
       value: 
       objectReference: {fileID: 2685542624088985464}
     - target: {fileID: 5274301564075278747, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
       propertyPath: customInspectorObjects.cameraOnRight
+      value: 
+      objectReference: {fileID: 265581442}
+    - target: {fileID: 5274301564075278747, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 2685542624088985464}
+    - target: {fileID: 5274301564075278747, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
       value: 
       objectReference: {fileID: 265581442}
     - target: {fileID: 7173566674183854753, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
@@ -16986,6 +17066,14 @@ PrefabInstance:
       objectReference: {fileID: 2133695368}
     - target: {fileID: 8789709236562719378, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
       propertyPath: customInspectorObjects.cameraOnRight
+      value: 
+      objectReference: {fileID: 1457602578}
+    - target: {fileID: 8789709236562719378, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 2133695368}
+    - target: {fileID: 8789709236562719378, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
       value: 
       objectReference: {fileID: 1457602578}
     m_RemovedComponents: []
@@ -17044,6 +17132,14 @@ PrefabInstance:
       objectReference: {fileID: 1990317680}
     - target: {fileID: 2614737549272989637, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: customInspectorObjects.cameraOnRight
+      value: 
+      objectReference: {fileID: 1457602578}
+    - target: {fileID: 2614737549272989637, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 1990317680}
+    - target: {fileID: 2614737549272989637, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
       value: 
       objectReference: {fileID: 1457602578}
     - target: {fileID: 2614737549272989642, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
@@ -17134,6 +17230,14 @@ PrefabInstance:
       propertyPath: customInspectorObjects.cameraOnRight
       value: 
       objectReference: {fileID: 2685542624088985463}
+    - target: {fileID: 4433794107204017489, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 1457602578}
+    - target: {fileID: 4433794107204017489, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
+      value: 
+      objectReference: {fileID: 2685542624088985463}
     - target: {fileID: 5492086847840354719, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: m_Targets.Array.data[1].target
       value: 
@@ -17200,6 +17304,14 @@ PrefabInstance:
       objectReference: {fileID: 2685542624088985463}
     - target: {fileID: 6166417331953220492, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: customInspectorObjects.cameraOnRight
+      value: 
+      objectReference: {fileID: 1457602578}
+    - target: {fileID: 6166417331953220492, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 2685542624088985463}
+    - target: {fileID: 6166417331953220492, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
       value: 
       objectReference: {fileID: 1457602578}
     - target: {fileID: 6946736559030403427, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
@@ -17669,6 +17781,14 @@ PrefabInstance:
       propertyPath: customInspectorObjects.cameraOnRight
       value: 
       objectReference: {fileID: 1457602578}
+    - target: {fileID: 323169520654514370, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 631007764}
+    - target: {fileID: 323169520654514370, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
+      value: 
+      objectReference: {fileID: 1457602578}
     - target: {fileID: 323169521530874831, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: customInspectorObjects.cameraOnLeft
       value: 
@@ -17677,12 +17797,28 @@ PrefabInstance:
       propertyPath: customInspectorObjects.cameraOnRight
       value: 
       objectReference: {fileID: 1370049734}
+    - target: {fileID: 323169521530874831, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 1457602578}
+    - target: {fileID: 323169521530874831, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
+      value: 
+      objectReference: {fileID: 1370049734}
     - target: {fileID: 323169522283298142, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: customInspectorObjects.cameraOnLeft
       value: 
       objectReference: {fileID: 1457602578}
     - target: {fileID: 323169522283298142, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: customInspectorObjects.cameraOnRight
+      value: 
+      objectReference: {fileID: 631007764}
+    - target: {fileID: 323169522283298142, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: customInspectorObjects.cameraOnLeftOrUnder
+      value: 
+      objectReference: {fileID: 1457602578}
+    - target: {fileID: 323169522283298142, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: customInspectorObjects.cameraOnRightOrAbove
       value: 
       objectReference: {fileID: 631007764}
     - target: {fileID: 964949387082539514, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}

@@ -19,28 +19,10 @@ public class ModifierSlot : MonoBehaviour
             return;
         }
         modifierImage.sprite = modifier.modSprite;
+        modifierImage.color = Color.white;
         abilityImage.sprite = modifier.activeAbility.abilitySprite;
+        abilityImage.color = Color.white;
         controlsImage.sprite = modifier.activeAbility.controlsSprite;
-    }
-
-    public void SetModifierSprite(ModifierScript modifier)
-    {
-        if (modifier == null)
-        {
-            modifierImage.sprite = null;
-            return;
-        }
-        modifierImage.sprite = modifier.modSprite;
-    }
-    public void SetAbilitySprite(ModifierScript modifier)
-    {
-        if (modifier == null)
-        {
-            abilityImage.sprite = null;
-            controlsImage.sprite = null;
-            return;
-        }
-        abilityImage.sprite = modifier.activeAbility.abilitySprite;
-        controlsImage.sprite = modifier.activeAbility.controlsSprite;
+        controlsImage.color = Color.white;
     }
 }

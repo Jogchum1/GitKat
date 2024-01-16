@@ -23,9 +23,11 @@ public class AbilityGiver : MonoBehaviour
         if(gameManager.abilitySwitcher.topModifier == null)
         {
             gameManager.abilitySwitcher.topModifier = modifierToGive;
+            gameManager.abilitySwitcher.StartAbilities();
         }else if(gameManager.abilitySwitcher.bottomModifier == null)
         {
             gameManager.abilitySwitcher.bottomModifier = modifierToGive;
+            gameManager.abilitySwitcher.StartAbilities();
         }
     }
 }
