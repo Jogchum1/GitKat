@@ -577,6 +577,17 @@ PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 1828970407346715859, guid: 9a2dbf392da65e642b5c26aebcae4ffb, type: 3}
   m_PrefabInstance: {fileID: 205212229834812689}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1370049734 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8225518917066268586, guid: 141f515165775c643a656dc626f3510f, type: 3}
+  m_PrefabInstance: {fileID: 2685542624088985460}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1373972613 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7321705302262806178, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
@@ -17645,7 +17656,7 @@ PrefabInstance:
     - target: {fileID: 323169521530874831, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: customInspectorObjects.cameraOnRight
       value: 
-      objectReference: {fileID: 631007764}
+      objectReference: {fileID: 1370049734}
     - target: {fileID: 323169522283298142, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: customInspectorObjects.cameraOnLeft
       value: 
