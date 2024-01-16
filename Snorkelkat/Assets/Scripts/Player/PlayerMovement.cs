@@ -77,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
 
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (jumpsLeft > 0)
+        if (jumpsLeft > 0 && anim.GetFloat("InSaus") != 2f)
         {
             if (jumpBufferCount >= 0 && hangCounter > 0f)
             {
@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
 
         }
         //Small jump
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f && jumpsLeft >= 0)
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f && jumpsLeft >= 0 && anim.GetFloat("InSaus") != 2f)
         {
             //anim.SetBool("IsJumping", false);
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
@@ -223,16 +223,25 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, maxYVelocity);
         }
 
-        if (IsGrounded() && horizontal == 0 /* || isSaus */)
+        //stops movement
+        if (IsGrounded() && horizontal == 0 && !isWallJumping)
         {
             return;
         }
 
-        if (!isWallJumping)
+        //changes movespeed if strompeling
+        float movementSpeed;
+        if (anim.GetFloat("InSaus") == 2f)
         {
-            //movement :)
-            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            movementSpeed = speed / 3;
         }
+        else
+        {
+            movementSpeed = speed;
+        }
+
+        //movement :)
+        rb.velocity = new Vector2(horizontal * movementSpeed, rb.velocity.y);
     }
 
     public bool IsGrounded()

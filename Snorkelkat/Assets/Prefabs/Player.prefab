@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 1432071369137243483}
   - component: {fileID: 7245940531133870332}
   - component: {fileID: 2697514211281824521}
+  - component: {fileID: 1095108833278011955}
   m_Layer: 0
   m_Name: PlayerGraphics
   m_TagString: Untagged
@@ -367,6 +368,51 @@ MonoBehaviour:
   sausfootstepR: {fileID: 8300000, guid: 7fc3b8e5803c66544afbd45e0e9aa7ae, type: 3}
   sausfootstepL: {fileID: 8300000, guid: 45d24f37f0492404eb12ceb37ab12040, type: 3}
   becomeSaus: {fileID: 8300000, guid: 45d24f37f0492404eb12ceb37ab12040, type: 3}
+--- !u!114 &1095108833278011955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913988928762782029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 0dcfde07aad20cf48ba378714f31aa23, type: 2}
+    - {fileID: 11400000, guid: 827da7c65c04b714b81ec74b9e54d1ba, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1432071369137243483}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: KneelUp
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1432071369137243483}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: KneelDown
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &8607489187868692277
 GameObject:
   m_ObjectHideFlags: 0
