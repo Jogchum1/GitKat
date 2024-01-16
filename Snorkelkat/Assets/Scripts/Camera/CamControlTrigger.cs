@@ -34,9 +34,16 @@ public class CamControlTrigger : MonoBehaviour
 
             Vector2 exitDirection = (collision.transform.position - collider.bounds.center).normalized;
 
-            if (customInspectorObjects.swapCameras && customInspectorObjects.cameraOnLeft != null && customInspectorObjects.cameraOnRight != null)
+            if (customInspectorObjects.swapCameras && customInspectorObjects.cameraOnLeftOrUnder != null && customInspectorObjects.cameraOnRightOrAbove != null)
             {
-                CamManager.instance.CameraCheckAndSwap(customInspectorObjects.cameraOnLeft, customInspectorObjects.cameraOnRight, exitDirection);
+                if (customInspectorObjects.swapCamerasUpDown)
+                {
+                    CamManager.instance.CameraCheckAndSwap(customInspectorObjects.cameraOnLeftOrUnder, customInspectorObjects.cameraOnRightOrAbove, exitDirection.y);
+                }
+                else
+                {
+                    CamManager.instance.CameraCheckAndSwap(customInspectorObjects.cameraOnLeftOrUnder, customInspectorObjects.cameraOnRightOrAbove, exitDirection.x);
+                }
             }
 
             if (customInspectorObjects.panCameraOnContact)
@@ -52,9 +59,10 @@ public class CustomInspectorObjects
 {
     public bool swapCameras = false;
     public bool panCameraOnContact = false;
+    public bool swapCamerasUpDown = false;
 
-    public CinemachineVirtualCamera cameraOnLeft;
-    public CinemachineVirtualCamera cameraOnRight;
+    public CinemachineVirtualCamera cameraOnLeftOrUnder;
+    public CinemachineVirtualCamera cameraOnRightOrAbove;
 
     public PanDirection panDirection;
     public float panDistance = 3f;
