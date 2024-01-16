@@ -17566,6 +17566,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8451866586423137653, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
 --- !u!114 &1364843180584757942 stripped
@@ -18179,6 +18183,14 @@ PrefabInstance:
       propertyPath: spawnpoint.y
       value: -4.13
       objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: textComponent
+      value: 
+      objectReference: {fileID: 696294036}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: dialogueRunner
+      value: 
+      objectReference: {fileID: 1455825668}
     - target: {fileID: 6026407387095363590, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
       propertyPath: m_IsActive
       value: 0
