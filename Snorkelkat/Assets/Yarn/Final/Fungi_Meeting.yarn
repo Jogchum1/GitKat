@@ -13,7 +13,6 @@ Your voice sounds hoarse. Speaking hurts, just like the rest of your injured bod
 The Web: "we.. / r... / pl.."
     -> "Are you.. a person?"
 You look around the tree, but find nobody else. After a few more seconds of strange noises, the voices start to speak in turns.
-The Web: "please refer to / us / as plural"
 The Web: "we are / both / few / many / several"
     -> "Who is speaking? Identify yourself!"
 The Web: "we designate / class / tag / name ourselves / the Web"
@@ -48,6 +47,7 @@ The Web: "only then / we will help you / find what you are missing"
 As surreal as this feels, the mushroom's deal is your best bet at going home.
     -> "On it."
 Spores fly into the air around you. You should find a place to spread them.
+<<RunNPCEvent NPC_Tree>>
 <<stop>>
 //The Web: "praat over dat de company het ecosysteem heeft verwoest en hun goal en dat ze de speler kunnen helpen te herstellen wat ze missen"
 //Speler krijgt opdracht om spores te verspreiden
@@ -60,7 +60,6 @@ Spores fly into the air around you. You should find a place to spread them.
 //        "I'm going crazy. Because I'm talking to a mushroom."
 //        The Web: "not just / the mushroom / but a network / a web"
 //        "Yes, the Web, whatever."
-<<RunNPCEvent NPC_Tree>>
 ---
 ===
 title: Creature_Room3
@@ -71,7 +70,7 @@ The corpse of an animal lays on the ground before you. The sight of its rotting 
 To your surprise, there is still light in the creature's eyes. It's not dead yet.
     -> "Can you speak, as well?"
 Its gaze lands on you.
-The Creature: "NAME. You are a long way from home."
+The Creature: "Cyborg. You are a long way from home."
     -> "How do you know that?"
 The Creature: "We spoke before, through the Web. I am one of many of its voices."
 The Creature: "You helped restore our network, so now I can finally die."
@@ -86,8 +85,7 @@ The Creature: "Yet I do not fear it, why do you?"
         The Creature: "You say you do not know what it feels like to die, but you were dead once already."
 The Creature: "You fear the end, but I will begin anew."
 The Creature: "I will regrow, my elements transformed. My cells will nurture life anew."
-The Creature: "We were once stars and now we are animals and after this we’ll be flowers."
-// later, elements of the creature's design are present in the flora you encounter.
+The Creature: "We were once stars and now we are animals and after this weâ€™ll be flowers."
 The Creature: "And my story will live on in you."
 The Creature: "Do you feel it? The connectedness of all things?"
 The light in their eyes slowly fades. It stares unfocused in your direction.
@@ -95,7 +93,7 @@ The light in their eyes slowly fades. It stares unfocused in your direction.
 ===
 title: Fungi_Room2
 tags: 
-position: 262.62158584594727,-1.9999998807907104
+position: 263.62158584594727,1.1920928955078125e-7
 ---
 ask about the changes to your body
 you connected to us, so you changed
@@ -110,7 +108,12 @@ to change and grow and find yourself and connect to others
 ===
 title: Eye_Room3
 tags: 
-position: 761,-2
+position: 762,-2
 ---
-
+-> "I do feel it"
+The hum of the Web's presence fills your mind once again.
+The Web: "does that / scare you ?"
+You stare into the familiar eye that seems to have mutated in the soil.
+    -> "Are you in there? The creature I just spoke to? Are you alive?"
+The Web:
 ===
