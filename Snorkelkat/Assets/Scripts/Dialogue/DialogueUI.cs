@@ -9,7 +9,7 @@ using TMPro;
 public class DialogueUI : DialogueViewBase
 {
 
-    public List<LocalizedLine> lines = new List<LocalizedLine>();
+    public List<String> lines = new List<String>();
 
     public List<TMP_Text> textObjects = new List<TMP_Text>();
     [SerializeField] CanvasGroup canvasGroup;
@@ -91,7 +91,7 @@ public class DialogueUI : DialogueViewBase
         // Start displaying the line: set our scale to zero, and update our
         // text.
         Scale = 0;
-        //text.text = dialogueLine.Text.Text;
+        text.text = dialogueLine.Text.Text;
         isTalking = true;
         // During presentation, if we get an advance signal, we'll indicate that
         // we want to interrupt.
@@ -116,19 +116,7 @@ public class DialogueUI : DialogueViewBase
                     // continue. Don't signal that we're done; instead, when we
                     // get a signal to continue, we'll notify that the user
                     // wants to interrupt this view.
-                    if(lines.Count < 5)
-                    {
-                        lines.Add(dialogueLine);
-                        Debug.Log("Add lines");
-                    }
-                    else
-                    {
-                        lines.RemoveAt(0);
-                        Debug.Log(lines.Count + " is dit dan 1 minder?");
-                        Debug.Log("Sort lines");
-                        SortLines();
-                        lines.Add(dialogueLine);
-                    }
+                    //AddLinesToHistory(dialogueLine);
                     Debug.Log(lines.Count + " is lines count");
 
 
@@ -155,7 +143,7 @@ public class DialogueUI : DialogueViewBase
     {
         for (int i = 0; i < lines.Count; i++)
         {
-            string tmp = lines[i].Text.Text.ToString();
+            string tmp = lines[i];
             textObjects[i].text = tmp;
             Debug.Log(i + " is i van update");
         }
@@ -165,7 +153,7 @@ public class DialogueUI : DialogueViewBase
     {
         for (int i = 0; i < lines.Count; i++)
         {
-            string tmp = lines[i].Text.Text.ToString();
+            string tmp = lines[i];
             textObjects[i].text = tmp;
             Debug.Log(i + " is i van sort");
         }
@@ -214,21 +202,9 @@ public class DialogueUI : DialogueViewBase
         Debug.Log($"{this.name} was interrupted while presenting {dialogueLine.TextID}");
         //Debug.Log(lines[lines.Count -1].Text.Text.ToString() + "TEEEEEEEEEEEEST");
 
-        if(lines[lines.Count - 1].Text.Text.ToString() != dialogueLine.Text.Text)
+        if(lines[lines.Count - 1] != dialogueLine.Text.Text)
         {
-            if (lines.Count < 5)
-            {
-                lines.Add(dialogueLine);
-                Debug.Log("Add lines");
-            }
-            else
-            {
-                lines.RemoveAt(0);
-                Debug.Log(lines.Count + " is dit dan 1 minder?");
-                Debug.Log("Sort lines");
-                SortLines();
-                lines.Add(dialogueLine);
-            }
+            //AddLinesToHistory(dialogueLine.RawText);
             Debug.Log(lines.Count + " is lines count");
             UpdateTextBoxes();
         }
@@ -247,6 +223,23 @@ public class DialogueUI : DialogueViewBase
         onDialogueLineFinished();
     }
 
+    public void AddLinesToHistory(String dialogueLine)
+    {
+        if (lines.Count < 5)
+        {
+            lines.Add(dialogueLine);
+            Debug.Log("Add lines");
+        }
+        else
+        {
+            lines.RemoveAt(0);
+            //Debug.Log(lines.Count + " is dit dan 1 minder?");
+            //Debug.Log("Sort lines");
+            SortLines();
+            lines.Add(dialogueLine);
+        }
+    }
+
     // DismissLine is called when the dialogue runner has instructed us to get
     // rid of the line. This is our view's opportunity to do whatever animations
     // we need to to get rid of the line. When we're done, we call
@@ -263,6 +256,7 @@ public class DialogueUI : DialogueViewBase
         }
 
         Debug.Log($"{this.name} dismissing line");
+        AddLinesToHistory(text.text);
 
         // If we have an animation running, stop it.
         if (currentAnimation != null)
