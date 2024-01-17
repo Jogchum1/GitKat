@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1428458803677379753}
   - component: {fileID: 6110494109652858183}
   - component: {fileID: 8473792648739862599}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collectible
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8978589315897910630}
   - component: {fileID: 8349288242485289975}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7936917782136912770}
   - component: {fileID: 1297572318194308866}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 4115435453567898448}
   - component: {fileID: 7567651700396455238}
   - component: {fileID: 321243924150363752}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}

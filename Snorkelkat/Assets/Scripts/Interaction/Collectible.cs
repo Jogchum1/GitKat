@@ -18,13 +18,16 @@ public class Collectible : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        gameManager.collectables.CollectSticker(collectableIndex);
-        collectedPopUp.SetActive(true);
-        interactable = false;
-        ToggleInteractPopUp();
-        foreach (GameObject gameObject in childrenToDisable)
+        if (interactable)
         {
-            gameObject.SetActive(false);
+            gameManager.collectables.CollectSticker(collectableIndex);
+            collectedPopUp.SetActive(true);
+            interactable = false;
+            ToggleInteractPopUp();
+            foreach (GameObject gameObject in childrenToDisable)
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 
@@ -41,11 +44,13 @@ public class Collectible : MonoBehaviour, IInteractable
         if (other.gameObject.tag == "Player" && interactable)
         {
             ToggleInteractPopUp();
+            Debug.Log("Toggled");
         }
     }
 
     public void ToggleInteractPopUp()
     {
-        interactPopUp.SetActive(!interactPopUp.activeInHierarchy);
+        bool newbool = !interactPopUp.activeInHierarchy;
+        interactPopUp.SetActive(newbool);
     }
 }
