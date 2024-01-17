@@ -257,6 +257,10 @@ PrefabInstance:
       propertyPath: strompelOnStart
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2280772047722110831, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
+      propertyPath: strompelMoveSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5422440861744908603, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: animator
       value: 
@@ -16653,7 +16657,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1796619926
 Transform:
   m_ObjectHideFlags: 0
@@ -16724,6 +16728,8 @@ PlayableDirector:
     value: {fileID: 1370727366}
   - key: {fileID: 6322072769691115768, guid: c52f9a667a8a2954f99135b7441e7a0c, type: 2}
     value: {fileID: 1726269967}
+  - key: {fileID: -6186324745309137131, guid: c52f9a667a8a2954f99135b7441e7a0c, type: 2}
+    value: {fileID: 1941452251}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1822957945 stripped
@@ -16740,6 +16746,11 @@ Animator:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4269637329506640144, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
   m_PrefabInstance: {fileID: 4269637331012846635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1941452251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3824294301351201425, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+  m_PrefabInstance: {fileID: 1149612477382886109}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1990317680 stripped
 MonoBehaviour:
