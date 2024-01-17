@@ -6,11 +6,13 @@ using UnityEngine.UIElements;
 using Yarn;
 using Yarn.Unity;
 using TMPro;
+using UnityEditor.Build;
 
-public class BartDialogueUI : DialogueViewBase
+public class NewDialogueUI : DialogueViewBase
 {
     [SerializeField] private CanvasGroup canvasGroup;
     [SerializeField] private TextMeshProUGUI currentLine;
+    [SerializeField] private TextMeshProUGUI currentSpeaker;
     [SerializeField] private List<TMP_Text> historyTextObjects = new List<TMP_Text>();
     private List<string> linesSaid = new List<string>();
 
@@ -64,7 +66,9 @@ public class BartDialogueUI : DialogueViewBase
 
         advanceHandler = requestInterrupt;
 
-        currentLine.text = dialogueLine.Text.Text;
+
+        currentSpeaker.text = dialogueLine.CharacterName;
+        currentLine.text = dialogueLine.TextWithoutCharacterName.Text;
     }
 
     public override void InterruptLine(LocalizedLine dialogueLine, Action onDialogueLineFinished)
@@ -78,6 +82,7 @@ public class BartDialogueUI : DialogueViewBase
         mouseIcon.SetActive(false);
         AddLineToHistory(currentLine.text);
         currentLine.text = "";
+        currentSpeaker.text = "";
         onDismissalComplete?.Invoke();
     }
 
@@ -194,5 +199,11 @@ public class BartDialogueUI : DialogueViewBase
         {
             advanceHandler?.Invoke();
         }
+    }
+
+    [YarnCommand("SetNameColor")]
+    public void SetNameTextColor(float r,float g,float b)
+    {
+        currentSpeaker.color = new Color(r, g, b);
     }
 }
