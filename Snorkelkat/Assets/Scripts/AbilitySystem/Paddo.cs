@@ -17,10 +17,10 @@ public class Paddo : MonoBehaviour
     {
         //DisablePaddoCollider();
         gameManager = GameManager.instance;
-        StartCoroutine(DestoryPaddo());
+        StartCoroutine(DestroyPaddo());
     }
 
-    private IEnumerator DestoryPaddo()
+    private IEnumerator DestroyPaddo()
     {
         yield return new WaitForSeconds(paddoTime);
         DisablePaddoCollider();
