@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainMenu : MonoBehaviour
+public class PauseMenu : MonoBehaviour
 {
     public GameObject menu;
+    public bool active = false;
 
     private void Start()
     {
@@ -16,15 +17,32 @@ public class MainMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            menu.SetActive(true);
-            Time.timeScale = 0;
+            Debug.Log("Pressed");
+            if (Time.timeScale == 0)
+            {
+                Time.timeScale = 1;
+            }
+            ToggleMenu(!active);
         } 
+    }
+
+    private void ToggleMenu(bool state)
+    {
+        active = state;
+        menu.SetActive(state);
+        if (state)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
     }
 
     public void Resume()
     {
-        menu.SetActive(false);
-        Time.timeScale = 1;
+        ToggleMenu(!active);
     }
 
     public void Options()
@@ -37,4 +55,5 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quitting Game");
         Application.Quit();
     }
+
 }
