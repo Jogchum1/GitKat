@@ -15,10 +15,7 @@ public class BecomeSaus : ModAbility
     private Rigidbody2D rigidbody;
     public override void ActivateAbility()
     {
-        if (gameManager == null)
-        {
-            gameManager = FindObjectOfType<GameManager>();
-        }
+        gameManager = GameManager.instance;
         Debug.Log(gameManager);
         Debug.Log("HALLO?");
         playerCollider = gameManager.player.GetComponent<CapsuleCollider2D>();
@@ -35,11 +32,6 @@ public class BecomeSaus : ModAbility
 
     public override void UpdateAbility()
     {
-        if(gameManager == null)
-        {
-            gameManager = FindObjectOfType<GameManager>();
-        }
-
         if(playerCollider == null)
         {
             playerCollider = gameManager.player.GetComponent<CapsuleCollider2D>();
