@@ -253,6 +253,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 2.13373
       objectReference: {fileID: 0}
+    - target: {fileID: 2280772047722110831, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
+      propertyPath: strompelOnStart
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5422440861744908603, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: animator
       value: 
@@ -337,6 +341,11 @@ MonoBehaviour:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3562355828845795079, guid: d763f04576d1ddb44b3cf1061ccd186f, type: 3}
   m_PrefabInstance: {fileID: 4664213657098531835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &347462754 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1124143149499625751, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+  m_PrefabInstance: {fileID: 5865324335247052756}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &349310765
 GameObject:
@@ -661,6 +670,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5946852445404483100, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
   m_PrefabInstance: {fileID: 1149612477382886109}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1467476409 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2026184370755987814, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+  m_PrefabInstance: {fileID: 1149612477382886109}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467476407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2571229a319340545b3b8bcff7f197ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1471945922 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3440771232243656617, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
@@ -17155,6 +17175,14 @@ PrefabInstance:
       propertyPath: goalDoor
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2595359192066084774, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: m_Events.m_Events.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595359192066084774, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: m_Events.m_Signals.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2614737549272989637, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: customInspectorObjects.cameraOnLeft
       value: 
@@ -17296,12 +17324,68 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1455825668}
     - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.size
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1457793647}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1467476409}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1457793654}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1457793654}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -17310,25 +17394,149 @@ PrefabInstance:
     - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 1457793654}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
       objectReference: {fileID: 1457793647}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 1457793647}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GiveModifier
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: set_enabled
       objectReference: {fileID: 0}
     - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AbilityGiver, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: UnityEngine.Behaviour, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087862116529279903, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6166417331953220492, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
@@ -17939,31 +18147,147 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1455825668}
     - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1457793654}
     - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1457793654}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1457793645}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1457793654}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1457793654}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1457793647}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: StopStrompeling
       objectReference: {fileID: 0}
     - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: NPCDialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: PlayerMovement, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973996259507583735, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -18191,6 +18515,126 @@ PrefabInstance:
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 1455825668}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1457793654}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1457793647}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1457793654}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1457793647}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: NPCDialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077459084580752477, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6026407387095363590, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -18203,6 +18647,214 @@ PrefabInstance:
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 1455825668}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 347462754}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1457793654}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1457793647}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1457793647}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 1440103952}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1457793654}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1457793647}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 1440103952}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Animator, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Death
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6959350994908867909, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7445486952265511395, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
       propertyPath: endScreen
       value: 

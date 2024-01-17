@@ -1,4 +1,4 @@
-﻿title: Outro
+title: Outro
 tags: 
 position: -11,0
 ---
@@ -15,4 +15,5 @@ too stubborn to die, always adapting, surviving
 the eternal cycles of transformation
 my past self is dead
 maybe I can be someone new
+<<RunNPCEvent NPC_Oog>>
 ===

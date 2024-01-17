@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 using Yarn;
 using Yarn.Unity;
 
@@ -11,16 +12,19 @@ public class NPCDialogue : MonoBehaviour, IInteractable
     public string textTitle;
     public GameObject textComponent;
     public bool isActive = false;
+    public bool isInteractable = true;
+
+    [Header("Events")]
+    [SerializeField]
+    private UnityEvent onTalkEvent;
     [SerializeField]
     private UnityEvent NPCEvent;
-
-    public UnityEvent onTalkEvent;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Player"){
-            isActive = !isActive;
-            textComponent.SetActive(isActive);
+        if(other.gameObject.tag == "Player" && isInteractable)
+        {
+            TogglePopUp(true);
         }
     }
 
@@ -28,16 +32,36 @@ public class NPCDialogue : MonoBehaviour, IInteractable
     {
         if (other.gameObject.tag == "Player")
         {
-            isActive = !isActive;
-            textComponent.SetActive(isActive);
+            TogglePopUp(false);
         }
+    }
+
+    public void TogglePopUp () 
+    {
+        isActive = !isActive;
+        textComponent.SetActive(isActive);
+    }   
+
+    public void TogglePopUp (bool input) 
+    {
+        isActive = input;
+        textComponent.SetActive(isActive);
+    }
+
+    public void ToggleNPC()
+    {
+        isInteractable = !isInteractable;
+        TogglePopUp(isInteractable);
     }
 
     public void Interact()
     {
-        Debug.Log("Interacting");
+        //Debug.Log("Interacting");
+        if (!isInteractable)
+        {
+            return;
+        }
         dialogueRunner.StartDialogue(textTitle);
-        
         onTalkEvent.Invoke();
     }
 

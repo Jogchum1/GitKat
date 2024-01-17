@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Strompel")]
     [SerializeField] private float strompelMoveSpeed;
     [SerializeField] private bool strompelOnStart;
-    private bool isStrompeling;
+    private bool isStrompeling = false;
 
     private void Start()
     {
@@ -234,7 +234,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //stops movement
-        if (IsGrounded() && horizontal == 0 && !isWallJumping)
+        if (IsGrounded() && horizontal == 0 || isWallJumping)
         {
             return;
         }

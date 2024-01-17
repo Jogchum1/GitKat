@@ -1043,8 +1043,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00080001354, y: -0.000100016594, z: 0}
-    m_Extent: {x: 0.5043, y: 0.5079, z: 0}
+    m_Center: {x: 0.0016500056, y: 0.00090000033, z: 0}
+    m_Extent: {x: 0.50165, y: 0.5088, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2514,8 +2514,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.22165012, y: 0.88284993, z: 0}
-    m_Extent: {x: 6.06075, y: 7.6487503, z: 0}
+    m_Center: {x: 0.22659993, y: 0.87855005, z: 0}
+    m_Extent: {x: 6.0543003, y: 7.65115, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2975,8 +2975,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.13115, y: -1.6979002, z: 0}
-    m_Extent: {x: 4.8329496, y: 4.7324, z: 0}
+    m_Center: {x: -0.12719989, y: -1.7034999, z: 0}
+    m_Extent: {x: 4.8414, y: 4.7335, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5369,8 +5369,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.5238001, y: 0.2651, z: 0}
-    m_Extent: {x: 5.5852003, y: 5.7701, z: 0}
+    m_Center: {x: 1.5222001, y: 0.27799988, z: 0}
+    m_Extent: {x: 5.5927, y: 5.7707, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -11407,8 +11407,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0015999973, y: -0.0034499764, z: 0}
-    m_Extent: {x: 0.5065, y: 0.50575, z: 0}
+    m_Center: {x: 0.0037499964, y: 0.00044998527, z: 0}
+    m_Extent: {x: 0.50374997, y: 0.50045, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -13514,8 +13514,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.049800396, y: 0.014199972, z: 0}
-    m_Extent: {x: 8.966, y: 1.5526, z: 0}
+    m_Center: {x: 0.049699783, y: 0.016199946, z: 0}
+    m_Extent: {x: 8.9657, y: 1.5467, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14016,8 +14016,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.38445, y: 5.4164, z: 0}
-    m_Extent: {x: 14.48285, y: 13.815, z: 0}
+    m_Center: {x: -1.3927002, y: 5.4108005, z: 0}
+    m_Extent: {x: 14.4762, y: 13.8125, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14587,8 +14587,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.19440007, y: -0.069599986, z: 0}
-    m_Extent: {x: 6.0793, y: 1.6256, z: 0}
+    m_Center: {x: -0.20195007, y: -0.07005, z: 0}
+    m_Extent: {x: 6.08275, y: 1.63775, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -15901,8 +15901,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.18904972, y: 0.7602999, z: 0}
-    m_Extent: {x: 9.06695, y: 4.2448997, z: 0}
+    m_Center: {x: 0.18515015, y: 0.7628499, z: 0}
+    m_Extent: {x: 9.06785, y: 4.24825, z: 0}
   m_PointLightInnerAngle: 178.5826
   m_PointLightOuterAngle: 178.5826
   m_PointLightInnerRadius: 0
@@ -17270,8 +17270,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0044499934, y: 0.00034999847, z: 0}
-    m_Extent: {x: 0.50444996, y: 0.50035, z: 0}
+    m_Center: {x: -0.00014999509, y: 0.0042000115, z: 0}
+    m_Extent: {x: 0.50205004, y: 0.5042, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -18990,8 +18990,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -3.1110997, y: 0.33799982, z: 0}
-    m_Extent: {x: 16.2141, y: 8.761801, z: 0}
+    m_Center: {x: -3.1144996, y: 0.3348503, z: 0}
+    m_Extent: {x: 16.2135, y: 8.76645, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -28629,8 +28629,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.7472, y: 0.12349987, z: 0}
-    m_Extent: {x: 5.073, y: 7.3711, z: 0}
+    m_Center: {x: -0.74265003, y: 0.11565018, z: 0}
+    m_Extent: {x: 5.07205, y: 7.37285, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -34656,8 +34656,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.9627001, y: 2.0723002, z: 0}
-    m_Extent: {x: 6.9883003, y: 9.3183, z: 0}
+    m_Center: {x: 1.9641001, y: 2.0778499, z: 0}
+    m_Extent: {x: 6.9854, y: 9.31945, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -34834,8 +34834,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.002700001, y: -0.000100016594, z: 0}
-    m_Extent: {x: 0.5027, y: 0.5025, z: 0}
+    m_Center: {x: 0.0012499988, y: 0.0017500222, z: 0}
+    m_Extent: {x: 0.50125, y: 0.50265, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -53748,8 +53748,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0010999739, y: -0.0010499954, z: 0}
-    m_Extent: {x: 0.5027, y: 0.50105, z: 0}
+    m_Center: {x: -0.0042999983, y: -0.0023500025, z: 0}
+    m_Extent: {x: 0.5043, y: 0.50235, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -55788,8 +55788,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.70505, y: 0.12379998, z: 0}
-    m_Extent: {x: 11.04295, y: 1.5734, z: 0}
+    m_Center: {x: -0.7107501, y: 0.12115002, z: 0}
+    m_Extent: {x: 11.049049, y: 1.57515, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -56288,8 +56288,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0042000115, y: 0.002700001, z: 0}
-    m_Extent: {x: 0.5042, y: 0.5027, z: 0}
+    m_Center: {x: -0.0042999983, y: 0.00084999204, z: 0}
+    m_Extent: {x: 0.5043, y: 0.50084996, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -62835,8 +62835,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.21885014, y: 3.6151998, z: 0}
-    m_Extent: {x: 6.12535, y: 10.2546, z: 0}
+    m_Center: {x: 0.22919989, y: 3.61905, z: 0}
+    m_Extent: {x: 6.1214, y: 10.25595, z: 0}
   m_PointLightInnerAngle: 21.49
   m_PointLightOuterAngle: 21.49
   m_PointLightInnerRadius: 0
@@ -64006,8 +64006,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.78195, y: 0.024849892, z: 0}
-    m_Extent: {x: 5.08245, y: 6.85675, z: 0}
+    m_Center: {x: 1.7831, y: 0.0227499, z: 0}
+    m_Extent: {x: 5.0762, y: 6.84625, z: 0}
   m_PointLightInnerAngle: 21.49
   m_PointLightOuterAngle: 21.49
   m_PointLightInnerRadius: 0
@@ -72030,8 +72030,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0034500062, y: -0.00045001507, z: 0}
-    m_Extent: {x: 0.50345004, y: 0.50325, z: 0}
+    m_Center: {x: -0.0011999905, y: 0.00069999695, z: 0}
+    m_Extent: {x: 0.5066, y: 0.5023, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -77358,8 +77358,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.56980014, y: -2.03, z: 0}
-    m_Extent: {x: 4.6462, y: 7.2924004, z: 0}
+    m_Center: {x: -0.5752001, y: -2.0333, z: 0}
+    m_Extent: {x: 4.6355, y: 7.2832, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -97652,59 +97652,87 @@ PrefabInstance:
       value: Creature_Room3
       objectReference: {fileID: 0}
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
       propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2951697787225315260}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1124143149499625751}
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2951697787225315260}
+    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1124143149499625751}
+    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
       propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GiveModifier
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
       propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GiveModifier
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: SetTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: AbilityGiver, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: UnityEngine.Animator, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCDialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.Animator, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
       value: Death
       objectReference: {fileID: 0}
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
+      value: Death
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
+      propertyPath: NPCEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6733805855433857065, guid: cf08124525319a543867ed7e719e3544, type: 3}
@@ -98578,62 +98606,6 @@ PrefabInstance:
       propertyPath: textTitle
       value: Outro
       objectReference: {fileID: 0}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 7122241734782678692}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1124143149499625751}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GiveModifier
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: AbilityGiver, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.Animator, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: Death
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595609762484549876, guid: cf08124525319a543867ed7e719e3544, type: 3}
-      propertyPath: onTalkEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6733805855433857065, guid: cf08124525319a543867ed7e719e3544, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -98713,17 +98685,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6733805856435676537, guid: cf08124525319a543867ed7e719e3544, type: 3}
   m_PrefabInstance: {fileID: 8159683155893253289}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7122241734782678692 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1435044671019516429, guid: cf08124525319a543867ed7e719e3544, type: 3}
-  m_PrefabInstance: {fileID: 8159683155893253289}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2571229a319340545b3b8bcff7f197ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &8186968319065721768
 PrefabInstance:
   m_ObjectHideFlags: 0
