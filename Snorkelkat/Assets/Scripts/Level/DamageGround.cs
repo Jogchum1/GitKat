@@ -13,6 +13,8 @@ public class DamageGround : MonoBehaviour
     [SerializeField] private float knockbackTime;
     private GameManager gameManager;
     [HideInInspector] public Vector2 enterDir;
+    [HideInInspector] public bool playerIsHere = false;
+    [HideInInspector] public bool knockingBack = false;
 
     private void Start()
     {
@@ -36,8 +38,13 @@ public class DamageGround : MonoBehaviour
 
     private IEnumerator EnablePlayerMovementAfterSeconds(float seconds)
     {
+        knockingBack = true;
         gameManager.TogglePlayerMovement(false);
         yield return new WaitForSeconds(seconds);
-        gameManager.TogglePlayerMovement(true);
+        knockingBack = false;
+        if (!playerIsHere)
+        {
+            gameManager.TogglePlayerMovement(true);
+        }
     }
 }

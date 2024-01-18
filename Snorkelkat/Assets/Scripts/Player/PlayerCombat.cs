@@ -118,15 +118,12 @@ public class PlayerCombat : MonoBehaviour, IDamageable
         {
             gameManager.playerMovement.anim.SetFloat("InSaus", 1);
         }
-    }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
         if (collision.tag == "Death" && !dying)
         {
             //gameManager.playerMovement.anim.SetFloat("InSaus", 1);
             //alpha = alpha + 0.1f;
-            if(dmgCooldown == false)
+            if (dmgCooldown == false)
             {
                 dmgCooldown = true;
                 StartCoroutine(TurnScreenRed());
@@ -141,6 +138,10 @@ public class PlayerCombat : MonoBehaviour, IDamageable
             Color color = new Color(redScreen.color.r, redScreen.color.g, redScreen.color.b, alpha);
             redScreen.color = color;
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
     }
 
     public IEnumerator TurnScreenRed()
