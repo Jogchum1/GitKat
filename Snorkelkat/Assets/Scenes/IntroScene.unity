@@ -559,12 +559,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 4873807943104617039, guid: b159083698629004c9ba30d2de561bdc, type: 3}
+      propertyPath: loadLevelOnStart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4873807943130653413, guid: b159083698629004c9ba30d2de561bdc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b159083698629004c9ba30d2de561bdc, type: 3}
+--- !u!114 &983580282 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4873807943104617039, guid: b159083698629004c9ba30d2de561bdc, type: 3}
+  m_PrefabInstance: {fileID: 983580281}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f43c2075684d3045b171e02e3c91f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1016527831
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,15 +869,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1510228236090308219, guid: 3f48420607a64fd4fb989ec545e37784, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1510228236090308219, guid: 3f48420607a64fd4fb989ec545e37784, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1510228236090308219, guid: 3f48420607a64fd4fb989ec545e37784, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1625662404956799933, guid: 3f48420607a64fd4fb989ec545e37784, type: 3}
       propertyPath: m_Color.a
@@ -872,6 +887,10 @@ PrefabInstance:
       propertyPath: backGround
       value: 
       objectReference: {fileID: 970405546}
+    - target: {fileID: 2376115021008507989, guid: 3f48420607a64fd4fb989ec545e37784, type: 3}
+      propertyPath: levelLoader
+      value: 
+      objectReference: {fileID: 983580282}
     - target: {fileID: 4348306433856010200, guid: 3f48420607a64fd4fb989ec545e37784, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
