@@ -56,8 +56,21 @@ public class IntroTask : MonoBehaviour
         alpha += 0.1f;
         backGround.color = new Color(backGround.color.r, backGround.color.g, backGround.color.b, alpha);
         timer.value = 1;
-        
-        if(alpha >= 1)
+        timerSpeed += speedIncrease;
+        Debug.Log(currentQuestion);
+        if (currentQuestion < questionList.Count)
+        {
+            questionList[currentQuestion].SetActive(false);
+            currentQuestion++;
+            if(currentQuestion != questionList.Count)
+                questionList[currentQuestion].SetActive(true);
+        }
+        else
+        {
+            Debug.Log("Wake up in woestijn");
+        }
+
+        if (alpha >= 1)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
