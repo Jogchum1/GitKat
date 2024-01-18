@@ -4253,6 +4253,7 @@ GameObject:
   - component: {fileID: 4705619748939423055}
   - component: {fileID: 5360716404277835564}
   - component: {fileID: 1673849137420945319}
+  - component: {fileID: 3125252162876643445}
   m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
@@ -4339,6 +4340,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3125252162876643445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5630186165874804298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 182d07323c8681549b14bd928945180d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveModifier: -20
 --- !u!1 &5762122727916919036
 GameObject:
   m_ObjectHideFlags: 0
@@ -4351,6 +4365,7 @@ GameObject:
   - component: {fileID: 5554070106480693939}
   - component: {fileID: 5793139024118836938}
   - component: {fileID: 3341078644470139489}
+  - component: {fileID: 4578651350121415657}
   m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
@@ -4437,6 +4452,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4578651350121415657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5762122727916919036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 182d07323c8681549b14bd928945180d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveModifier: -20
 --- !u!1 &5942523933126730022
 GameObject:
   m_ObjectHideFlags: 0
@@ -5921,6 +5949,7 @@ GameObject:
   - component: {fileID: 2604771153326651335}
   - component: {fileID: 5190147904506575908}
   - component: {fileID: 6297333336948870250}
+  - component: {fileID: 6246528828988183827}
   m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
@@ -6007,6 +6036,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6246528828988183827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8842446701644114808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 182d07323c8681549b14bd928945180d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveModifier: -20
 --- !u!1 &8965808966844080582
 GameObject:
   m_ObjectHideFlags: 0

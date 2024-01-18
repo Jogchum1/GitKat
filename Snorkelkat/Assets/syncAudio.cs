@@ -12,6 +12,7 @@ public class syncAudio : MonoBehaviour
     public AudioClip sausfootstepL;
     public AudioClip becomeSaus;
     public ParticleSystem particleSystem;
+    public ParticleSystem particleSystemSaus;
 
     void PlayFootstepR()
     {
@@ -47,6 +48,9 @@ public class syncAudio : MonoBehaviour
     {
         particleSystem.Play();
     }
-    
 
+    void PlayParticleSystemSaus()
+    {
+        particleSystemSaus.Play();
+    }
 }
