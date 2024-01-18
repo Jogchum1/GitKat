@@ -312,7 +312,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void WallSlide()
     {
-        if (IsWalled() && !IsGrounded() && horizontal != 0f)
+        if (IsWalled() && !IsGrounded() && horizontal != 0f && !isSaus && canWallJump)
         {
             if (!isWallSliding)
             {

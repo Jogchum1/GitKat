@@ -39,10 +39,12 @@ public class BecomeSaus : ModAbility
         if (gameManager.playerMovement.vertical < 0  && !gameManager.playerMovement.isSaus)
         {
             SetAbility(true);
+            gameManager.playerMovement.canWallJump = false;
         }
         else if (gameManager.playerMovement.vertical >= 0 && gameManager.playerMovement.isSaus)
         {
             SetAbility(false);
+            gameManager.playerMovement.canWallJump = true;
         }
     }
 
