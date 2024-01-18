@@ -25,9 +25,7 @@ public class BecomeSaus : ModAbility
 
     public override void DeactivateAbility()
     {
-        playerCollider.size = colliderSize;
-        gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.Normal;
-        gameManager.playerMovement.isSaus = false;
+        SetAbility(false);
     }
 
     public override void UpdateAbility()
@@ -40,27 +38,36 @@ public class BecomeSaus : ModAbility
 
         if (gameManager.playerMovement.vertical < 0  && !gameManager.playerMovement.isSaus)
         {
+            SetAbility(true);
+        }
+        else if (gameManager.playerMovement.vertical >= 0 && gameManager.playerMovement.isSaus)
+        {
+            SetAbility(false);
+        }
+    }
+
+    private void SetAbility(bool state)
+    {
+        if (state)
+        {
             gameManager.syncAudio.PlaybecomeSaus();
             playerCollider.size = new Vector2(playerCollider.size.x, changedPlayerScaleY);
-            CenterCollider();
+            gameManager.playerPhysicsStateMachine.state = sausState;
 
             if (gameManager.playerMovement.IsGrounded() && rigidbody.velocity.x < activationForwardSpeed)
             {
                 rigidbody.velocity = new Vector2(activationForwardSpeed * gameManager.playerMovement.aheadAmount, rigidbody.velocity.y);
             }
-            gameManager.playerPhysicsStateMachine.state = sausState;
-            gameManager.playerMovement.isSaus = true;
-            gameManager.playerMovement.anim.SetBool("IsSaus", true);
         }
-        else if (gameManager.playerMovement.vertical >= 0 && gameManager.playerMovement.isSaus)
+        else
         {
             playerCollider.size = new Vector2(playerCollider.size.x, colliderSize.y);
-            CenterCollider();
-
             gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.Normal;
-            gameManager.playerMovement.isSaus = false;
-            gameManager.playerMovement.anim.SetBool("IsSaus", false);
         }
+
+        CenterCollider();
+        gameManager.playerMovement.isSaus = state;
+        gameManager.playerMovement.anim.SetBool("IsSaus", state);
     }
 
     private void CenterCollider()

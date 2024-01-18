@@ -173,7 +173,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Glide();
         }
-        else
+        else if (!isHangGliding)
         {
             rb.gravityScale = 3;
             anim.SetBool("IsFloating", false);
@@ -423,6 +423,7 @@ public class PlayerMovement : MonoBehaviour
             if (rb.velocity.y <= 0)
             {
                 rb.gravityScale = glideGrav;
+                anim.SetBool("IsFloating", true);
             }
             else
             {
@@ -434,6 +435,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
         {
             rb.gravityScale = 3f;
+            anim.SetBool("IsFloating", false);
         }
 
     }

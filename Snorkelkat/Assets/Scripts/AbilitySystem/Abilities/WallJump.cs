@@ -13,5 +13,7 @@ public class WallJump : ModAbility
     public override void DeactivateAbility()
     {
         gameManager.playerMovement.canWallJump = false;
+        gameManager.playerMovement.isWallSliding = false;
+        gameManager.playerMovement.anim.SetBool("IsWallSliding", false);
     }
 }
