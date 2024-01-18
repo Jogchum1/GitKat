@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.038, y: 0.72698975}
+  m_AnchoredPosition: {x: 6.18, y: 0.72698975}
   m_SizeDelta: {x: 1.5336, y: 0.5381}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &6733805855433857067
@@ -184,7 +184,6 @@ GameObject:
   - component: {fileID: 6733805856435676537}
   - component: {fileID: 6733805856435676536}
   - component: {fileID: 6595609762484549876}
-  - component: {fileID: 1435044671019516429}
   m_Layer: 8
   m_Name: NPC
   m_TagString: Untagged
@@ -222,7 +221,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.0983077}
+  m_Offset: {x: 1.8687611, y: 1.361537}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -233,7 +232,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.8113937, y: 3.1966155}
+  m_Size: {x: 9.548916, y: 3.723074}
   m_EdgeRadius: 0
 --- !u!114 &6595609762484549876
 MonoBehaviour:
@@ -248,7 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 0}
-  textTitle: Eye_Room3
+  textTitle: Fungi_Room1
   textComponent: {fileID: 6733805855433857065}
   isActive: 0
   isInteractable: 1
@@ -270,31 +269,18 @@ MonoBehaviour:
   NPCEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6595609762484549876}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
-        m_MethodName: ToggleNPC
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1435044671019516429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6733805856435676535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2571229a319340545b3b8bcff7f197ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  modifierToGive: {fileID: 11400000, guid: 452abbf0c13b05d44a481395bab52600, type: 2}
 --- !u!1 &6733805857012390423
 GameObject:
   m_ObjectHideFlags: 0
