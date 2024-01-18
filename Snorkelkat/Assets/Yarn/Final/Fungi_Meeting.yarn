@@ -91,7 +91,7 @@ The Creature: "Do you feel it? The connectedness of all things?"
 The light in their eyes slowly fades. It stares unfocused in your direction.
 <<RunNPCEvent NPC_DeadCreature>>
 ===
-title: Fungi_Room2
+title: Skeleton_Room2
 tags: 
 position: 263.62158584594727,1.1920928955078125e-7
 ---
@@ -108,12 +108,32 @@ to change and grow and find yourself and connect to others
 ===
 title: Eye_Room3
 tags: 
-position: 762,-2
+position: 761,-2
 ---
--> "I do feel it"
 The hum of the Web's presence fills your mind once again.
-The Web: "does that / scare you ?"
+The Web: "does it / scare you?"
 You stare into the familiar eye that seems to have mutated in the soil.
     -> "Are you in there? The creature I just spoke to? Are you alive?"
-The Web:
+The Web: "you avoid / our question"
+Frustration wells up inside of you.
+    -> "Does it scare me? Of course it scares me!"
+    "The world that I knew is collapsing, and the world outside of that is collapsing, also."
+    "All I wanted was to go back home, but I don't think I can anymore."
+    "But what other option is there, really? Watching the world turn to dust, and me along with it?"
+The Web: "rot / results in / renewal / resistance / revolution"
+The Web: "lichen / covers your bones / mushrooms / grow in your skull"
+The Web: "you feel your past self / decomposing / and it scares you"
+    -> "How do I make it stop?"
+The Web: "do you want it / to stop?"
+The Web: "to go back to the safety / of being a cog / in their / destructive / machines?"
+    -> "But.. I don't know who I am outside of the Hivemind."
+The Web: "is that not / exhilirating? / not knowing?"
+The Web: "you are / entwined / with us now"
+The Web: "part of you / has altered us / just as part of us / has altered you"
+The Web: "and we will not / abandon you"
+    -> "The company will kill us."
+The Web: "and yet / we have survived / and will keep surviving"
+The Web: "our fungal threads / will pierce / their walls"
+The Web: "their system will bloat / and decay"
+The Web: "and the world will / resurge / from their / remains"
 ===
