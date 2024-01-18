@@ -23,20 +23,7 @@ public class LevelLoader : MonoBehaviour
     public void LoadLevel()
     {
         animator.SetTrigger("Exit");
-
-        StartCoroutine(LoadLevelASync(levelToLoad));
-    }
-
-    IEnumerator LoadLevelASync(int levelToLoad)
-    {
-        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(levelToLoad);
-
-        while (!loadOperation.isDone)
-        {
-            float progressValue = Mathf.Clamp01(loadOperation.progress / 0.9f);
-            slider.value = progressValue;
-            yield return null;
-        }
+        SceneManager.LoadScene(levelToLoad);
     }
 
     public void quitGame()

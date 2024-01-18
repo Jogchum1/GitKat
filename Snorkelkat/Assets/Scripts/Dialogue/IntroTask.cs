@@ -13,6 +13,7 @@ public class IntroTask : MonoBehaviour
     public float timerSpeed = 1;
     public float speedIncrease = 0.1f;
     public List<GameObject> questionList = new List<GameObject>();
+    [SerializeField] private LevelLoader levelLoader;
    
 
     private int currentQuestion = 0;
@@ -47,7 +48,7 @@ public class IntroTask : MonoBehaviour
         }
         else
         {
-            Debug.Log("Wake up in woestijn");
+            levelLoader.LoadLevel();
         }
     }
 
@@ -67,12 +68,12 @@ public class IntroTask : MonoBehaviour
         }
         else
         {
-            Debug.Log("Wake up in woestijn");
+            levelLoader.LoadLevel();
         }
 
         if (alpha >= 1)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            levelLoader.LoadLevel();
         }
     }
 
