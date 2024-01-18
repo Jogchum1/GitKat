@@ -16765,6 +16765,16 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5214361807576047732, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
   m_PrefabInstance: {fileID: 1149612477382886109}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1824460530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5567476937871528279, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+  m_PrefabInstance: {fileID: 1149612477382886109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1837844191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4326784983017495530, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
+  m_PrefabInstance: {fileID: 1149612477382886109}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1885115565 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1364843180664207591, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
@@ -17209,7 +17219,7 @@ PrefabInstance:
     - target: {fileID: 802970265883042034, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: interactPopUp
       value: 
-      objectReference: {fileID: 1364843180584757945}
+      objectReference: {fileID: 1837844191}
     - target: {fileID: 802970265883042034, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: collectedPopUp
       value: 
@@ -17621,7 +17631,7 @@ PrefabInstance:
     - target: {fileID: 8821650008784464463, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: interactPopUp
       value: 
-      objectReference: {fileID: 1364843180584757945}
+      objectReference: {fileID: 1824460530}
     - target: {fileID: 8821650008784464463, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: collectedPopUp
       value: 
@@ -17942,11 +17952,6 @@ GameObject:
 --- !u!1 &1364843180584757944 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7383023961705722549, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
-  m_PrefabInstance: {fileID: 1364843180584757941}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1364843180584757945 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3181923668848194839, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
   m_PrefabInstance: {fileID: 1364843180584757941}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2685542624088985460
@@ -19072,7 +19077,7 @@ PrefabInstance:
     - target: {fileID: 8791013000711166495, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
       propertyPath: interactPopUp
       value: 
-      objectReference: {fileID: 1364843180584757945}
+      objectReference: {fileID: 0}
     - target: {fileID: 8791013000711166495, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
       propertyPath: collectedPopUp
       value: 
