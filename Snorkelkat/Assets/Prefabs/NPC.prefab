@@ -248,9 +248,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 0}
-  textTitle: Puzzelblokje
+  textTitle: Eye_Room3
   textComponent: {fileID: 6733805855433857065}
   isActive: 0
+  isInteractable: 1
   onTalkEvent:
     m_PersistentCalls:
       m_Calls:
