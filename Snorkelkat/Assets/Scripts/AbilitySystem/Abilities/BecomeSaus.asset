@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BecomeSaus
   m_EditorClassIdentifier: 
   abilitySprite: {fileID: 21300000, guid: 9b6f84e676db1fa4a83819db6af94767, type: 3}
-  controlsSprite: {fileID: 21300000, guid: 8e606d895f2b4e648bdbe66c859ed041, type: 3}
+  controlsSprite: {fileID: 21300000, guid: 7214f582f2bdc2f4daca11ed762368b0, type: 3}
   gameManager: {fileID: 0}
   changedPlayerScaleY: 0.75
   activationForwardSpeed: 0
