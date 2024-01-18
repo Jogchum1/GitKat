@@ -157,7 +157,6 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     {
         if (collision.tag == "Death")
         {
-            //gameManager.playerMovement.anim.SetFloat("InSaus", 0);
             alpha = 0;
             StartCoroutine(TransitionRedScreen(redScreen.color, redScreenColor, 0.5f));
         }
@@ -184,20 +183,22 @@ public class PlayerCombat : MonoBehaviour, IDamageable
     {
         gameManager.playerMovement.anim.SetBool("IsDying", true);
         dying = true;
-        gameManager.TogglePlayerMovement();
-        gameManager.StopPlayerVelocity();
+        gameManager.TogglePlayerMovement(false);
+        gameManager.playerMovement.rb.velocity = Vector2.zero;
 
         float duration = dieTime / 3;
         yield return door.TransitionScreen(Color.clear, Color.black, duration);
 
         gameObject.transform.position = respawnPoint.transform.position;
         gameManager.camManager.currentCamera.ForceCameraPosition(respawnPoint.transform.position, Quaternion.identity);
+        gameManager.playerMovement.rb.velocity = Vector2.zero;
 
         yield return new WaitForSeconds(dieTime / 3);
 
         yield return door.TransitionScreen(Color.black, Color.clear, duration);
 
-        gameManager.TogglePlayerMovement();
+        gameManager.playerMovement.rb.velocity = Vector2.zero;
+        gameManager.TogglePlayerMovement(true);
 
         Color color = new Color(redScreen.color.r, redScreen.color.g, redScreen.color.b, 0);
         redScreen.color = color;
