@@ -54,7 +54,7 @@ public class IntroTask : MonoBehaviour
     public void PressedWrongButton()
     {
         alpha += 0.1f;
-        //backGround.color = new Color(backGround.color.r, backGround.color.g, backGround.color.b, alpha);
+        backGround.color = new Color(backGround.color.r, backGround.color.g, backGround.color.b, alpha);
         timer.value = 1;
         
         if(alpha >= 1)
