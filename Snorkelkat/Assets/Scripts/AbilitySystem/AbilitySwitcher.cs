@@ -22,9 +22,9 @@ public class AbilitySwitcher : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
         {
-            Debug.Log("R Pressed");
+            Debug.Log("Shift Pressed");
             if (!switching)
             {
                 SwitchModifierPos();

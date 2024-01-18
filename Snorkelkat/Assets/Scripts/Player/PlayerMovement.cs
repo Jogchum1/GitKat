@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     private GameManager gameManager;
     private float horizontal;
+    [HideInInspector] public float vertical;
     
     private bool isFacingRight = true;
     private float hangCounter;
@@ -80,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+        vertical = Input.GetAxisRaw("Vertical");
 
         if (jumpsLeft > 0 && !isStrompeling)
         {
@@ -260,7 +262,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void DoPaddoJump()
     {
-        if (Input.GetMouseButtonDown(0) && IsGrounded() && paddoTimerDone)
+        if (vertical < 0 && IsGrounded() && paddoTimerDone)
         {
             Vector3 currentLocation = new Vector3(transform.position.x, transform.position.y -0.5f, transform.position.z);
             StartCoroutine(SpawnPaddo(currentLocation, 0f));
@@ -268,7 +270,7 @@ public class PlayerMovement : MonoBehaviour
             paddoTimerDone = false;
             paddoTimer = paddoCooldown;
         }
-        else if (Input.GetMouseButtonDown(0) && paddoTimerDone)
+        else if (vertical < 0 && paddoTimerDone)
         {
             RaycastHit2D ray;
             float distance = 100;

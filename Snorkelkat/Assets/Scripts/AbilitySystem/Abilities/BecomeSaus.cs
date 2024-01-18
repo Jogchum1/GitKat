@@ -38,7 +38,7 @@ public class BecomeSaus : ModAbility
             colliderSize = playerCollider.size;
         }
 
-        if (Input.GetKey(KeyCode.Mouse0) && !gameManager.playerMovement.isSaus)
+        if (gameManager.playerMovement.vertical < 0  && !gameManager.playerMovement.isSaus)
         {
             gameManager.syncAudio.PlaybecomeSaus();
             playerCollider.size = new Vector2(playerCollider.size.x, changedPlayerScaleY);
@@ -52,7 +52,7 @@ public class BecomeSaus : ModAbility
             gameManager.playerMovement.isSaus = true;
             gameManager.playerMovement.anim.SetBool("IsSaus", true);
         }
-        else if (!Input.GetKey(KeyCode.Mouse0) && gameManager.playerMovement.isSaus)
+        else if (gameManager.playerMovement.vertical >= 0 && gameManager.playerMovement.isSaus)
         {
             playerCollider.size = new Vector2(playerCollider.size.x, colliderSize.y);
             CenterCollider();
