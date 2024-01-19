@@ -357,7 +357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2280772047722110831, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: strompelOnStart
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2280772047722110831, guid: a5a359b7fcb7c9a49b57689e3a1b95b3, type: 3}
       propertyPath: strompelMoveSpeed
@@ -17896,7 +17896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6946736559030403427, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7412750886717056319, guid: 641474b4daf21ed41a1663a30128387b, type: 3}
       propertyPath: m_IsActive
@@ -19434,7 +19434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8279637967677716264, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8791013000711166495, guid: 373cec9795c42e1439504e885d5cbe9a, type: 3}
       propertyPath: interactPopUp
