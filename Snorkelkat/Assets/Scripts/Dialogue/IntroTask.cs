@@ -14,6 +14,8 @@ public class IntroTask : MonoBehaviour
     public float speedIncrease = 0.1f;
     public List<GameObject> questionList = new List<GameObject>();
     [SerializeField] private LevelLoader levelLoader;
+    [SerializeField] private UnityEvent endOfIntroEvent;
+    private bool invoked= false;
    
 
     private int currentQuestion = 0;
@@ -48,7 +50,11 @@ public class IntroTask : MonoBehaviour
         }
         else
         {
-            levelLoader.LoadLevel();
+            if (!invoked)
+            {
+                endOfIntroEvent.Invoke();
+                invoked= true;
+            }
         }
     }
 
@@ -68,12 +74,20 @@ public class IntroTask : MonoBehaviour
         }
         else
         {
-            levelLoader.LoadLevel();
+            if (!invoked)
+            {
+                endOfIntroEvent.Invoke();
+                invoked = true;
+            }
         }
 
         if (alpha >= 1)
         {
-            levelLoader.LoadLevel();
+            if (!invoked)
+            {
+                endOfIntroEvent.Invoke();
+                invoked = true;
+            }
         }
     }
 

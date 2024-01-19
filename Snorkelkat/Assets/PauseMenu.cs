@@ -5,6 +5,8 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject menu;
+    public GameObject abilitySwithUI;
+    public GameObject dialogueUI;
     public bool active = false;
 
     private void Start()
@@ -30,6 +32,8 @@ public class PauseMenu : MonoBehaviour
     {
         active = state;
         menu.SetActive(state);
+        abilitySwithUI.SetActive(!state);
+        dialogueUI.SetActive(!state);
         if (state)
         {
             Time.timeScale = 0;

@@ -92,6 +92,7 @@ You feel your skin shift again, but the changes are not as visible this time. As
 You shut your eyes tightly, asking the changes to go away, and your nervous system complies.
 As you peer at your hand again, the barbs are gone.
 You release a relieved breath you didn't know you were holding. It listened.
+<<RunNPCEvent NPC_Skeleton>>
 ===
 title: Eye_Room3
 tags: 
@@ -123,5 +124,6 @@ The Web: "and yet / we have survived / and will keep surviving"
 The Web: "our fungal threads / will devour / their walls"
 The Web: "their system will bloat / and decay"
 The Web: "and the world will / resurge / from their / remains"
+<<RunNPCEvent NPC_Oog>>
 ===
 

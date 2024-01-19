@@ -30,11 +30,8 @@ public class BecomeSaus : ModAbility
 
     public override void UpdateAbility()
     {
-        if(playerCollider == null)
-        {
             playerCollider = gameManager.player.GetComponent<CapsuleCollider2D>();
             colliderSize = playerCollider.size;
-        }
 
         if (gameManager.playerMovement.vertical < 0  && !gameManager.playerMovement.isSaus)
         {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Yarn.Unity;
 
 public class LevelLoader : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class LevelLoader : MonoBehaviour
         animator.SetTrigger("Enter");
     }
 
+    [YarnCommand("LoadLevel")]
     public void LoadLevel()
     {
         animator.SetTrigger("Exit");

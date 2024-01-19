@@ -19,6 +19,9 @@ public class NPCDialogue : MonoBehaviour, IInteractable
     private UnityEvent onTalkEvent;
     [SerializeField]
     private UnityEvent NPCEvent;
+    [SerializeField]
+    private UnityEvent extraEvent;
+
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -69,5 +72,10 @@ public class NPCDialogue : MonoBehaviour, IInteractable
     public void RunNPCEvent()
     {
         NPCEvent.Invoke();
+    }
+
+    public void RunExtraEvent()
+    {
+        extraEvent.Invoke();
     }
 }
