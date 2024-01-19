@@ -26,12 +26,13 @@ public class BecomeSaus : ModAbility
     public override void DeactivateAbility()
     {
         SetAbility(false);
+        colliderSize = playerCollider.size;
     }
 
     public override void UpdateAbility()
     {
             playerCollider = gameManager.player.GetComponent<CapsuleCollider2D>();
-            colliderSize = playerCollider.size;
+            //colliderSize = playerCollider.size;
 
         if (gameManager.playerMovement.vertical < 0  && !gameManager.playerMovement.isSaus)
         {
