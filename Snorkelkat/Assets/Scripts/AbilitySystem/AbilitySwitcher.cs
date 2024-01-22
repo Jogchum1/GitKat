@@ -22,6 +22,10 @@ public class AbilitySwitcher : MonoBehaviour
 
     public void Update()
     {
+        if (topModifier == null && bottomModifier == null)
+        {
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
         {
             Debug.Log("Shift Pressed");
