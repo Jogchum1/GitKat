@@ -26,6 +26,8 @@ A9091: "You are on atmospheric distillation of the humus today. Get to your stat
 //    -> Say nothing. (Would be cool if other choices disappear when you hover over them. You have no choice.)
     -> "Acknowledged."
 You walk to your station, where an exhausted drone slides out of their seat. You take their place.
+<<StartIntro IntroSequence>>
+-
 ===
 
 title: Intro3
@@ -44,4 +46,5 @@ TERMINATING NEUROTRANCIEVER CONNECTION..
 NEUROTRANCIEVER TERMINATED
 For the first time ever, your head is completely silent.
 <<LoadLevel LevelLoader>>
+-
 ===

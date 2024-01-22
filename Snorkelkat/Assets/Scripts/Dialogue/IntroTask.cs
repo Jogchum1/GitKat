@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using Yarn.Unity;
+
 public class IntroTask : MonoBehaviour
 {
     [SerializeField]
@@ -16,24 +18,25 @@ public class IntroTask : MonoBehaviour
     [SerializeField] private LevelLoader levelLoader;
     [SerializeField] private UnityEvent endOfIntroEvent;
     private bool invoked= false;
-   
-
     private int currentQuestion = 0;
+    private bool introStarted;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        timer.value = timer.value - Time.deltaTime * timerSpeed;
-        if(timer.value <= 0)
+        if (introStarted)
         {
-            PressedWrongButton();
+            timer.value = timer.value - Time.deltaTime * timerSpeed;
+            if (timer.value <= 0)
+            {
+                PressedWrongButton();
+            }
         }
+    }
+
+    [YarnCommand("StartIntro")]
+    public void StartIntro()
+    {
+        introStarted = true;
     }
 
     public void PressedRightButton()
@@ -41,9 +44,9 @@ public class IntroTask : MonoBehaviour
         timer.value = 1;
         timerSpeed += speedIncrease;
 
-
         questionList[currentQuestion].SetActive(false);
         currentQuestion++;
+
         if (currentQuestion < questionList.Count)
         {
             questionList[currentQuestion].SetActive(true);
@@ -73,15 +76,6 @@ public class IntroTask : MonoBehaviour
                 questionList[currentQuestion].SetActive(true);
         }
         else
-        {
-            if (!invoked)
-            {
-                endOfIntroEvent.Invoke();
-                invoked = true;
-            }
-        }
-
-        if (alpha >= 1)
         {
             if (!invoked)
             {
