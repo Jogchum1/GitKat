@@ -1,0 +1,129 @@
+title: Fungi_Room1
+tags: 
+position: 0,0
+---
+A cluster of glowing mushrooms catches your eye. They're a welcome sight in the barren wasteland that is this planet's surface.
+    -> Reach out to touch them.
+The mushroom's light pulsates the moment your fingers touch it. Suddenly, the chattering sound of multiple people speaking at once fills your mind.
+The Web: "mmmmmmm / bbzz mm zm / grrr..."
+Startled, you pull your hand back.
+    -> "What was that?"
+    -> "Who's there?"
+Your voice sounds hoarse. Speaking hurts, just like the rest of your injured body.
+The Web: "we.. / r... / pl.."
+    -> "Are you.. a person?"
+You look around the tree, but find nobody else. After a few more seconds of strange noises, the voices start to speak in turns.
+The Web: "we are / both / few / many / several"
+    -> "Who is speaking?"
+The Web: "we designate / class / tag / name ourselves / the Web"
+The Web: "how should / we / refer to / you?"
+    -> "We are the Hive. My designation is C5041" // callback to the intro dialogue
+The Web: "The Web meets the Hive / except / your mind is / disconnected"
+    -> "They cast me out!"
+"I didn't work hard enough, I- I have to get back, I don't know where I am.."
+The reality of the situation dawns on you. The AI cast you out to prove yourself.
+You either have to find your way back to the safety of the Hivemind and show them you can do your job
+Or die out in this wasteland of a planet, alone.
+The only living thing you've found out here is this mushroom.
+    -> "You're a mushroom, how can you speak?"
+The Web: "we are not one mushroom / it is one of us / a node / connected / intertwined / with our network"
+The Web: "we are / the Cloud / the Virus / the Stream / the Cells / the Web"
+The Web: "we learned / your syntax / so you would accept / and hear us"
+The Web: "your languages / are difficult / we would rather speak our own"
+    -> "Those are computer terms."
+The Web: "we copy / your language / like you copied / ours"
+The Web: "we are organic / as well as machine / cybernetic organism / just like the company / made / you"
+    -> "Can you help me return?"
+The Web are silent. For a second you think you might have imagined your conversation. It could've been a hallucination.
+The polluted air is probably not doing you any good.
+The Web: "the company's grasp on / our forest / grows stronger / our cycles of life and decay / disrupted"
+The Web: "you can walk the world and / spread / our network / of fungi / with its spores"
+The Web: "it is necessary / for our / survival"
+The Web: "if you do that / we will help you / find what you are missing"
+As surreal as this feels, the mushroom's deal is your best bet at going home.
+    -> "On it."
+Spores fly into the air around you. You should find a place to spread them.
+<<RunNPCEvent NPC_Tree>>
+===
+title: Creature_Room3
+tags: 
+position: 524.0000038146973,-0.9999980926513672
+---
+The corpse of an animal lays on the ground before you. The sight of its rotting body sends a shiver through your spine.
+To your surprise, there is still light in the creature's eyes. It's not dead yet.
+    -> "Can you speak, as well?"
+Its gaze lands on you.
+The Creature: "Cyborg. You are a long way from home."
+    -> "How do you know that?"
+The Creature: "We spoke before, through the Web. I am one of many of its voices."
+The Creature: "You helped restore our network, so now I can finally die."
+Mushrooms fruit from its body and wounds. You look away from the rot.
+The Creature: "The sight of me repulses you, why?"
+    -> "You're on the brink of death."
+The Creature: "Yet I do not fear it, why do you?"
+    -> "I'm not afraid of death! We have technology that heals us."
+        The Creature: "You built religions to make the though of dying bearable. Now you seek to live forever through machines."
+    -> "It will hurt.. And I don't know what comes after."
+        The Creature: "There will always be violence in death. But so will there be peace."
+        The Creature: "You say you do not know what it feels like to die, but you were dead once already."
+The Creature: "You fear the end, but I will begin anew."
+The Creature: "I will regrow, my elements transformed. My cells will nurture life anew."
+The Creature: "We were once stars and now we are animals and after this we’ll be flowers."
+The Creature: "And my story will live on in you."
+The Creature: "Do you feel it? The connectedness of all things?"
+The light in their eyes slowly fades. It stares unfocused in your direction.
+<<RunNPCEvent NPC_DeadCreature>>
+===
+title: Skeleton_Room2
+tags: 
+position: 263.62158584594727,1.1920928955078125e-7
+---
+The carcass that seemed frozen in time is finally starting to decompose.
+Soon, new life will be able to grow from its nutrients.
+The air glitters with the spores the newly grown mushrooms are spreading. You take a breath.
+A tingling sensation spreads across your skin. It startles you, but doesn't feel unpleasant.
+It travels in colorful waves, originating from the palm of your hand, that just touched the skeleton's head.
+It feels like your nervous system is rewiring itself, sending you signals you have never experienced before.
+But it doesn't feel invasive, like the droning feeling of the Hive inside of your mind. Before it disconnected you.
+You notice you can control the sensation, making it shift through your body.
+You will it to move through your back, between your shoulder blades, where your skin starts to shift, making room for two insectoid wings that sprout from your back.
+A bit unnerved, you quickly move the tingling away from that place. It travels through your limbs, to the tips of your fingers and toes.
+You feel your skin shift again, but the changes are not as visible this time. As you look closer at your hand, you see tiny barbs that now dust your skin's surface.
+You shut your eyes tightly, asking the changes to go away, and your nervous system complies.
+As you peer at your hand again, the barbs are gone.
+You release a relieved breath you didn't know you were holding. It listened.
+<<RunNPCEvent NPC_Skeleton>>
+===
+title: Eye_Room3
+tags: 
+position: 761,-2
+---
+The hum of the Web's presence fills your mind once again.
+The Web: "does it / scare you?"
+You stare into the familiar eye that seems to have mutated in the soil.
+    -> "Are you in there? The creature I just spoke to? Are you alive?"
+The Web: "you avoid / our question"
+Frustration wells up inside of you.
+    -> "Does it scare me? Of course it scares me!"
+    "The world that I knew is collapsing, and the world outside of that is collapsing, also."
+    "All I wanted was to go back home, but I don't think I can anymore."
+    "But what other option is there, really? Watching the world turn to dust, and me along with it?"
+The Web: "rot / results in / renewal / resistance / revolution"
+The Web: "lichen / covers your bones / mushrooms / grow in your skull"
+The Web: "you feel your past self / decomposing / and it scares you"
+    -> "How do I make it stop?"
+The Web: "do you want it / to stop?"
+The Web: "to go back to the safety / of being a cog / in their / destructive / machines?"
+    -> "But.. I don't know who I am outside of the Hivemind."
+The Web: "is that not / exhilirating? / not knowing?"
+The Web: "you are / entwined / with us now"
+The Web: "part of you / has altered us / just as part of us / has altered you"
+The Web: "and we will not / abandon you"
+    -> "The company will kill us."
+The Web: "and yet / we have survived / and will keep surviving"
+The Web: "our fungal threads / will devour / their walls"
+The Web: "their system will bloat / and decay"
+The Web: "and the world will / resurge / from their / remains"
+<<RunNPCEvent NPC_Oog>>
+===
+

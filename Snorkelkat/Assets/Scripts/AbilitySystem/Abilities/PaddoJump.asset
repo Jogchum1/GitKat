@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783d9b0623e125248886fefd553e9bdd, type: 3}
+  m_Name: PaddoJump
+  m_EditorClassIdentifier: 
+  abilitySprite: {fileID: 21300000, guid: 5815a9ce629f28d4a96151981c8ad5d2, type: 3}
+  controlsSprite: {fileID: 21300000, guid: 7214f582f2bdc2f4daca11ed762368b0, type: 3}
+  gameManager: {fileID: 0}
+  paddo: {fileID: 3635531572129897165, guid: 021ebf865d1940b4bba43f7ec9497905, type: 3}

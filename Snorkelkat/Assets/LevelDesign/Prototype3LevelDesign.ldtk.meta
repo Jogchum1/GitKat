@@ -29,6 +29,12 @@ ScriptedImporter:
     _asset: {fileID: 3901521205299043480, guid: 171d458eee2522f44b441f4cc9c8383a, type: 3}
   - _key: Door_RightWall
     _asset: {fileID: 3901521205299043480, guid: 1ff0b9d73c1b30c4ba0faa33c62ec8a5, type: 3}
+  - _key: Door
+    _asset: {instanceID: 0}
+  - _key: Collectable
+    _asset: {instanceID: 0}
+  - _key: Cant_stand_here
+    _asset: {instanceID: 0}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 

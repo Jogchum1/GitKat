@@ -1,0 +1,75 @@
+{
+	"identifier": "Level_1",
+	"uniqueIdentifer": "d8db4b10-8990-11ee-a937-2f20f4ffbe7a",
+	"x": 160,
+	"y": 1552,
+	"width": 1680,
+	"height": 688,
+	"bgColor": "#8B9BB4",
+	"neighbourLevels": [],
+	"customFields" : {},
+	"layers": [
+		"Ground.png"
+	],
+	"entities": {
+		"Door": [
+			{
+				"id": "Door",
+				"iid": "d8db4b12-8990-11ee-a937-cf1ae8ff73a1",
+				"layer": "Entities",
+				"x": 1648,
+				"y": 128,
+				"width": 16,
+				"height": 16,
+				"color": 12470831,
+				"customFields" : {}
+			},
+			{
+				"id": "Door",
+				"iid": "d8db4b13-8990-11ee-a937-050165d51485",
+				"layer": "Entities",
+				"x": 448,
+				"y": 16,
+				"width": 16,
+				"height": 16,
+				"color": 12470831,
+				"customFields" : {}
+			}
+		],
+		"Collectable": [
+			{
+				"id": "Collectable",
+				"iid": "d8db4b15-8990-11ee-a937-fdf85582496f",
+				"layer": "Entities",
+				"x": 1168,
+				"y": 128,
+				"width": 16,
+				"height": 16,
+				"color": 6539085,
+				"customFields" : {}
+			},
+			{
+				"id": "Collectable",
+				"iid": "7091d5e0-8990-11ee-a937-8b3aa52b4f71",
+				"layer": "Entities",
+				"x": 1248,
+				"y": 416,
+				"width": 16,
+				"height": 16,
+				"color": 6539085,
+				"customFields" : {}
+			},
+			{
+				"id": "Collectable",
+				"iid": "74e1a800-8990-11ee-a937-abe5822a2ba0",
+				"layer": "Entities",
+				"x": 192,
+				"y": 512,
+				"width": 16,
+				"height": 16,
+				"color": 6539085,
+				"customFields" : {}
+			}
+		]
+	}
+}

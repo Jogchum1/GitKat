@@ -7,6 +7,17 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public GameObject player;
+    /*[HideInInspector]*/ public PlayerMovement playerMovement;
+    /*[HideInInspector]*/ public PlayerInteract playerInteract;
+    /*[HideInInspector]*/ public PlayerCombat playerCombat;
+    /*[HideInInspector]*/ public PlayerPhysicsStateMachine playerPhysicsStateMachine;
+    /*[HideInInspector]*/ public Rigidbody2D playerRigidbody2D;
+    /*[HideInInspector]*/ public AbilitySwitcher abilitySwitcher;
+    public PauseMenu pauseMenu;
+    public Collectables collectables;
+    public syncAudio syncAudio;
+    public CamManager camManager;
+
     public GameObject inventory;
     private bool inventoryActive;
 
@@ -18,6 +29,14 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
+        playerMovement = player.GetComponent<PlayerMovement>();
+        playerInteract = player.GetComponent<PlayerInteract>();
+        playerCombat = player.GetComponent<PlayerCombat>();
+        playerPhysicsStateMachine = player.GetComponent<PlayerPhysicsStateMachine>();
+        playerRigidbody2D = player.GetComponent<Rigidbody2D>();
+        abilitySwitcher = player.GetComponent<AbilitySwitcher>();
+        camManager = FindObjectOfType<CamManager>();
+        syncAudio = FindObjectOfType<syncAudio>();
     }
 
     private void Update()
@@ -34,20 +53,20 @@ public class GameManager : MonoBehaviour
     public void TogglePlayerMovement()
     {
         playerActive = !playerActive;
-        player.GetComponent<PlayerMovement>().enabled = playerActive;
-        player.GetComponent<PlayerInteract>().enabled = playerActive;
+        playerMovement.enabled = playerActive;
+        playerInteract.enabled = playerActive;
     }
 
     public void TogglePlayerMovement(bool set)
     {
         playerActive = set;
-        player.GetComponent<PlayerMovement>().enabled = playerActive;
-        player.GetComponent<PlayerInteract>().enabled = playerActive;
+        playerMovement.enabled = playerActive;
+        playerInteract.enabled = playerActive;
     }
 
     public void StopPlayerVelocity()
     {
-        player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        playerRigidbody2D.velocity = new Vector2(0, 0);
     }
 
     public void ToggleInventory()
