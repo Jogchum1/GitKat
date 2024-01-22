@@ -6,84 +6,62 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "BecomeSaus", menuName = "AbilitySystem/Abilities/BecomeSaus")]
 public class BecomeSaus : ModAbility
 {
-    public float changedPlayerScaleY = 0.5f;
-    [SerializeField]
-    public float activationForwardSpeed;
-    [SerializeField]
-    private PlayerPhysicsStateMachine.State sausState;
-    private CapsuleCollider2D playerCollider;
-    private Vector2 colliderSize;
-    private Rigidbody2D rigidbody;
+    [Header("Normal State")]
+    [SerializeField] private PlayerPhysicsStateMachine.State normalState;
+    [SerializeField] private Vector2 normalColliderSize;
+    [SerializeField] private Vector2 normalColliderOffset;
+
+    [Header("Saus State")]
+    [SerializeField] private PlayerPhysicsStateMachine.State sausState;
+    [SerializeField] private Vector2 sausColliderSize;
+    [SerializeField] private Vector2 sausColliderOffset;
 
     public override void ActivateAbility()
     {
-        gameManager = GameManager.instance;
-        Debug.Log(gameManager);
-        Debug.Log("HALLO?");
-        playerCollider = gameManager.player.GetComponent<CapsuleCollider2D>();
-        rigidbody = gameManager.playerMovement.rb;
-        colliderSize = gameManager.player.GetComponent<CapsuleCollider2D>().size;
+        SetAbility(false);
     }
 
     public override void DeactivateAbility()
     {
         SetAbility(false);
-        //colliderSize = gameManager.player.GetComponent<CapsuleCollider2D>().size;
-        gameManager.player.GetComponent<CapsuleCollider2D>().size = new Vector2(0.75f, 2);
-        gameManager.player.GetComponent<CapsuleCollider2D>().offset = new Vector2(0, 0);
-        CenterCollider();
     }
 
     public override void UpdateAbility()
     {
-        playerCollider = gameManager.player.GetComponent<CapsuleCollider2D>();
-        CenterCollider();
-        //colliderSize = playerCollider.size;
-
         if (gameManager.playerMovement.vertical < 0  && !gameManager.playerMovement.isSaus)
         {
             SetAbility(true);
-            gameManager.player.GetComponent<CapsuleCollider2D>().size = new Vector2(0.75f, 0);
-            gameManager.player.GetComponent<CapsuleCollider2D>().offset = new Vector2(0, -0.6f);
-            gameManager.playerMovement.canWallJump = false;
         }
         else if (gameManager.playerMovement.vertical >= 0 && gameManager.playerMovement.isSaus)
         {
             SetAbility(false);
-            gameManager.player.GetComponent<CapsuleCollider2D>().size = new Vector2(0.75f, 2);
-            gameManager.player.GetComponent<CapsuleCollider2D>().offset = new Vector2(0, 0);
-            gameManager.playerMovement.canWallJump = true;
         }
     }
 
     private void SetAbility(bool state)
     {
+        CapsuleCollider2D collider = gameManager.player.GetComponent<CapsuleCollider2D>();
+
         if (state == true)
         {
             gameManager.syncAudio.PlaybecomeSaus();
-            gameManager.player.GetComponent<CapsuleCollider2D>().size = new Vector2(gameManager.player.GetComponent<CapsuleCollider2D>().size.x, changedPlayerScaleY);
-            CenterCollider();
+
             gameManager.playerPhysicsStateMachine.state = sausState;
 
-            if (gameManager.playerMovement.IsGrounded() && rigidbody.velocity.x < activationForwardSpeed)
-            {
-                rigidbody.velocity = new Vector2(activationForwardSpeed * gameManager.playerMovement.aheadAmount, rigidbody.velocity.y);
-            }
+            collider.size = sausColliderSize;
+            collider.offset = sausColliderOffset;
+
         }
         else
         {
-            gameManager.player.GetComponent<CapsuleCollider2D>().size = new Vector2(gameManager.player.GetComponent<CapsuleCollider2D>().size.x, colliderSize.y);
-            CenterCollider();
-            gameManager.playerPhysicsStateMachine.state = PlayerPhysicsStateMachine.State.Normal;
+            gameManager.playerPhysicsStateMachine.state = normalState;
+
+            collider.size = normalColliderSize;
+            collider.offset = normalColliderOffset;
         }
 
+        gameManager.playerMovement.canWallJump = !state;
         gameManager.playerMovement.isSaus = state;
         gameManager.playerMovement.anim.SetBool("IsSaus", state);
-    }
-
-    private void CenterCollider()
-    {
-        float offsetY = (gameManager.player.GetComponent<CapsuleCollider2D>().size.y * 0.5f) - 1;
-        gameManager.player.GetComponent<CapsuleCollider2D>().offset = new Vector2(gameManager.player.GetComponent<CapsuleCollider2D>().offset.x, offsetY);
     }
 }
