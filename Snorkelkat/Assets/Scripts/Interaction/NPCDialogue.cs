@@ -64,7 +64,10 @@ public class NPCDialogue : MonoBehaviour, IInteractable
         {
             return;
         }
-        dialogueRunner.StartDialogue(textTitle);
+        if(textTitle != "")
+        {
+            dialogueRunner.StartDialogue(textTitle);
+        }
         onTalkEvent.Invoke();
     }
 
@@ -72,6 +75,16 @@ public class NPCDialogue : MonoBehaviour, IInteractable
     public void RunNPCEvent()
     {
         NPCEvent.Invoke();
+    }
+
+    public void StartDialogueEvent(string dialoguTitle)
+    {
+        if(textTitle == "")
+        {
+            textTitle = dialoguTitle;
+            Debug.Log(textTitle);
+            dialogueRunner.StartDialogue(textTitle);
+        }
     }
 
     public void RunExtraEvent()
