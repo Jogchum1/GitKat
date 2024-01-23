@@ -2049,6 +2049,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 518612245618360446, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -364.11914
+      objectReference: {fileID: 0}
     - target: {fileID: 1364843180350034800, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
       propertyPath: m_Name
       value: UI
@@ -2397,6 +2401,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8383296366914556003, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 25.551758
+      objectReference: {fileID: 0}
     - target: {fileID: 8383296367012451912, guid: fef61270cb2cd67418232af8f1a64208, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2573,7 +2581,7 @@ PrefabInstance:
       objectReference: {fileID: 118220258}
     - target: {fileID: 2685542624303244603, guid: 141f515165775c643a656dc626f3510f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -287.1016
+      value: -283.93573
       objectReference: {fileID: 0}
     - target: {fileID: 2685542624303244603, guid: 141f515165775c643a656dc626f3510f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2766,6 +2774,26 @@ PrefabInstance:
     - target: {fileID: 964949387082539514, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913623047719384842, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_NormalMapDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913623047719384842, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalBounds.m_Center.x
+      value: -0.17350006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913623047719384842, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalBounds.m_Center.y
+      value: -7.97495
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913623047719384842, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalBounds.m_Extent.x
+      value: 7.222
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913623047719384842, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
+      propertyPath: m_LocalBounds.m_Extent.y
+      value: 12.159249
       objectReference: {fileID: 0}
     - target: {fileID: 4142699811516675425, guid: 7de257e0d0405214883d5c99072cc52a, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
