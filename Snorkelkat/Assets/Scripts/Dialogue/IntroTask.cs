@@ -45,10 +45,10 @@ public class IntroTask : MonoBehaviour
         timerSpeed += speedIncrease;
 
         questionList[currentQuestion].SetActive(false);
-        currentQuestion++;
 
         if (currentQuestion < questionList.Count)
         {
+            currentQuestion++;
             questionList[currentQuestion].SetActive(true);
         }
         else
