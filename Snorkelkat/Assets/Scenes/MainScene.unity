@@ -3727,7 +3727,7 @@ PrefabInstance:
       objectReference: {fileID: 1908754969}
     - target: {fileID: 1179260317014797982, guid: 2d78ddbaf35006a418ededf3629ff156, type: 3}
       propertyPath: gameObjectsToEnable.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1179260317014797982, guid: 2d78ddbaf35006a418ededf3629ff156, type: 3}
       propertyPath: gameObjectsToEnable.Array.data[0]
@@ -3744,7 +3744,7 @@ PrefabInstance:
     - target: {fileID: 1179260317014797982, guid: 2d78ddbaf35006a418ededf3629ff156, type: 3}
       propertyPath: gameObjectsToEnable.Array.data[3]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1351645199}
     - target: {fileID: 1179260317899800864, guid: 2d78ddbaf35006a418ededf3629ff156, type: 3}
       propertyPath: room
       value: 
