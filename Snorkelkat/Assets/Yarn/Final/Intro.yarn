@@ -24,7 +24,7 @@ position: 1,0
 Your superior stands before you.
 A9091: "You are on atmospheric distillation of the humus today. Get to your station. You can take over from G1920"
 //    -> Say nothing. (Would be cool if other choices disappear when you hover over them. You have no choice.)
-    -> "Acknowledged."
+    -> You: "Acknowledged."
 You walk to your station, where an exhausted drone slides out of their seat. You take their place.
 <<StartIntro IntroSequence>>
 ===
@@ -34,13 +34,13 @@ tags:
 position: 300,1
 ---
 MULTIPLE ERRORS DETECTED
-    -> "What's happening?"
+    -> You: "What's happening?"
 The Hive: "DO NOT SPEAK UNLESS YOU ARE SPOKEN TO."
 The Hive: "YOUR PERFORMANCE IS INSUFFICIENT."
 The Hive: "YOU WILL BE TERMINATED."
-    -> "Wait, let me back in!"
+    -> You: "Wait, let me back in!"
 TERMINATING NEUROTRANCIEVER CONNECTION..
-    -> "Give me another chance, PLEASE! I can do it, I promise."
+    -> You: "Give me another chance, PLEASE! I can do it, I promise."
 ...
 NEUROTRANCIEVER TERMINATED
 For the first time ever, your head is completely silent.
