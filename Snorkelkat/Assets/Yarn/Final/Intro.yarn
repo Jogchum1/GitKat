@@ -9,7 +9,7 @@ MODEL: Implant X V.21
 CONNECTING TO HIVEMIND
 The Hive: "GOOD MORNING."
 The Hive: "PLEASE STATE YOUR DESIGNATION."
-    -> "We are the Hive. My designation is C5041."
+    -> You: "We are the Hive. My designation is C5041."
 The Hive: "VERY WELL."
 The Hive: "MAKE YOUR WAY TO GRID 902 OF SUBJUNCTION 12 TO START YOUR TASKS FOR TODAY."
 The Hive: "YOUR SUPERIOR, A7120, HAS BEEN TERMINATED."
@@ -27,7 +27,6 @@ A9091: "You are on atmospheric distillation of the humus today. Get to your stat
     -> "Acknowledged."
 You walk to your station, where an exhausted drone slides out of their seat. You take their place.
 <<StartIntro IntroSequence>>
--
 ===
 
 title: Intro3

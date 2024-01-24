@@ -11,6 +11,7 @@ public class NewDialogueUI : DialogueViewBase
 {
     [SerializeField] private CanvasGroup canvasGroup;
     [SerializeField] private TextMeshProUGUI currentLine;
+    private LocalizedLine currentDialogueLine;
     [SerializeField] private TextMeshProUGUI currentSpeaker;
     [SerializeField] private List<TMP_Text> historyTextObjects = new List<TMP_Text>();
     private List<string> linesSaid = new List<string>();
@@ -68,6 +69,7 @@ public class NewDialogueUI : DialogueViewBase
 
         currentSpeaker.text = dialogueLine.CharacterName;
         currentLine.text = dialogueLine.TextWithoutCharacterName.Text;
+        currentDialogueLine = dialogueLine;
     }
 
     public override void InterruptLine(LocalizedLine dialogueLine, Action onDialogueLineFinished)
@@ -79,9 +81,10 @@ public class NewDialogueUI : DialogueViewBase
     public override void DismissLine(Action onDismissalComplete)
     {
         mouseIcon.SetActive(false);
-        AddLineToHistory(currentLine.text);
+        AddLineToHistory(currentDialogueLine.Text.Text);
         currentLine.text = "";
         currentSpeaker.text = "";
+        currentDialogueLine = null;
         onDismissalComplete?.Invoke();
     }
 
@@ -145,7 +148,7 @@ public class NewDialogueUI : DialogueViewBase
             IEnumerator OptionViewWasSelectedInternal(DialogueOption selectedOption)
             {
                 DisableOptionView();
-                AddLineToHistory(selectedOption.Line.RawText);
+                AddLineToHistory(selectedOption.Line.Text.Text);
                 OnOptionSelected(selectedOption.DialogueOptionID);
                 yield return null;
             }
